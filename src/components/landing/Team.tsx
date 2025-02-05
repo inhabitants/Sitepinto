@@ -91,49 +91,49 @@ const Team = () => {
         {sectors.map((sector) => (
           <div key={sector.name} className="mb-16 last:mb-0">
             <h3 className="text-2xl font-bold text-neutral-100 mb-8">{sector.name}</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
               {sector.members.map((member) => (
                 <HoverCard key={member.name}>
                   <HoverCardTrigger asChild>
-                    <div className="relative group cursor-pointer">
-                      <div className="overflow-hidden rounded-full aspect-square">
+                    <div className="relative group cursor-pointer w-[75px] h-[75px]">
+                      <div className="overflow-hidden rounded-full w-[75px] h-[75px]">
                         <img
                           src={member.image}
                           alt={member.name}
                           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                         />
                       </div>
-                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-full">
-                        <h3 className="text-xl font-bold text-white">{member.name}</h3>
-                        <p className="text-neutral-300">{member.role}</p>
+                      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full flex flex-col items-center justify-center">
+                        <p className="text-white text-xs font-medium">{member.name}</p>
+                        <p className="text-neutral-300 text-xs">{member.role}</p>
                       </div>
                     </div>
                   </HoverCardTrigger>
-                  <HoverCardContent className="w-80">
-                    <div className="flex justify-center space-x-4">
+                  <HoverCardContent className="w-auto p-2">
+                    <div className="flex justify-center space-x-2">
                       <a
                         href={member.social.twitter}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
+                        className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
                       >
-                        <Twitter className="w-5 h-5" />
+                        <Twitter className="w-4 h-4" />
                       </a>
                       <a
                         href={member.social.youtube}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
+                        className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
                       >
-                        <Youtube className="w-5 h-5" />
+                        <Youtube className="w-4 h-4" />
                       </a>
                       <a
                         href={member.social.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
+                        className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
                       >
-                        <Linkedin className="w-5 h-5" />
+                        <Linkedin className="w-4 h-4" />
                       </a>
                     </div>
                   </HoverCardContent>
