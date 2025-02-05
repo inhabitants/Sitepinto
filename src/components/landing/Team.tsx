@@ -88,60 +88,64 @@ const Team = () => {
           </p>
         </div>
 
-        {sectors.map((sector) => (
-          <div key={sector.name} className="mb-16 last:mb-0">
-            <h3 className="text-2xl font-bold text-neutral-100 mb-8">{sector.name}</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-              {sector.members.map((member) => (
-                <HoverCard key={member.name}>
-                  <HoverCardTrigger asChild>
-                    <div className="relative group cursor-pointer w-[75px] h-[75px]">
-                      <div className="overflow-hidden rounded-full w-[75px] h-[75px]">
-                        <img
-                          src={member.image}
-                          alt={member.name}
-                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                        />
+        <div className="grid gap-16">
+          {sectors.map((sector) => (
+            <div key={sector.name} className="bg-neutral-800/50 rounded-xl p-8">
+              <h3 className="text-2xl font-bold text-neutral-100 mb-8 border-b border-neutral-700 pb-4">
+                {sector.name}
+              </h3>
+              <div className="flex flex-wrap gap-8 justify-center">
+                {sector.members.map((member) => (
+                  <HoverCard key={member.name}>
+                    <HoverCardTrigger asChild>
+                      <div className="relative group cursor-pointer w-[75px] h-[75px]">
+                        <div className="overflow-hidden rounded-full w-[75px] h-[75px]">
+                          <img
+                            src={member.image}
+                            alt={member.name}
+                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                          />
+                        </div>
+                        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full flex flex-col items-center justify-center">
+                          <p className="text-white text-xs font-medium">{member.name}</p>
+                          <p className="text-neutral-300 text-xs">{member.role}</p>
+                        </div>
                       </div>
-                      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full flex flex-col items-center justify-center">
-                        <p className="text-white text-xs font-medium">{member.name}</p>
-                        <p className="text-neutral-300 text-xs">{member.role}</p>
+                    </HoverCardTrigger>
+                    <HoverCardContent className="w-auto p-2">
+                      <div className="flex justify-center space-x-2">
+                        <a
+                          href={member.social.twitter}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
+                        >
+                          <Twitter className="w-4 h-4" />
+                        </a>
+                        <a
+                          href={member.social.youtube}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
+                        >
+                          <Youtube className="w-4 h-4" />
+                        </a>
+                        <a
+                          href={member.social.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
+                        >
+                          <Linkedin className="w-4 h-4" />
+                        </a>
                       </div>
-                    </div>
-                  </HoverCardTrigger>
-                  <HoverCardContent className="w-auto p-2">
-                    <div className="flex justify-center space-x-2">
-                      <a
-                        href={member.social.twitter}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
-                      >
-                        <Twitter className="w-4 h-4" />
-                      </a>
-                      <a
-                        href={member.social.youtube}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
-                      >
-                        <Youtube className="w-4 h-4" />
-                      </a>
-                      <a
-                        href={member.social.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
-                      >
-                        <Linkedin className="w-4 h-4" />
-                      </a>
-                    </div>
-                  </HoverCardContent>
-                </HoverCard>
-              ))}
+                    </HoverCardContent>
+                  </HoverCard>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
