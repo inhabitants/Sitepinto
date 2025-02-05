@@ -4,14 +4,14 @@ import { Card } from "@/components/ui/card";
 const Features = () => {
   const features = [
     {
-      title: "Intelligent Task Management",
-      description: "Streamline your tasks and collaborate seamlessly with our cutting-edge SaaS startup platform.",
-      points: ["Smart Task Assignment", "Real-time Collaboration", "Data Security & Privacy"]
+      title: "HelenAI - Escritora Digital",
+      description: "Uma agente de IA especializada em criar histórias em quadrinhos únicas e envolventes.",
+      points: ["Criação de Narrativas", "Desenvolvimento de Personagens", "Roteiros Personalizados"]
     },
     {
-      title: "Advanced Analytics",
-      description: "Harness the power of AI-driven analytics to optimize your campaigns and understand your audience better.",
-      points: ["Smart Audience Segmentation", "Predictive Performance", "Real-time Visualization"]
+      title: "Comunidade DAO",
+      description: "Faça parte de uma comunidade descentralizada que está moldando o futuro da criação de conteúdo digital.",
+      points: ["Governança Participativa", "Colaboração Criativa", "Benefícios Exclusivos"]
     }
   ];
 
@@ -20,11 +20,11 @@ const Features = () => {
       <div className="container-padding">
         <div className="text-center mb-16">
           <span className="bg-accent-purple/10 text-accent-purple px-4 py-1.5 rounded-full text-sm font-medium">
-            TWO-COL FEATURES
+            RECURSOS
           </span>
-          <h2 className="heading-lg mt-6">Supercharge Your Workflows</h2>
+          <h2 className="heading-lg mt-6">Inovação em Criação Digital</h2>
           <p className="text-neutral-600 mt-4 max-w-2xl mx-auto">
-            Unlock your team's true potential with our state-of-the-art SaaS platform.
+            Descubra como a HelenAI está transformando a criação de histórias em quadrinhos.
           </p>
         </div>
 
@@ -44,9 +44,9 @@ const Features = () => {
                 ))}
               </ul>
               <div className="mt-8 flex gap-4">
-                <button className="button-primary">Start 14-day trial</button>
+                <button className="button-primary">Participar Agora</button>
                 <button className="px-6 py-3 text-neutral-600 hover:text-primary transition-colors">
-                  Contact Sales
+                  Saiba Mais
                 </button>
               </div>
             </div>

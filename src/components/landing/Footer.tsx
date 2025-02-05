@@ -6,54 +6,54 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-6">
               <div className="w-8 h-8 bg-primary rounded-full"></div>
-              <span className="text-xl font-semibold">Lovely</span>
+              <span className="text-xl font-semibold">Pinto Brasil</span>
             </div>
             <p className="text-neutral-600 text-sm">
-              Modern SaaS Platform for Businesses
+              DAO de Inovação em Conteúdo Digital
             </p>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Product</h4>
+            <h4 className="font-semibold mb-4">Produto</h4>
             <ul className="space-y-3 text-sm text-neutral-600">
-              <li><a href="#" className="hover:text-primary transition-colors">Features</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Pricing</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Documentation</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">HelenAI</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Comics</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Documentação</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="font-semibold mb-4">Comunidade</h4>
             <ul className="space-y-3 text-sm text-neutral-600">
-              <li><a href="#" className="hover:text-primary transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Sobre</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Discord</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">DAO</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-3 text-sm text-neutral-600">
-              <li><a href="#" className="hover:text-primary transition-colors">Privacy</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Terms</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">License</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Privacidade</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Termos</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Licença</a></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-neutral-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-neutral-600">
-            © 2024 Lovely. All rights reserved.
+            © 2024 Pinto Brasil DAO. Todos os direitos reservados.
           </p>
           <div className="flex gap-6">
+            <a href="#" className="text-neutral-600 hover:text-primary transition-colors">
+              Discord
+            </a>
             <a href="#" className="text-neutral-600 hover:text-primary transition-colors">
               Twitter
             </a>
             <a href="#" className="text-neutral-600 hover:text-primary transition-colors">
               GitHub
-            </a>
-            <a href="#" className="text-neutral-600 hover:text-primary transition-colors">
-              Discord
             </a>
           </div>
         </div>
