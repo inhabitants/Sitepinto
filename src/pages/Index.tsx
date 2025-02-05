@@ -2,6 +2,8 @@ import Navigation from "@/components/landing/Navigation";
 import Hero from "@/components/landing/Hero";
 import TrustedBy from "@/components/landing/TrustedBy";
 import Features from "@/components/landing/Features";
+import Team from "@/components/landing/Team";
+import FAQ from "@/components/landing/FAQ";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
@@ -11,6 +13,8 @@ const Index = () => {
       <Hero />
       <TrustedBy />
       <Features />
+      <Team />
+      <FAQ />
       <Footer />
     </div>
   );
