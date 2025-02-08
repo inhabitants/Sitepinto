@@ -7,8 +7,8 @@ const Team = () => {
       name: "Development",
       members: [
         {
-          name: "Dev Member 1",
-          role: "Smart Contracts",
+          name: "PK",
+          role: "Frontend",
           image: "/placeholder.svg",
           social: {
             twitter: "https://twitter.com/dev1",
