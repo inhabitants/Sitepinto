@@ -2,23 +2,27 @@ const TrustedBy = () => {
   const companies = [
     { 
       name: "Lush", 
-      className: "w-40",
-      imageUrl: "/Lushlogo.png"
+      className: "w-32",
+      imageUrl: "/Lushlogo.png",
+      link: "https://www.lush.com"
     },
     { 
       name: "SpellBorne", 
-      className: "w-40",
-      imageUrl: "/Spellborne-logo.png"
+      className: "w-48",
+      imageUrl: "/Spellborne-logo.png",
+      link: "https://spellborne.com"
     },
     { 
       name: "Kgen", 
       className: "w-40",
-      imageUrl: "/Kgen-logo.png"
+      imageUrl: "/Kgen-logo.png",
+      link: "https://kgen.com"
     },
     { 
       name: "Blast", 
       className: "w-40",
-      imageUrl: "/BlastLogo.svg"
+      imageUrl: "/BlastLogo.svg",
+      link: "https://blast.io"
     }
   ];
 
@@ -28,13 +32,19 @@ const TrustedBy = () => {
         <p className="text-center text-neutral-600 mb-12">Pinto está presente em</p>
         <div className="flex flex-wrap justify-center items-center gap-12">
           {companies.map((company) => (
-            <div key={company.name} className={`${company.className} h-8 flex items-center justify-center`}>
+            <a
+              key={company.name}
+              href={company.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${company.className} h-8 flex items-center justify-center transition-opacity hover:opacity-80`}
+            >
               <img 
                 src={company.imageUrl}
                 alt={`${company.name} logo`}
                 className="h-full object-contain"
               />
-            </div>
+            </a>
           ))}
         </div>
       </div>
