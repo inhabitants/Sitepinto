@@ -9,7 +9,7 @@ const Team = () => {
         {
           name: "PK",
           role: "Frontend",
-          image: "/placeholder.svg",
+          image: "/PK.jpg",
           social: {
             twitter: "https://twitter.com/dev1",
             youtube: "https://youtube.com/@dev1",
