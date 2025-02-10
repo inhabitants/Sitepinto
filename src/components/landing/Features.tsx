@@ -6,12 +6,14 @@ const Features = () => {
     {
       title: "HelenAI - Escritora Digital",
       description: "Uma agente de IA especializada em criar histórias em quadrinhos únicas e envolventes.",
-      points: ["Criação de Narrativas", "Desenvolvimento de Personagens", "Roteiros Personalizados"]
+      points: ["Criação de Narrativas", "Desenvolvimento de Personagens", "Roteiros Personalizados"],
+      image: "/helens.gif"
     },
     {
       title: "Comunidade DAO",
       description: "Faça parte de uma comunidade descentralizada que está moldando o futuro da criação de conteúdo digital.",
-      points: ["Governança Participativa", "Colaboração Criativa", "Benefícios Exclusivos"]
+      points: ["Governança Participativa", "Colaboração Criativa", "Benefícios Exclusivos"],
+      image: "/PintoSquare.jpg"
     }
   ];
 
@@ -52,8 +54,8 @@ const Features = () => {
             </div>
             <div className="flex-1">
               <Card className="glass-panel p-6 rounded-2xl">
-                <video 
-                  src="/Helens.mp4" 
+                <img 
+                  src={feature.image}
                   alt={feature.title}
                   className="w-full h-auto rounded-lg"
                 />
