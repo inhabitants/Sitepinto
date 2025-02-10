@@ -8,7 +8,7 @@ import {
 const FAQ = () => {
   const faqs = [
     {
-      question: "O que é a Pinto Brasil DAO?",
+      question: "O que é a Pinto DAO?",
       answer: "A Pinto Brasil DAO é uma organização autônoma descentralizada focada na criação de conteúdo digital inovador, com destaque para a HelenAI, nossa agente escritora de histórias em quadrinhos."
     },
     {
