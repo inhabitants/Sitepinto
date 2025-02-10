@@ -4,25 +4,33 @@ const TrustedBy = () => {
       name: "Lush", 
       className: "w-32",
       imageUrl: "/Lushlogo.png",
-      link: "https://www.lush.com"
+      link: "https://www.lush.com",
+      target: "_blank"
+
     },
     { 
       name: "SpellBorne", 
       className: "w-48",
       imageUrl: "/Spellborne-logo.png",
-      link: "https://spellborne.com"
+      link: "https://spellborne.com",
+      target: "_blank"
     },
+
     { 
       name: "Kgen", 
       className: "w-40",
       imageUrl: "/Kgen-logo.png",
-      link: "https://kgen.com"
+      link: "https://kgen.com",
+      target: "_blank"
+
     },
     { 
       name: "Blast", 
       className: "w-40",
       imageUrl: "/BlastLogo.svg",
-      link: "https://blast.io"
+      link: "https://blast.io",
+      target: "_blank"
+
     }
   ];
 
