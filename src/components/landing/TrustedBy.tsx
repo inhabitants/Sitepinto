@@ -1,31 +1,31 @@
 const TrustedBy = () => {
   const companies = [
     { 
-      name: "Stripe", 
+      name: "Lush", 
       className: "w-24",
       imageUrl: "/Lushlogo.png"
     },
     { 
-      name: "HubSpot", 
+      name: "SpellBorne", 
       className: "w-28",
-      imageUrl: "/images/hubspot-logo.png"
+      imageUrl: "/Spellborne-logo.png"
     },
     { 
-      name: "Intercom", 
+      name: "Kgen", 
       className: "w-28",
-      imageUrl: "/images/intercom-logo.png"
+      imageUrl: "/Kgen-logo.png"
     },
     { 
-      name: "Asana", 
+      name: "Outro", 
       className: "w-24",
-      imageUrl: "/images/asana-logo.png"
+      imageUrl: "/Outro.png"
     }
   ];
 
   return (
     <section className="py-24 bg-neutral-200/50">
       <div className="container-padding">
-        <p className="text-center text-neutral-600 mb-12">Pinto está em:</p>
+        <p className="text-center text-neutral-600 mb-12">Pinto está presente em</p>
         <div className="flex flex-wrap justify-center items-center gap-12">
           {companies.map((company) => (
             <div key={company.name} className={`${company.className} h-8 flex items-center justify-center`}>
