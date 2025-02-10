@@ -4,16 +4,17 @@ import { Card } from "@/components/ui/card";
 const Features = () => {
   const features = [
     {
-      title: "HelenAI - Escritora Digital",
-      description: "Uma agente de IA especializada em criar histórias em quadrinhos únicas e envolventes.",
-      points: ["Criação de Narrativas", "Desenvolvimento de Personagens", "Roteiros Personalizados"],
-      image: "/Helens.gif"
-    },
-    {
       title: "Comunidade DAO",
       description: "Faça parte de uma comunidade descentralizada que está moldando o futuro da criação de conteúdo digital.",
-      points: ["Governança Participativa", "Colaboração Criativa", "Benefícios Exclusivos"],
+      points: ["Benefícios Exclusivos", "Pesquisa Web3", "Governança Participativa"],
       image: "/PintoSquare.jpg"
+      
+    },
+    {
+      title: "HelenAI - Shared IP Artista Digital",
+      description: "Uma agente de IA de IP compartilhada que funciona como uma atriz multibrand.",
+      points: ["Brand Compartilhada", "Colaboração Criativa", "Produção visual"],
+      image: "/Helens.gif"
     }
   ];
 
