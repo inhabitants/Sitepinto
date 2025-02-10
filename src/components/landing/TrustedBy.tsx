@@ -16,9 +16,9 @@ const TrustedBy = () => {
       imageUrl: "/Kgen-logo.png"
     },
     { 
-      name: "Outro", 
+      name: "Blast", 
       className: "w-40",
-      imageUrl: "/Outro.png"
+      imageUrl: "/BlastLogo.svg"
     }
   ];
 

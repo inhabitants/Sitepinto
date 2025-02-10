@@ -72,6 +72,31 @@ const Team = () => {
           }
         }
       ]
+    },
+    {
+      name: "Callers",
+      members: [
+        {
+          name: "Caller 1",
+          role: "Market Analyst",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://twitter.com/caller1",
+            youtube: "https://youtube.com/@caller1",
+            linkedin: "https://linkedin.com/in/caller1"
+          }
+        },
+        {
+          name: "Caller 2",
+          role: "Technical Analyst",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://twitter.com/caller2",
+            youtube: "https://youtube.com/@caller2",
+            linkedin: "https://linkedin.com/in/caller2"
+          }
+        }
+      ]
     }
   ];
 
