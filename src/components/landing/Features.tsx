@@ -52,8 +52,8 @@ const Features = () => {
             </div>
             <div className="flex-1">
               <Card className="glass-panel p-6 rounded-2xl">
-                <img 
-                  src="/Helens.gif" 
+                <video 
+                  src="/Helens.mp4" 
                   alt={feature.title}
                   className="w-full h-auto rounded-lg"
                 />
