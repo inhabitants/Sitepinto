@@ -2,22 +2,22 @@ const TrustedBy = () => {
   const companies = [
     { 
       name: "Lush", 
-      className: "w-24",
+      className: "w-40",
       imageUrl: "/Lushlogo.png"
     },
     { 
       name: "SpellBorne", 
-      className: "w-28",
+      className: "w-40",
       imageUrl: "/Spellborne-logo.png"
     },
     { 
       name: "Kgen", 
-      className: "w-28",
+      className: "w-40",
       imageUrl: "/Kgen-logo.png"
     },
     { 
       name: "Outro", 
-      className: "w-24",
+      className: "w-40",
       imageUrl: "/Outro.png"
     }
   ];

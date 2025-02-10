@@ -53,7 +53,7 @@ const Features = () => {
             <div className="flex-1">
               <Card className="glass-panel p-6 rounded-2xl">
                 <img 
-                  src="/placeholder.svg" 
+                  src="/Helens.gif" 
                   alt={feature.title}
                   className="w-full h-auto rounded-lg"
                 />
