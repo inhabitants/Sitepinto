@@ -7,7 +7,7 @@ const Features = () => {
       title: "HelenAI - Escritora Digital",
       description: "Uma agente de IA especializada em criar histórias em quadrinhos únicas e envolventes.",
       points: ["Criação de Narrativas", "Desenvolvimento de Personagens", "Roteiros Personalizados"],
-      image: "/helens.gif"
+      image: "/Helens.gif"
     },
     {
       title: "Comunidade DAO",
