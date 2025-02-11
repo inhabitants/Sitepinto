@@ -1,4 +1,5 @@
-import { GraduationCap, BookOpen, Puzzle, Apple, LightBulb } from "lucide-react";
+
+import { GraduationCap, BookOpen, Puzzle, Apple, Lightbulb } from "lucide-react";
 
 const Values = () => {
   const values = [
@@ -8,7 +9,7 @@ const Values = () => {
       description: "Aqui, todo mundo se ajuda. Temos um bando forte, em que cada membro apoia o outro em projetos, estudos e, claro, nas loucuras de risco degen."
     },
     {
-      icon: LightBulb,
+      icon: Lightbulb,
       title: "Vanguardismo", 
       description: "Não temos medo de chocar ideias ousadas. Testamos protocolos novos, criamos ferramentas próprias e estamos sempre prontos para um 'ovo surpresa' que seja net positive"
     },
