@@ -1,0 +1,7 @@
+
+<svg width="329" height="120" viewBox="0 0 329 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M68 20 L268 20 L268 100 L68 100 L68 20" fill="none" stroke="none"/>
+  <text x="68" y="85" style="font-size: 80px; font-weight: bold; font-family: Arial, sans-serif;" fill="#4A4A4A">PINTO</text>
+  <text x="68" y="115" style="font-size: 24px; font-family: Arial, sans-serif;" fill="#C5A572">DAO</text>
+  <path d="M50 20 L280 90" stroke="#4CAF50" stroke-width="8"/>
+</svg>

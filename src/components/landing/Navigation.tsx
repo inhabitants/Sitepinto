@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import { motion } from "framer-motion";
@@ -9,8 +10,7 @@ const Navigation = () => {
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-50">
       <div className="glass-panel rounded-full px-6 py-4 flex items-center justify-between shadow-lg backdrop-blur-md">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-primary rounded-full"></div>
-          <span className="text-xl font-semibold">Pinto Brasil</span>
+          <img src="/pinto-dao-logo.svg" alt="Pinto DAO" className="h-8 w-auto" />
         </div>
         
         <div className="hidden md:flex items-center gap-8">
