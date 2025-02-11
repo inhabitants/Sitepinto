@@ -2,9 +2,9 @@ const TrustedBy = () => {
   const companies = [
     { 
       name: "Lush", 
-      className: "w-32",
+      className: "w-48",
       imageUrl: "/Lushlogo.png",
-      link: "https://www.lush.com",
+      link: "https://exchange.lushai.net/trade/80472625-fc31-406d-bb2e-2aaa3ccfedd1",
       target: "_blank"
 
     },
@@ -12,23 +12,23 @@ const TrustedBy = () => {
       name: "SpellBorne", 
       className: "w-48",
       imageUrl: "/Spellborne-logo.png",
-      link: "https://spellborne.com",
+      link: "https://spellborne.wiki/skins",
       target: "_blank"
     },
 
     { 
       name: "Kgen", 
-      className: "w-40",
+      className: "w-70",
       imageUrl: "/Kgen-logo.png",
-      link: "https://kgen.com",
+      link: "https://bit.ly/KGeNPintoBrasilPOG",
       target: "_blank"
 
     },
     { 
       name: "Blast", 
-      className: "w-40",
+      className: "w-32",
       imageUrl: "/BlastLogo.svg",
-      link: "https://blast.io",
+      link: "https://opensea.io/collection/pintudo",
       target: "_blank"
 
     }
