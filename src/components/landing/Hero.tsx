@@ -18,7 +18,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Se dizem que o brasileiro não desiste nunca, imagine então quando a gente se junta para caçar e criar em conjunto.
+          Se dizem que o brasileiro não desiste nunca, imagine quando a gente se junta para caçar e criar em conjunto
         </motion.p>
         <motion.div 
           className="flex flex-wrap justify-center gap-4"
