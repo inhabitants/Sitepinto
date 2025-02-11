@@ -1,5 +1,4 @@
-
-import { Puzzle, Apple, Zap, HelpCircle } from "lucide-react";
+import { GraduationCap, BookOpen, Puzzle, Apple, LightBulb } from "lucide-react";
 
 const Values = () => {
   const values = [
@@ -9,17 +8,17 @@ const Values = () => {
       description: "Aqui, todo mundo se ajuda. Temos um bando forte, em que cada membro apoia o outro em projetos, estudos e, claro, nas loucuras de risco degen."
     },
     {
-      icon: Apple,
-      title: "Vanguardismo",
+      icon: LightBulb,
+      title: "Vanguardismo", 
       description: "Não temos medo de chocar ideias ousadas. Testamos protocolos novos, criamos ferramentas próprias e estamos sempre prontos para um 'ovo surpresa' que seja net positive"
     },
     {
-      icon: Zap,
+      icon: BookOpen,
       title: "Construção Coletiva",
       description: "Juntamos conhecimentos técnicos, criatividade e nossa dose de loucura para desenvolver produtos, ferramentas, bots e agentes como HelenAI. Cada contribuição tempera essa 'sopa' que alimenta toda a DAO."
     },
     {
-      icon: HelpCircle,
+      icon: Apple,
       title: "Estudando com prazer",
       description: "Aprender não é só encher a cabeça de teoria: é criar laços e se divertir no processo. Organizamos experimentos, aulas, pesquisas, e convidamos especialistas para trocar ideias de forma leve e interativa. Enquanto uns ciscam dados, outros bicam novos conceitos, e todo mundo sai mais forte, com boas risadas e bagagem."
     }
