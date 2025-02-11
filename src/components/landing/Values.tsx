@@ -11,12 +11,12 @@ const Values = () => {
     {
       icon: Apple,
       title: "Vanguardismo",
-      description: "Não temos medo de chocar ideias ousadas. Testamos protocolos novos, criamos ferramentas próprias e estamos sempre prontos para um "ovo surpresa" que seja net positive"
+      description: "Não temos medo de chocar ideias ousadas. Testamos protocolos novos, criamos ferramentas próprias e estamos sempre prontos para um 'ovo surpresa' que seja net positive"
     },
     {
       icon: Zap,
       title: "Construção Coletiva",
-      description: "Juntamos conhecimentos técnicos, criatividade e nossa dose de loucura para desenvolver produtos, ferramentas, bots e agentes como HelenAI. Cada contribuição tempera essa "sopa" que alimenta toda a DAO."
+      description: "Juntamos conhecimentos técnicos, criatividade e nossa dose de loucura para desenvolver produtos, ferramentas, bots e agentes como HelenAI. Cada contribuição tempera essa 'sopa' que alimenta toda a DAO."
     },
     {
       icon: HelpCircle,
