@@ -10,7 +10,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Bem-vindo ao Pinto Brasil DAO
+          Pinto Brasil DAO
         </motion.h1>
         <motion.p 
           className="text-xl text-neutral-600 mb-8"
@@ -18,7 +18,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Conheça HelenAI, nossa agente escritora de histórias em quadrinhos que está revolucionando a criação de conteúdo digital.
+          Se dizem que o brasileiro não desiste nunca, imagine então quando a gente se junta para caçar e criar em conjunto.
         </motion.p>
         <motion.div 
           className="flex flex-wrap justify-center gap-4"
