@@ -18,7 +18,7 @@ const TrustedBy = () => {
 
     { 
       name: "Kgen", 
-      className: "w-70",
+      className: "w-48",
       imageUrl: "/Kgen-logo.png",
       link: "https://bit.ly/KGeNPintoBrasilPOG",
       target: "_blank"
@@ -26,7 +26,7 @@ const TrustedBy = () => {
     },
     { 
       name: "Blast", 
-      className: "w-32",
+      className: "w-48",
       imageUrl: "/BlastLogo.svg",
       link: "https://opensea.io/collection/pintudo",
       target: "_blank"
