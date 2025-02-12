@@ -10,7 +10,7 @@ const Navigation = () => {
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-50">
       <div className="glass-panel rounded-full px-6 py-4 flex items-center justify-between shadow-lg backdrop-blur-md">
         <div className="flex items-center gap-2">
-          <img src="/pinto-dao-logo.svg" alt="Pinto DAO" className="h-12 w-[130px] object-contain" />
+          <img src="/Logo-Pinto-DAO.png" alt="Pinto DAO" className="h-12 w-[130px] object-contain" />
         </div>
         
         <div className="hidden md:flex items-center gap-8">
