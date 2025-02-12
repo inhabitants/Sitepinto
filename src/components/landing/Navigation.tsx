@@ -16,6 +16,7 @@ const Navigation = () => {
         <div className="hidden md:flex items-center gap-8">
           <a href="#recursos" className="text-neutral-600 hover:text-primary transition-colors font-medium">Recursos</a>
           <a href="#valores" className="text-neutral-600 hover:text-primary transition-colors font-medium">Nossos Valores</a>
+          <a href="#produtos" className="text-neutral-600 hover:text-primary transition-colors font-medium">Produtos</a>
           <a href="#equipe" className="text-neutral-600 hover:text-primary transition-colors font-medium">Nossa Equipe</a>
           <a href="#faq" className="text-neutral-600 hover:text-primary transition-colors font-medium">FAQ</a>
         </div>
@@ -47,6 +48,7 @@ const Navigation = () => {
           <div className="flex flex-col gap-4">
             <a href="#recursos" className="text-neutral-600 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">Recursos</a>
             <a href="#valores" className="text-neutral-600 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">Nossos Valores</a>
+            <a href="#produtos" className="text-neutral-600 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">Produtos</a>
             <a href="#equipe" className="text-neutral-600 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">Nossa Equipe</a>
             <a href="#faq" className="text-neutral-600 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">FAQ</a>
             <hr className="border-neutral-200" />
