@@ -6,37 +6,37 @@ const Products = () => {
     {
       icon: Coffee,
       title: "Café com Dev",
-      description: "Encontros semanais para discutir tecnologia, blockchain e desenvolvimento com a comunidade.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       link: "/cafe-com-dev"
     },
     {
       icon: BookOpen,
       title: "Cursos e Workshops",
-      description: "Aprenda com especialistas através de nossos cursos e workshops exclusivos sobre Web3 e desenvolvimento.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       link: "/cursos"
     },
     {
       icon: Code,
       title: "Desenvolvimento Web3",
-      description: "Serviços de desenvolvimento de smart contracts, dApps e integrações blockchain personalizadas.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       link: "/desenvolvimento"
     },
     {
       icon: Laptop,
       title: "HelenAI Lab",
-      description: "Laboratório de experimentação e desenvolvimento de IA com foco em geração de conteúdo e arte digital.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       link: "/helen-ai"
     },
     {
       icon: PenTool,
       title: "Criação de NFTs",
-      description: "Serviço completo de criação, desenvolvimento e lançamento de coleções NFT para artistas e marcas.",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       link: "/nfts"
     }
   ];
 
   return (
-    <section className="py-24">
+    <section id="produtos" className="py-24">
       <div className="container-padding">
         <div className="text-center mb-16">
           <span className="bg-accent-purple/10 text-accent-purple px-4 py-1.5 rounded-full text-sm font-medium">
@@ -48,7 +48,7 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
           {products.map((product) => (
             <div 
               key={product.title} 
