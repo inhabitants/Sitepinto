@@ -1,13 +1,21 @@
-
 import { Coffee, BookOpen, Code, Laptop, PenTool } from "lucide-react";
 
+interface Product {
+  icon: any;
+  title: string;
+  description: string;
+  link: string;
+  isExternal?: boolean;
+}
+
 const Products = () => {
-  const products = [
+  const products: Product[] = [
     {
       icon: Coffee,
-      title: "Café com Dev",
+      title: "Helenai",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      link: "/cafe-com-dev"
+      link: "https://helenai.xyz/",
+      isExternal: true
     },
     {
       icon: BookOpen,
@@ -40,11 +48,11 @@ const Products = () => {
       <div className="container-padding">
         <div className="text-center mb-16">
           <span className="bg-accent-purple/10 text-accent-purple px-4 py-1.5 rounded-full text-sm font-medium">
-            PRODUTOS E SERVIÇOS
+            SubDAOs
           </span>
-          <h2 className="heading-lg mt-6">O que oferecemos</h2>
+          <h2 className="heading-lg mt-6">Produtos e Serviços</h2>
           <p className="text-neutral-600 mt-4 max-w-2xl mx-auto">
-            Explore nossa variedade de produtos e serviços para a comunidade Web3
+            Descubra os produtos e serviços propostos por nossas SubDAOs
           </p>
         </div>
 
@@ -66,6 +74,10 @@ const Products = () => {
               <a 
                 href={product.link}
                 className="mt-auto button-secondary w-full"
+                {...(product.isExternal ? {
+                  target: "_blank",
+                  rel: "noopener noreferrer"
+                } : {})}
               >
                 Saiba mais
               </a>
