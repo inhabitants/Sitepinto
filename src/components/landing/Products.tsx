@@ -14,7 +14,7 @@ const Products = () => {
     {
       icon: Coffee,
       title: "Helenai",
-      description: "Uma agente de IA com IP compartilhada que atua como atriz avatar em diferentes projetos e marcas. Nossa primeira SubDAO focada em nosso core approach experimental ligado a AI.,
+      description: "Uma agente de IA com IP compartilhada que atua como atriz avatar em diferentes projetos e marcas. Nossa primeira SubDAO focada em nosso core approach experimental ligado a AI.",
       link: "https://helenai.xyz/",
       isExternal: true,
       buttonText: "Conheça Helen"
