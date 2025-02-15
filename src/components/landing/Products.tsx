@@ -1,4 +1,4 @@
-import { Coffee, BookOpen, Code, Laptop, PenTool } from "lucide-react";
+import { Bot, BookText, LineChart, Flask, Users } from "lucide-react";
 
 interface Product {
   icon: any;
@@ -20,7 +20,7 @@ const Products = () => {
       buttonText: "Conheça Helen"
     },
     {
-      icon: BookOpen,
+      icon: BookText,
       title: "Aulas e Researchs",
       description: "Conteúdo educacional produzido por especialistas de diferentes nichos Web3, entre membros e convidados. Inclui análises aprofundadas de projetos, protocolos e tendências do mercado.",
       link: "https://discord.pinto.wtf",
@@ -28,7 +28,7 @@ const Products = () => {
       buttonText: "Participe do Discord"
     },
     {
-      icon: Code,
+      icon: LineChart,
       title: "Golden Team Callers",
       description: "Squad especializado em diferentes estratégias Web3, desde análise de memecoins até gestão de portfólio de longo prazo. Escolhas amplas para cada tipo de perfil.",
       link: "https://docs.pinto.wtf/docs/pinto-brasil/callers",
@@ -36,7 +36,7 @@ const Products = () => {
       buttonText: "Conhecer Callers"
     },
     {
-      icon: Laptop,
+      icon: Flask,
       title: "AI Lab",
       description: "Lab de soluções com IA. Criamos ferramentas e produtos experimentais para uso interno e externo, focando em aplicações práticas.",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSc1jcinGf6Dmh1Vlwx8roC5mdMtKAJpCyvDA60nMJPDOw_WGQ/viewform?usp=dialog",
@@ -44,7 +44,7 @@ const Products = () => {
       buttonText: "Marque uma reunião"
     },
     {
-      icon: PenTool,
+      icon: Users,
       title: "Community Pools",
       description: "Pools coletivos para oportunidades especiais. Unimos recursos para acessar presales, desenvolver ferramentas e participar de projetos que demandam maior capital financeiro ou social.",
       link: "https://discord.pinto.wtf",
@@ -66,11 +66,11 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {products.map((product) => (
             <div 
               key={product.title} 
-              className="flex flex-col items-start text-left p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow min-h-[320px]"
+              className="flex flex-col items-start text-left p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow min-h-[380px]"
             >
               <div className="w-16 h-16 rounded-full bg-accent-purple/10 flex items-center justify-center mb-6">
                 <product.icon className="w-8 h-8 text-accent-purple" />
