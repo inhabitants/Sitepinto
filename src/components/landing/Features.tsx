@@ -5,7 +5,7 @@ const Features = () => {
   const features = [
     {
       title: "Comunidade DAO",
-      description: "Faça parte de uma comunidade descentralizada que está moldando o futuro da criação de conteúdo digital.",
+      description: "Faça parte de uma comunidade que pode aprender e construir junto.",
       points: ["Benefícios Exclusivos", "Pesquisa Web3", "Governança Participativa"],
       image: "/PintoSquare.jpg"
       
