@@ -1,5 +1,5 @@
 import React from 'react';
-import { Coffee, BookText, LineChart, TestTube, Users, LucideIcon } from "lucide-react";
+import { Coffee, BookText, LineChart, TestTube, Users, LucideIcon, Lightbulb } from "lucide-react";
 
 interface Product {
   icon: LucideIcon;
@@ -8,6 +8,7 @@ interface Product {
   link: string;
   isExternal?: boolean;
   buttonText: string;
+  isSpecial?: boolean;
 }
 
 const Products = () => {
@@ -54,6 +55,16 @@ const Products = () => {
     }
   ];
 
+  const specialCard = {
+    icon: Lightbulb,
+    title: "Proponha sua SubDAO",
+    description: "Você tem um projeto e quer ampliar ele por meio de uma comunidade experimental? Transforme-o em uma SubDAO e agregue valor tanto para ele quanto para seus usuários.",
+    link: "https://discord.pinto.wtf",
+    isExternal: true,
+    buttonText: "Propor Projeto",
+    isSpecial: true
+  };
+
   return (
     <section id="produtos" className="py-24">
       <div className="container-padding">
@@ -94,6 +105,38 @@ const Products = () => {
               </a>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 max-w-7xl mx-auto">
+          <div className="flex flex-col items-start text-left p-8 bg-gradient-to-br from-accent-purple/10 to-accent-purple/20 rounded-2xl shadow-sm hover:shadow-md transition-shadow min-h-[380px] border-2 border-accent-purple/20">
+            <div className="w-16 h-16 rounded-full bg-accent-purple/20 flex items-center justify-center mb-6">
+              <specialCard.icon className="w-8 h-8 text-accent-purple" />
+            </div>
+            <h3 className="text-2xl font-bold mb-3 text-primary">
+              {specialCard.title}
+            </h3>
+            <p className="text-neutral-600 leading-relaxed mb-8 text-lg">
+              {specialCard.description}
+            </p>
+            <div className="flex gap-4 mt-auto w-full">
+              <a 
+                href={specialCard.link}
+                className="button-primary flex-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {specialCard.buttonText}
+              </a>
+              <a 
+                href="https://docs.pinto.wtf"
+                className="button-secondary flex-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver Documentação
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
