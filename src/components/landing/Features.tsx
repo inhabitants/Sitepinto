@@ -10,7 +10,7 @@ const Features = () => {
       points: ["Benefícios Exclusivos", "Pesquisa Web3", "Governança Participativa"],
       image: "/PintoSquare.jpg",
       primaryLink: "https://discord.pinto.wtf",
-      secondaryLink: "https://docs.pinto.wtf/docs/pinto-brasil/intro"
+      secondaryLink: "https://docs.pinto.wtf/docs/intro"
     },
     {
       title: "HelenAI - Shared IP Artista Digital",
@@ -18,7 +18,7 @@ const Features = () => {
       points: ["Brand Compartilhada", "Colaboração Criativa", "Produção visual"],
       image: "/Helens.gif",
       primaryLink: "https://helenai.xyz",
-      secondaryLink: "https://docs.pinto.wtf/docs/pinto-brasil/helen"
+      secondaryLink: "https://docs.pinto.wtf/docs/intro"
     }
   ];
 
