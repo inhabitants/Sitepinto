@@ -1,5 +1,5 @@
 import React from 'react';
-import { Coffee, BookText, LineChart, Flask, Users, LucideIcon } from "lucide-react";
+import { Coffee, BookText, LineChart, TestTube, Users, LucideIcon } from "lucide-react";
 
 interface Product {
   icon: LucideIcon;
@@ -37,7 +37,7 @@ const Products = () => {
       buttonText: "Conhecer Callers"
     },
     {
-      icon: Flask,
+      icon: TestTube,
       title: "AI Lab",
       description: "Lab de soluções com IA. Criamos ferramentas e produtos experimentais para uso interno e externo, focando em aplicações práticas.",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSc1jcinGf6Dmh1Vlwx8roC5mdMtKAJpCyvDA60nMJPDOw_WGQ/viewform?usp=dialog",
