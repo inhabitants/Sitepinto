@@ -1,3 +1,4 @@
+import React from 'react';
 import { Check } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
@@ -7,14 +8,17 @@ const Features = () => {
       title: "Comunidade DAO",
       description: "Faça parte de uma comunidade que pode aprender e construir junto.",
       points: ["Benefícios Exclusivos", "Pesquisa Web3", "Governança Participativa"],
-      image: "/PintoSquare.jpg"
-      
+      image: "/PintoSquare.jpg",
+      primaryLink: "https://discord.pinto.wtf",
+      secondaryLink: "https://docs.pinto.wtf/docs/pinto-brasil/intro"
     },
     {
       title: "HelenAI - Shared IP Artista Digital",
       description: "Uma agente de IA de IP compartilhada que funciona como uma atriz multibrand.",
       points: ["Brand Compartilhada", "Colaboração Criativa", "Produção visual"],
-      image: "/Helens.gif"
+      image: "/Helens.gif",
+      primaryLink: "https://helenai.xyz",
+      secondaryLink: "https://docs.pinto.wtf/docs/pinto-brasil/helen"
     }
   ];
 
@@ -47,10 +51,22 @@ const Features = () => {
                 ))}
               </ul>
               <div className="mt-8 flex gap-4">
-                <button className="button-primary">Participar Agora</button>
-                <button className="px-6 py-3 text-neutral-600 hover:text-primary transition-colors">
+                <a 
+                  href={feature.primaryLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button-primary"
+                >
+                  Participar Agora
+                </a>
+                <a 
+                  href={feature.secondaryLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 text-neutral-600 hover:text-primary transition-colors"
+                >
                   Saiba Mais
-                </button>
+                </a>
               </div>
             </div>
             <div className="flex-1">

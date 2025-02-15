@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import { ArrowRight, Discord } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -34,14 +35,16 @@ const Hero = () => {
             className="button-primary flex items-center gap-2"
           >
             Entrar na Comunidade
+            <Discord className="w-4 h-4" />
           </a>
           <a 
             href="https://helenai.xyz"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 border border-neutral-300 rounded-lg hover:bg-neutral-200/50 transition-colors"
+            className="px-6 py-3 border border-neutral-300 rounded-lg hover:bg-neutral-200/50 transition-colors flex items-center gap-2"
           >
             Conhecer HelenAI
+            <ArrowRight className="w-4 h-4" />
           </a>
         </motion.div>
       </div>

@@ -113,7 +113,7 @@ const Products = () => {
                     {card.buttonText}
                   </a>
                   <a 
-                    href="https://docs.pinto.wtf"
+                    href="https://docs.pinto.wtf/docs/pinto-brasil/SubDAO"
                     className="button-secondary flex-1"
                     target="_blank"
                     rel="noopener noreferrer"
