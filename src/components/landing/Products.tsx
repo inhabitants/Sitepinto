@@ -14,38 +14,42 @@ const Products = () => {
     {
       icon: Coffee,
       title: "Helenai",
-      description: "Uma agente de IA com IP compartilhada que atua como atriz avatar em diferentes projetos e marcas. Nossa primeira SubDAO focada em nosso core approach experimental ligado a AI.
+      description: "Uma agente de IA com IP compartilhada que atua como atriz avatar em diferentes projetos e marcas. Nossa primeira SubDAO focada em nosso core approach experimental ligado a AI.,
       link: "https://helenai.xyz/",
       isExternal: true,
-      buttonText: "Conheça a Helen"
+      buttonText: "Conheça Helen"
     },
     {
       icon: BookOpen,
       title: "Aulas e Researchs",
       description: "Conteúdo educacional produzido por especialistas de diferentes nichos Web3, entre membros e convidados. Inclui análises aprofundadas de projetos, protocolos e tendências do mercado.",
-      link: "/cursos",
-      buttonText: "Ver Conteúdo"
+      link: "https://discord.pinto.wtf",
+      isExternal: true,
+      buttonText: "Participe do Discord"
     },
     {
       icon: Code,
       title: "Golden Team Callers",
       description: "Squad especializado em diferentes estratégias Web3, desde análise de memecoins até gestão de portfólio de longo prazo. Escolhas amplas para cada tipo de perfil.",
-      link: "/desenvolvimento",
+      link: "https://docs.pinto.wtf/docs/pinto-brasil/callers",
+      isExternal: true,
       buttonText: "Conhecer Callers"
     },
     {
       icon: Laptop,
       title: "AI Lab",
       description: "Lab de soluções com IA. Criamos ferramentas e produtos experimentais para uso interno e externo, focando em aplicações práticas.",
-      link: "/helen-ai",
-      buttonText: "Explorar Lab"
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSc1jcinGf6Dmh1Vlwx8roC5mdMtKAJpCyvDA60nMJPDOw_WGQ/viewform?usp=dialog",
+      isExternal: true,
+      buttonText: "Marque uma reunião"
     },
     {
       icon: PenTool,
       title: "Community Pools",
       description: "Pools coletivos para oportunidades especiais. Unimos recursos para acessar presales, desenvolver ferramentas e participar de projetos que demandam maior capital financeiro ou social.",
-      link: "/pools",
-      buttonText: "Ver Pools"
+      link: "https://discord.pinto.wtf",
+      isExternal: true,
+      buttonText: "Participe do Discord"
     }
   ];
 
