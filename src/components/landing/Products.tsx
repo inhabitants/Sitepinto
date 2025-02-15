@@ -6,6 +6,7 @@ interface Product {
   description: string;
   link: string;
   isExternal?: boolean;
+  buttonText: string;
 }
 
 const Products = () => {
@@ -15,31 +16,36 @@ const Products = () => {
       title: "Helenai",
       description: "Nossa 1a SubDAO é uma agente de IA como IP compartilhada. Uma atriz avatar que pode ser utilizada em diferentes projetos e marcas.",
       link: "https://helenai.xyz/",
-      isExternal: true
+      isExternal: true,
+      buttonText: "Conheça a Helen"
     },
     {
       icon: BookOpen,
       title: "Cursos e Workshops",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      link: "/cursos"
+      link: "/cursos",
+      buttonText: "Ver Cursos"
     },
     {
       icon: Code,
       title: "Desenvolvimento Web3",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      link: "/desenvolvimento"
+      link: "/desenvolvimento",
+      buttonText: "Iniciar Projeto"
     },
     {
       icon: Laptop,
       title: "HelenAI Lab",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      link: "/helen-ai"
+      link: "/helen-ai",
+      buttonText: "Explorar Lab"
     },
     {
       icon: PenTool,
       title: "Criação de NFTs",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      link: "/nfts"
+      link: "/nfts",
+      buttonText: "Criar NFT"
     }
   ];
 
@@ -79,7 +85,7 @@ const Products = () => {
                   rel: "noopener noreferrer"
                 } : {})}
               >
-                Saiba mais
+                {product.buttonText}
               </a>
             </div>
           ))}
