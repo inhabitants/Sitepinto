@@ -7,11 +7,15 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-primary rounded-full"></div>
-              <span className="text-xl font-semibold">Pinto Brasil</span>
+              <img 
+                src="/Logo-Pinto-DAO.png" 
+                alt="PintoDAOLogo" 
+                className="w-8 h-8 rounded-full object-cover"
+              />
+              <span className="text-xl font-semibold">Pinto Brasil DAO</span>
             </div>
             <p className="text-neutral-600 text-sm">
-              DAO de Inovação em Conteúdo Digital
+              DAO de experimentação e estudo em Web3
             </p>
           </div>
           
@@ -44,7 +48,7 @@ const Footer = () => {
 
         <div className="border-t border-neutral-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-neutral-600">
-            © 2024 Pinto Brasil DAO. Todos os direitos reservados.
+            © 2025 Pinto Brasil DAO. Todos os direitos reservados.
           </p>
           <div className="flex gap-6">
             <a href="https://discord.pinto.wtf" target="_blank" rel="noopener noreferrer" className="text-neutral-600 hover:text-primary transition-colors">
