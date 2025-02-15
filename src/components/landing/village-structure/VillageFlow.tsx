@@ -3,8 +3,6 @@ import { useCallback } from 'react';
 import { 
   ReactFlow, 
   Background, 
-  Controls,
-  MiniMap,
   useNodesState,
   useEdgesState,
   addEdge,
@@ -28,16 +26,19 @@ const VillageFlow = () => {
         onConnect={onConnect}
         fitView
         attributionPosition="bottom-right"
+        panOnScroll={false}
+        zoomOnScroll={false}
+        panOnDrag={false}
+        zoomOnPinch={false}
+        zoomOnDoubleClick={false}
+        preventScrolling={true}
+        nodesDraggable={false}
+        nodesConnectable={false}
+        nodesFocusable={false}
+        edgesFocusable={false}
+        elementsSelectable={false}
       >
         <Background />
-        <Controls />
-        <MiniMap 
-          style={{
-            backgroundColor: '#ffffff',
-            border: '1px solid #e5e7eb',
-          }}
-          maskColor="rgba(0, 0, 0, 0.1)"
-        />
       </ReactFlow>
     </div>
   );
