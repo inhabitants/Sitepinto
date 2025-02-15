@@ -1,4 +1,3 @@
-
 import { Node, Edge } from '@xyflow/react';
 
 export const initialNodes: Node[] = [
@@ -8,7 +7,7 @@ export const initialNodes: Node[] = [
     data: { 
       label: 'Caçadores e Coletores (Nível 1)',
     },
-    position: { x: 400, y: 0 },
+    position: { x: 300, y: 50 },
     style: {
       background: '#9b87f5',
       color: 'white',
@@ -25,7 +24,7 @@ export const initialNodes: Node[] = [
     data: { 
       label: 'Agricultura (Nível 2)',
     },
-    position: { x: 200, y: 150 },
+    position: { x: 150, y: 200 },
     style: {
       background: '#7E69AB',
       color: 'white',
@@ -42,7 +41,7 @@ export const initialNodes: Node[] = [
     data: { 
       label: 'Ferraria (Nível 3)',
     },
-    position: { x: 600, y: 150 },
+    position: { x: 450, y: 200 },
     style: {
       background: '#6E59A5',
       color: 'white',
@@ -59,7 +58,7 @@ export const initialNodes: Node[] = [
     data: { 
       label: 'Exploratório (Nível 4)',
     },
-    position: { x: 400, y: 300 },
+    position: { x: 300, y: 350 },
     style: {
       background: '#1A1F2C',
       color: 'white',
@@ -76,7 +75,7 @@ export const initialNodes: Node[] = [
     data: { 
       label: 'Caça e coleta de oportunidades: drops, whitelists, farms, DeFi em diferentes nichos e chains'
     },
-    position: { x: 400, y: -80 },
+    position: { x: 300, y: -30 },
     style: {
       background: 'rgba(155, 135, 245, 0.1)',
       border: 'none',
@@ -93,7 +92,7 @@ export const initialNodes: Node[] = [
     data: { 
       label: 'Produção de conteúdo e conhecimento para expandir farms e melhorar geração de renda passiva'
     },
-    position: { x: 200, y: 70 },
+    position: { x: 150, y: 120 },
     style: {
       background: 'rgba(126, 105, 171, 0.1)',
       border: 'none',
@@ -110,7 +109,7 @@ export const initialNodes: Node[] = [
     data: { 
       label: 'Laboratório colaborativo para construção de ferramentas úteis para comunidade e clientes'
     },
-    position: { x: 600, y: 70 },
+    position: { x: 450, y: 120 },
     style: {
       background: 'rgba(110, 89, 165, 0.1)',
       border: 'none',
@@ -127,7 +126,7 @@ export const initialNodes: Node[] = [
     data: { 
       label: 'Pesquisa e experimentação de novas tecnologias, incluindo HelenAI como brand compartilhada'
     },
-    position: { x: 400, y: 220 },
+    position: { x: 300, y: 270 },
     style: {
       background: 'rgba(26, 31, 44, 0.1)',
       border: 'none',
