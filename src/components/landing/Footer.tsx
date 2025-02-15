@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Footer = () => {
   return (
     <footer className="border-t border-neutral-200 bg-white">
@@ -16,27 +18,26 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Produto</h4>
             <ul className="space-y-3 text-sm text-neutral-600">
-              <li><a href="#" className="hover:text-primary transition-colors">HelenAI</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Comics</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Documentação</a></li>
+              <li><a href="https://helenai.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">HelenAI</a></li>
+              <li><a href="https://docs.pinto.wtf/docs/intro" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Documentação</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Comunidade</h4>
             <ul className="space-y-3 text-sm text-neutral-600">
-              <li><a href="#" className="hover:text-primary transition-colors">Sobre</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Discord</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">DAO</a></li>
+              <li><a href="https://docs.pinto.wtf/docs/intro" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Sobre</a></li>
+              <li><a href="https://discord.pinto.wtf" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Discord</a></li>
+              <li><a href="https://docs.pinto.wtf/docs/intro" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">DAO</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-3 text-sm text-neutral-600">
-              <li><a href="#" className="hover:text-primary transition-colors">Privacidade</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Termos</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Licença</a></li>
+              <li><a href="https://docs.pinto.wtf/docs/legal/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Privacidade</a></li>
+              <li><a href="https://docs.pinto.wtf/docs/legal/terms" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Termos</a></li>
+              <li><a href="https://docs.pinto.wtf/docs/legal/license" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Licença</a></li>
             </ul>
           </div>
         </div>
@@ -46,13 +47,13 @@ const Footer = () => {
             © 2024 Pinto Brasil DAO. Todos os direitos reservados.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-neutral-600 hover:text-primary transition-colors">
+            <a href="https://discord.pinto.wtf" target="_blank" rel="noopener noreferrer" className="text-neutral-600 hover:text-primary transition-colors">
               Discord
             </a>
-            <a href="#" className="text-neutral-600 hover:text-primary transition-colors">
+            <a href="https://twitter.com/pintobrasildao" target="_blank" rel="noopener noreferrer" className="text-neutral-600 hover:text-primary transition-colors">
               Twitter
             </a>
-            <a href="#" className="text-neutral-600 hover:text-primary transition-colors">
+            <a href="https://github.com/inhabitants" target="_blank" rel="noopener noreferrer" className="text-neutral-600 hover:text-primary transition-colors">
               GitHub
             </a>
           </div>
