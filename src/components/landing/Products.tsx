@@ -54,11 +54,11 @@ const Products = () => {
       <div className="container-padding">
         <div className="text-center mb-16">
           <span className="bg-accent-purple/10 text-accent-purple px-4 py-1.5 rounded-full text-sm font-medium">
-            SubDAOs
+            PRODUTOS & SERVIÇOS
           </span>
-          <h2 className="heading-lg mt-6">Produtos e Serviços</h2>
+          <h2 className="heading-lg mt-6">O que nossa comunidade oferece</h2>
           <p className="text-neutral-600 mt-4 max-w-2xl mx-auto">
-            Descubra os produtos e serviços propostos por nossas SubDAOs
+            Descubra as propostas de valor de nossa comunidade
           </p>
         </div>
 
