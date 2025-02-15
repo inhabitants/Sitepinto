@@ -1,7 +1,8 @@
-import { Coffee, BookText, LineChart, Flask, Users } from "lucide-react";
+import React from 'react';
+import { Coffee, BookText, LineChart, Flask, Users, LucideIcon } from "lucide-react";
 
 interface Product {
-  icon: any;
+  icon: LucideIcon;
   title: string;
   description: string;
   link: string;
