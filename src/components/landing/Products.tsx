@@ -55,15 +55,18 @@ const Products = () => {
     }
   ];
 
-  const specialCard = {
-    icon: Lightbulb,
-    title: "Proponha sua SubDAO",
-    description: "Você tem um projeto e quer ampliar ele por meio de uma comunidade experimental? Transforme-o em uma SubDAO e agregue valor tanto para ele quanto para seus usuários.",
-    link: "https://discord.pinto.wtf",
-    isExternal: true,
-    buttonText: "Propor Projeto",
-    isSpecial: true
-  };
+  const allCards = [
+    ...products,
+    {
+      icon: Lightbulb,
+      title: "Proponha sua SubDAO",
+      description: "Você tem um projeto e quer ampliar ele por meio de uma comunidade experimental? Transforme-o em uma SubDAO e agregue valor tanto para ele quanto para seus usuários.",
+      link: "https://discord.pinto.wtf",
+      isExternal: true,
+      buttonText: "Propor Projeto",
+      isSpecial: true
+    }
+  ];
 
   return (
     <section id="produtos" className="py-24">
@@ -79,64 +82,59 @@ const Products = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {products.map((product) => (
+          {allCards.map((card) => (
             <div 
-              key={product.title} 
-              className="flex flex-col items-start text-left p-8 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow min-h-[380px]"
+              key={card.title} 
+              className={`flex flex-col items-start text-left p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow min-h-[380px] ${
+                card.isSpecial 
+                  ? 'bg-gradient-to-br from-accent-purple/10 to-accent-purple/20 border-2 border-accent-purple/20' 
+                  : 'bg-white'
+              }`}
             >
-              <div className="w-16 h-16 rounded-full bg-accent-purple/10 flex items-center justify-center mb-6">
-                <product.icon className="w-8 h-8 text-accent-purple" />
+              <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-6 ${
+                card.isSpecial ? 'bg-accent-purple/20' : 'bg-accent-purple/10'
+              }`}>
+                <card.icon className="w-8 h-8 text-accent-purple" />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-primary">
-                {product.title}
+                {card.title}
               </h3>
               <p className="text-neutral-600 leading-relaxed mb-8">
-                {product.description}
+                {card.description}
               </p>
-              <a 
-                href={product.link}
-                className="mt-auto button-secondary w-full"
-                {...(product.isExternal ? {
-                  target: "_blank",
-                  rel: "noopener noreferrer"
-                } : {})}
-              >
-                {product.buttonText}
-              </a>
+              {card.isSpecial ? (
+                <div className="flex gap-4 mt-auto w-full">
+                  <a 
+                    href={card.link}
+                    className="button-primary flex-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {card.buttonText}
+                  </a>
+                  <a 
+                    href="https://docs.pinto.wtf"
+                    className="button-secondary flex-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Ver Docs
+                  </a>
+                </div>
+              ) : (
+                <a 
+                  href={card.link}
+                  className="mt-auto button-secondary w-full"
+                  {...(card.isExternal ? {
+                    target: "_blank",
+                    rel: "noopener noreferrer"
+                  } : {})}
+                >
+                  {card.buttonText}
+                </a>
+              )}
             </div>
           ))}
-        </div>
-
-        <div className="mt-12 max-w-7xl mx-auto">
-          <div className="flex flex-col items-start text-left p-8 bg-gradient-to-br from-accent-purple/10 to-accent-purple/20 rounded-2xl shadow-sm hover:shadow-md transition-shadow min-h-[380px] border-2 border-accent-purple/20">
-            <div className="w-16 h-16 rounded-full bg-accent-purple/20 flex items-center justify-center mb-6">
-              <specialCard.icon className="w-8 h-8 text-accent-purple" />
-            </div>
-            <h3 className="text-2xl font-bold mb-3 text-primary">
-              {specialCard.title}
-            </h3>
-            <p className="text-neutral-600 leading-relaxed mb-8 text-lg">
-              {specialCard.description}
-            </p>
-            <div className="flex gap-4 mt-auto w-full">
-              <a 
-                href={specialCard.link}
-                className="button-primary flex-1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {specialCard.buttonText}
-              </a>
-              <a 
-                href="https://docs.pinto.wtf"
-                className="button-secondary flex-1"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ver Documentação
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>

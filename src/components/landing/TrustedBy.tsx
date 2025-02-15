@@ -1,3 +1,5 @@
+import React from 'react';
+
 const TrustedBy = () => {
   const companies = [
     { 
