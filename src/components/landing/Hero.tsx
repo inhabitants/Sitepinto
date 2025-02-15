@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import { ArrowRight, Discord } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -35,7 +35,7 @@ const Hero = () => {
             className="button-primary flex items-center gap-2"
           >
             Entrar na Comunidade
-            <Discord className="w-4 h-4" />
+            <MessageCircle className="w-4 h-4" />
           </a>
           <a 
             href="https://helenai.xyz"
