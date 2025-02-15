@@ -14,38 +14,38 @@ const Products = () => {
     {
       icon: Coffee,
       title: "Helenai",
-      description: "Nossa 1a SubDAO é uma agente de IA como IP compartilhada. Uma atriz avatar que pode ser utilizada em diferentes projetos e marcas.",
+      description: "Uma agente de IA com IP compartilhada que atua como atriz avatar em diferentes projetos e marcas. Nossa primeira SubDAO focada em nosso core approach experimental ligado a AI.
       link: "https://helenai.xyz/",
       isExternal: true,
       buttonText: "Conheça a Helen"
     },
     {
       icon: BookOpen,
-      title: "Cursos e Workshops",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Aulas e Researchs",
+      description: "Conteúdo educacional produzido por especialistas de diferentes nichos Web3, entre membros e convidados. Inclui análises aprofundadas de projetos, protocolos e tendências do mercado.",
       link: "/cursos",
-      buttonText: "Ver Cursos"
+      buttonText: "Ver Conteúdo"
     },
     {
       icon: Code,
-      title: "Desenvolvimento Web3",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Golden Team Callers",
+      description: "Squad especializado em diferentes estratégias Web3, desde análise de memecoins até gestão de portfólio de longo prazo. Escolhas amplas para cada tipo de perfil.",
       link: "/desenvolvimento",
-      buttonText: "Iniciar Projeto"
+      buttonText: "Conhecer Callers"
     },
     {
       icon: Laptop,
-      title: "HelenAI Lab",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "AI Lab",
+      description: "Lab de soluções com IA. Criamos ferramentas e produtos experimentais para uso interno e externo, focando em aplicações práticas.",
       link: "/helen-ai",
       buttonText: "Explorar Lab"
     },
     {
       icon: PenTool,
-      title: "Criação de NFTs",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      link: "/nfts",
-      buttonText: "Criar NFT"
+      title: "Community Pools",
+      description: "Pools coletivos para oportunidades especiais. Unimos recursos para acessar presales, desenvolver ferramentas e participar de projetos que demandam maior capital financeiro ou social.",
+      link: "/pools",
+      buttonText: "Ver Pools"
     }
   ];
 
