@@ -23,11 +23,11 @@ const Features = () => {
       <div className="container-padding">
         <div className="text-center mb-16">
           <span className="bg-accent-purple/10 text-accent-purple px-4 py-1.5 rounded-full text-sm font-medium">
-            RECURSOS
+            SOBRE
           </span>
-          <h2 className="heading-lg mt-6">Inovação em Criação Digital</h2>
+          <h2 className="heading-lg mt-6">Irreverência e cooperação para além do alfa</h2>
           <p className="text-neutral-600 mt-4 max-w-2xl mx-auto">
-            Descubra como a HelenAI está transformando a criação de histórias em quadrinhos.
+            Acompanhe callers, aprenda sobre rendimentos, construa em conjunto, experiente algo novo
           </p>
         </div>
 
