@@ -6,11 +6,11 @@ const Footer = () => {
       <div className="container-padding py-12 md:py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center gap-2 mb-6">
+            <div className="flex items-center gap-3 mb-6">
               <img 
                 src="/Logo-Pinto-DAO.png" 
                 alt="PintoDAOLogo" 
-                className="w-8 h-8 rounded-full object-cover"
+                className="w-16 h-auto object-contain"
               />
               <span className="text-xl font-semibold">Pinto Brasil DAO</span>
             </div>

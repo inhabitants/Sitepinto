@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import { motion } from "framer-motion";
@@ -9,8 +8,12 @@ const Navigation = () => {
   return (
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-50">
       <div className="glass-panel rounded-full px-6 py-4 flex items-center justify-between shadow-lg backdrop-blur-md">
-        <div className="flex items-center gap-2">
-          <img src="/Logo-Pinto-DAO.png" alt="Pinto DAO" className="h-12 w-[130px] object-contain" />
+        <div className="flex items-center gap-3">
+          <img 
+            src="/Logo-Pinto-DAO.png" 
+            alt="Pinto DAO" 
+            className="h-14 w-[160px] object-contain"
+          />
         </div>
         
         <div className="hidden md:flex items-center gap-8">
@@ -22,12 +25,22 @@ const Navigation = () => {
         </div>
         
         <div className="hidden md:flex items-center gap-4">
-          <button className="px-4 py-2 text-primary hover:text-primary/80 transition-colors font-medium">
-            Entrar
-          </button>
-          <button className="button-secondary">
+          <a 
+            href="https://docs.pinto.wtf/docs/intro" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 text-primary hover:text-primary/80 transition-colors font-medium"
+          >
+            Docs
+          </a>
+          <a 
+            href="https://discord.pinto.wtf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button-secondary"
+          >
             Comunidade
-          </button>
+          </a>
         </div>
 
         <button 
