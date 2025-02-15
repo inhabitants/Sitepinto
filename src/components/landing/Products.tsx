@@ -13,7 +13,7 @@ const Products = () => {
     {
       icon: Coffee,
       title: "Helenai",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      description: "Nossa 1a SubDAO é uma agente de IA como IP compartilhada. Uma atriz avatar que pode ser utilizada em diferentes projetos e marcas.",
       link: "https://helenai.xyz/",
       isExternal: true
     },
