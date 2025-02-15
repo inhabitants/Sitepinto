@@ -7,11 +7,13 @@ import {
   MiniMap,
   useNodesState,
   useEdgesState,
-  addEdge
+  addEdge,
+  Node,
+  Edge
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 
-const initialNodes = [
+const initialNodes: Node[] = [
   {
     id: '1',
     type: 'default',
@@ -26,7 +28,7 @@ const initialNodes = [
       borderRadius: '12px',
       padding: '20px',
       width: 280,
-      textAlign: 'center'
+      textAlign: 'center' as const
     }
   },
   {
@@ -43,7 +45,7 @@ const initialNodes = [
       borderRadius: '12px',
       padding: '20px',
       width: 280,
-      textAlign: 'center'
+      textAlign: 'center' as const
     }
   },
   {
@@ -60,7 +62,7 @@ const initialNodes = [
       borderRadius: '12px',
       padding: '20px',
       width: 280,
-      textAlign: 'center'
+      textAlign: 'center' as const
     }
   },
   {
@@ -77,10 +79,9 @@ const initialNodes = [
       borderRadius: '12px',
       padding: '20px',
       width: 280,
-      textAlign: 'center'
+      textAlign: 'center' as const
     }
   },
-  // Descrições
   {
     id: '1-desc',
     type: 'default',
@@ -95,7 +96,7 @@ const initialNodes = [
       padding: '15px',
       width: 280,
       fontSize: '12px',
-      textAlign: 'center'
+      textAlign: 'center' as const
     }
   },
   {
@@ -112,7 +113,7 @@ const initialNodes = [
       padding: '15px',
       width: 280,
       fontSize: '12px',
-      textAlign: 'center'
+      textAlign: 'center' as const
     }
   },
   {
@@ -129,7 +130,7 @@ const initialNodes = [
       padding: '15px',
       width: 280,
       fontSize: '12px',
-      textAlign: 'center'
+      textAlign: 'center' as const
     }
   },
   {
@@ -146,12 +147,12 @@ const initialNodes = [
       padding: '15px',
       width: 280,
       fontSize: '12px',
-      textAlign: 'center'
+      textAlign: 'center' as const
     }
   }
 ];
 
-const initialEdges = [
+const initialEdges: Edge[] = [
   { id: 'e1-2', source: '1', target: '2', animated: true, style: { stroke: '#9b87f5' } },
   { id: 'e1-3', source: '1', target: '3', animated: true, style: { stroke: '#9b87f5' } },
   { id: 'e2-4', source: '2', target: '4', animated: true, style: { stroke: '#7E69AB' } },
