@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +12,7 @@
   }
 
   body {
-    @apply bg-neutral-100 text-[#141413] font-sans antialiased;
+    @apply bg-neutral-100 text-primary font-sans antialiased;
   }
 }
 
@@ -46,9 +45,4 @@
            font-medium tracking-wide shadow-sm hover:shadow-md
            backdrop-blur-sm border border-white/10;
   }
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* Ajuste este valor baseado na altura do seu navbar */
 }

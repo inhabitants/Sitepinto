@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -68,10 +67,6 @@ export default {
       },
       backdropBlur: {
         xs: "2px",
-      },
-      textColor: {
-        primary: "#141413",
-        "primary-foreground": "#FAFAF8",
       },
     },
   },
