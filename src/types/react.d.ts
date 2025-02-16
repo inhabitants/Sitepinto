@@ -1,18 +1,17 @@
-
 /// <reference types="react" />
 /// <reference types="react-dom" />
 
 declare module 'react' {
   export * from 'react'
   export type KeyboardEvent<T> = React.KeyboardEvent<T>
-  export const useState: any
-  export const useCallback: any
-  export const useEffect: any
-  export const useRef: any
-  export const useMemo: any
-  export const useId: any
-  export const useContext: any
-  export const createContext: any
+  export const useState: typeof React.useState
+  export const useCallback: typeof React.useCallback
+  export const useEffect: typeof React.useEffect
+  export const useRef: typeof React.useRef
+  export const useMemo: typeof React.useMemo
+  export const useId: typeof React.useId
+  export const useContext: typeof React.useContext
+  export const createContext: typeof React.createContext
   export type FC<P = {}> = React.FunctionComponent<P>
   export type SVGProps<T> = React.SVGProps<T>
   export type ReactNode = React.ReactNode
@@ -32,30 +31,92 @@ declare module 'react' {
   export const forwardRef: typeof React.forwardRef
 }
 
-declare module '@radix-ui/react-alert-dialog' {
+declare module '@radix-ui/react-sheet' {
+  import type { ComponentProps } from 'react'
+  
+  export interface SheetContentProps extends ComponentProps<'div'> {
+    side?: 'top' | 'right' | 'bottom' | 'left'
+  }
+  
+  export interface SheetProps {
+    Content: React.FC<SheetContentProps>
+  }
+  
+  const Sheet: SheetProps
+  export = Sheet
+}
+
+declare module 'recharts' {
   import { ComponentProps } from 'react'
   
-  const Root: React.FC<any>
-  const Trigger: React.FC<any>
-  const Portal: React.FC<any>
-  const Overlay: React.FC<ComponentProps<'div'>>
-  const Content: React.FC<ComponentProps<'div'>>
-  const Title: React.FC<ComponentProps<'h2'>>
-  const Description: React.FC<ComponentProps<'p'>>
-  const Action: React.FC<ComponentProps<'button'>>
-  const Cancel: React.FC<ComponentProps<'button'>>
-
-  export {
-    Root,
-    Trigger,
-    Portal,
-    Overlay,
-    Content,
-    Title,
-    Description,
-    Action,
-    Cancel
+  interface TooltipPayload {
+    value: any
+    name: string
+    dataKey: string
+    payload: any
+    color?: string
   }
+
+  interface TooltipProps {
+    active?: boolean
+    payload?: TooltipPayload[]
+    label?: string
+    formatter?: (value: any, name: string) => [string, string]
+    labelFormatter?: (label: any) => string
+    labelClassName?: string
+  }
+  
+  interface LegendProps {
+    payload?: Array<{
+      value: any
+      type?: string
+      id?: string
+      color?: string
+      payload?: any
+      dataKey?: string
+    }>
+    verticalAlign?: 'top' | 'bottom' | 'middle'
+  }
+  
+  export interface ResponsiveContainerProps extends ComponentProps<'div'> {
+    aspect?: number
+    width?: string | number
+    height?: string | number
+    children: React.ReactNode
+  }
+
+  export const ResponsiveContainer: React.FC<ResponsiveContainerProps>
+  export const Tooltip: React.FC<TooltipProps>
+  export const Legend: React.FC<LegendProps>
+}
+
+declare module 'embla-carousel-react' {
+  export interface EmblaOptionsType {
+    align?: 'start' | 'center' | 'end'
+    axis?: 'x' | 'y'
+    direction?: 'ltr' | 'rtl'
+    startIndex?: number
+    loop?: boolean
+    dragFree?: boolean
+    draggable?: boolean
+    containScroll?: boolean | 'trimSnaps' | 'keepSnaps'
+  }
+
+  export type EmblaCarouselApi = {
+    canScrollNext: () => boolean
+    canScrollPrev: () => boolean
+    scrollNext: () => void
+    scrollPrev: () => void
+    on: (eventName: string, callback: (api: EmblaCarouselApi) => void) => void
+    off: (eventName: string, callback: (api: EmblaCarouselApi) => void) => void
+  }
+
+  export type UseEmblaCarouselType = [(node: HTMLElement | null) => void, EmblaCarouselApi | null]
+
+  export default function useEmblaCarousel(
+    options?: EmblaOptionsType,
+    plugins?: any[]
+  ): UseEmblaCarouselType
 }
 
 declare module 'lucide-react' {
@@ -95,77 +156,28 @@ declare module 'framer-motion' {
   export const motion: any
 }
 
-declare module '@radix-ui/react-sheet' {
-  export interface SheetContentProps {
-    className?: string
-    children?: React.ReactNode
-    side?: 'top' | 'right' | 'bottom' | 'left'
-  }
-  export interface SheetProps {
-    Content: React.FC<SheetContentProps>
-  }
-  const Sheet: SheetProps
-  export = Sheet
-}
-
-declare module 'recharts' {
+declare module '@radix-ui/react-alert-dialog' {
   import { ComponentProps } from 'react'
   
-  interface TooltipProps {
-    active?: boolean
-    payload?: Array<{
-      value: any
-      name: string
-      dataKey: string
-      payload: any
-      color?: string
-    }>
-    label?: string
-    labelFormatter?: (label: any) => string
-    labelClassName?: string
-    formatter?: (value: any, name: string) => string
-  }
-  
-  interface LegendProps {
-    payload?: Array<{
-      value: any
-      type?: string
-      id?: string
-      color?: string
-      payload?: any
-      dataKey?: string
-    }>
-    verticalAlign?: 'top' | 'bottom' | 'middle'
-  }
-  
-  export interface ResponsiveContainerProps extends ComponentProps<'div'> {
-    aspect?: number
-    width?: string | number
-    height?: string | number
-    children: React.ReactNode
-  }
+  const Root: React.FC<any>
+  const Trigger: React.FC<any>
+  const Portal: React.FC<any>
+  const Overlay: React.FC<ComponentProps<'div'>>
+  const Content: React.FC<ComponentProps<'div'>>
+  const Title: React.FC<ComponentProps<'h2'>>
+  const Description: React.FC<ComponentProps<'p'>>
+  const Action: React.FC<ComponentProps<'button'>>
+  const Cancel: React.FC<ComponentProps<'button'>>
 
-  export const ResponsiveContainer: React.FC<ResponsiveContainerProps>
-  export const Tooltip: React.FC<TooltipProps>
-  export const Legend: React.FC<LegendProps>
-}
-
-declare module 'embla-carousel-react' {
-  export type UseEmblaCarouselType = [(node: HTMLElement | null) => void, any]
-  
-  interface EmblaOptionsType {
-    align?: 'start' | 'center' | 'end'
-    axis?: 'x' | 'y'
-    direction?: 'ltr' | 'rtl'
-    startIndex?: number
-    loop?: boolean
-    dragFree?: boolean
-    draggable?: boolean
-    containScroll?: boolean | 'trimSnaps' | 'keepSnaps'
+  export {
+    Root,
+    Trigger,
+    Portal,
+    Overlay,
+    Content,
+    Title,
+    Description,
+    Action,
+    Cancel
   }
-
-  export default function useEmblaCarousel(
-    options?: EmblaOptionsType,
-    plugins?: any[]
-  ): UseEmblaCarouselType
 }
