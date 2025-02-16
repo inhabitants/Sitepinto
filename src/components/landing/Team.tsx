@@ -1,3 +1,4 @@
+
 import { Twitter, Youtube, Linkedin } from "lucide-react";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 
@@ -105,7 +106,7 @@ const Team = () => {
       <div className="container-padding">
         <div className="text-center mb-16">
           <span className="bg-accent-purple/10 text-accent-purple px-4 py-1.5 rounded-full text-sm font-medium">
-            NOSSA EQUIPE
+            MEMBROS
           </span>
           <h2 className="heading-lg mt-6 text-neutral-100">Membros da DAO</h2>
           <p className="text-neutral-400 mt-4 max-w-2xl mx-auto">
