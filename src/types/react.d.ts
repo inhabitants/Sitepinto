@@ -112,11 +112,16 @@ declare module 'recharts' {
   
   interface TooltipProps {
     active?: boolean
-    payload?: any[]
+    payload?: Array<{
+      value: any
+      name: string
+      dataKey: string
+      payload: any
+    }>
     label?: string
     labelFormatter?: (label: any) => string
     labelClassName?: string
-    formatter?: (value: any, name: string) => [string, string]
+    formatter?: (value: any, name: string) => string
   }
   
   interface LegendProps {
@@ -126,6 +131,7 @@ declare module 'recharts' {
       id?: string
       color?: string
       payload?: any
+      dataKey?: string
     }>
     verticalAlign?: 'top' | 'bottom' | 'middle'
   }
@@ -143,8 +149,21 @@ declare module 'recharts' {
 }
 
 declare module 'embla-carousel-react' {
-  export default function useEmblaCarousel<T = any>(): [
-    (node: HTMLElement | null) => void,
-    T | null
-  ]
+  export type UseEmblaCarouselType = [(node: HTMLElement | null) => void, any]
+  
+  interface EmblaOptionsType {
+    align?: 'start' | 'center' | 'end'
+    axis?: 'x' | 'y'
+    direction?: 'ltr' | 'rtl'
+    startIndex?: number
+    loop?: boolean
+    dragFree?: boolean
+    draggable?: boolean
+    containScroll?: boolean | 'trimSnaps' | 'keepSnaps'
+  }
+
+  export default function useEmblaCarousel(
+    options?: EmblaOptionsType,
+    plugins?: any[]
+  ): UseEmblaCarouselType
 }
