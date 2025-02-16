@@ -107,9 +107,9 @@ const Team = () => {
           <span className="bg-accent-purple/10 text-accent-purple px-4 py-1.5 rounded-full text-sm font-medium">
             NOSSA EQUIPE
           </span>
-          <h2 className="heading-lg mt-6 text-neutral-100">Membros da DAO</h2>
+          <h2 className="heading-lg mt-6 text-neutral-100">Core members da DAO</h2>
           <p className="text-neutral-400 mt-4 max-w-2xl mx-auto">
-            Conheça os membros que fazem parte da nossa comunidade descentralizada.
+            Conheça os membros proeminentes de nossa comunidade descentralizada.
           </p>
         </div>
 
