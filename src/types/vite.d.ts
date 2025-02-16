@@ -34,5 +34,9 @@ declare module 'path' {
   export function resolve(...paths: string[]): string
 }
 
+declare module '@xyflow/react' {
+  export * from '@xyflow/react'
+}
+
 declare const __dirname: string
 declare const process: { cwd(): string } 
