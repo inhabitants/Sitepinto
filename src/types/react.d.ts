@@ -1,3 +1,4 @@
+
 /// <reference types="react" />
 /// <reference types="react-dom" />
 
@@ -32,6 +33,13 @@ declare module 'react' {
 }
 
 declare module 'input-otp' {
+  interface OTPProps extends React.HTMLAttributes<HTMLDivElement> {
+    containerClassName?: string
+    maxLength?: number
+    value?: string
+    onChange?: (value: string) => void
+  }
+
   interface OTPSlot {
     char: string
     hasFakeCaret: boolean
@@ -42,7 +50,7 @@ declare module 'input-otp' {
     slots: OTPSlot[]
   }
 
-  export const OTPInput: React.FC<React.HTMLAttributes<HTMLDivElement>>
+  export const OTPInput: React.ForwardRefExoticComponent<OTPProps & React.RefAttributes<HTMLDivElement>>
   export const OTPInputContext: React.Context<OTPInputContext>
 }
 
@@ -51,13 +59,11 @@ declare module '@radix-ui/react-sheet' {
   
   export interface SheetContentProps extends ComponentProps<'div'> {
     side?: 'top' | 'right' | 'bottom' | 'left'
+    className?: string
+    children?: React.ReactNode
   }
   
-  export interface SheetProps {
-    Content: React.FC<SheetContentProps>
-  }
-  
-  const Sheet: SheetProps & {
+  interface SheetProps {
     Root: React.FC<ComponentProps<'div'>>
     Trigger: React.FC<ComponentProps<'button'>>
     Close: React.FC<ComponentProps<'button'>>
@@ -70,6 +76,7 @@ declare module '@radix-ui/react-sheet' {
     Description: React.FC<ComponentProps<'p'>>
   }
   
+  const Sheet: SheetProps
   export = Sheet
 }
 
