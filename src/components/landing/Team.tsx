@@ -12,7 +12,7 @@ const Team = () => {
           role: "Frontend",
           image: "/PK.jpg",
           social: {
-            twitter: "https://twitter.com/dev1",
+            twitter: "https://x.com/x06pk",
             youtube: "https://youtube.com/@dev1",
             linkedin: "https://linkedin.com/in/dev1"
           }
