@@ -4,6 +4,7 @@
 
 declare module 'react' {
   export * from 'react'
+  export type KeyboardEvent<T> = React.KeyboardEvent<T>
   export const useState: any
   export const useCallback: any
   export const useEffect: any
@@ -24,10 +25,37 @@ declare module 'react' {
   export type ThHTMLAttributes<T> = React.ThHTMLAttributes<T>
   export type TdHTMLAttributes<T> = React.TdHTMLAttributes<T>
   export type ComponentType<P = any> = React.ComponentType<P>
-  export type ReactElement = React.ReactElement
+  export type ReactElement<P = any, T extends string | JSXElementConstructor<any> = string | JSXElementConstructor<any>> = React.ReactElement<P, T>
+  export type JSXElementConstructor<P> = React.JSXElementConstructor<P>
   export type CSSProperties = React.CSSProperties
   export type ComponentPropsWithoutRef<T> = React.ComponentPropsWithoutRef<T>
   export const forwardRef: typeof React.forwardRef
+}
+
+declare module '@radix-ui/react-alert-dialog' {
+  import { ComponentProps } from 'react'
+  
+  const Root: React.FC<any>
+  const Trigger: React.FC<any>
+  const Portal: React.FC<any>
+  const Overlay: React.FC<ComponentProps<'div'>>
+  const Content: React.FC<ComponentProps<'div'>>
+  const Title: React.FC<ComponentProps<'h2'>>
+  const Description: React.FC<ComponentProps<'p'>>
+  const Action: React.FC<ComponentProps<'button'>>
+  const Cancel: React.FC<ComponentProps<'button'>>
+
+  export {
+    Root,
+    Trigger,
+    Portal,
+    Overlay,
+    Content,
+    Title,
+    Description,
+    Action,
+    Cancel
+  }
 }
 
 declare module 'lucide-react' {
@@ -67,6 +95,26 @@ declare module 'framer-motion' {
   export const motion: any
 }
 
-declare module '@radix-ui/react-alert-dialog' {
-  export * from '@radix-ui/react-alert-dialog'
+declare module '@radix-ui/react-sheet' {
+  interface SheetContentProps {
+    className?: string
+    children?: React.ReactNode
+  }
+  export interface SheetProps {
+    Content: React.FC<SheetContentProps>
+  }
+  const Sheet: SheetProps
+  export = Sheet
+}
+
+declare module 'recharts' {
+  interface TooltipProps {
+    active?: boolean
+    payload?: any[]
+    label?: string
+    labelFormatter?: (label: any) => string
+    labelClassName?: string
+    formatter?: (value: any, name: string) => [string, string]
+  }
+  export const Tooltip: React.FC<TooltipProps>
 }
