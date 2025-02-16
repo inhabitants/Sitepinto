@@ -8,20 +8,44 @@ import {
 const FAQ = () => {
   const faqs = [
     {
-      question: "O que é a Pinto DAO?",
-      answer: "A Pinto Brasil DAO é uma organização autônoma descentralizada focada na criação de conteúdo digital inovador, com destaque para a HelenAI, nossa agente escritora de histórias em quadrinhos."
+      question: "O que é a Pinto Brasil DAO?",
+      answer: "A Pinto Brasil DAO é uma Organização Autônoma Descentralizada (DAO) focada na criação e inovação de conteúdo digital. Nossa missão é unir criadores, desenvolvedores e entusiastas da Web3 para explorar novas oportunidades e colaborar em projetos que impactem a comunidade."
     },
     {
       question: "Como posso participar da DAO?",
-      answer: "Para participar da nossa DAO, você pode começar entrando em nosso servidor Discord, onde nossa comunidade se reúne para discutir ideias, votar em propostas e colaborar em projetos."
+      answer: "Para participar da Pinto Brasil DAO, você pode começar entrando em nosso servidor Discord. Lá, você poderá interagir com outros membros, discutir ideias, votar em propostas e colaborar em projetos. Além disso, você pode se inscrever em nossas newsletters e acompanhar nossas redes sociais para ficar por dentro das novidades."
     },
     {
       question: "Quem é a HelenAI?",
-      answer: "HelenAI é nossa agente de IA especializada em criar histórias em quadrinhos únicas. Ela combina criatividade artificial com narrativas envolventes para produzir conteúdo original."
+      answer: "HelenAI é nossa agente de inteligência artificial especializada em criar histórias em quadrinhos e outros conteúdos criativos. Ela combina algoritmos avançados de aprendizado de máquina com narrativas envolventes para produzir conteúdo original e inovador. A HelenAI é uma parte fundamental da nossa comunidade, ajudando a expandir as possibilidades criativas."
     },
     {
-      question: "Quais são os benefícios de ser membro?",
-      answer: "Como membro, você terá acesso a conteúdo exclusivo, direito a voto em decisões importantes da DAO, participação nos lucros gerados pelos projetos e networking com outros criadores."
+      question: "Quais são os benefícios de ser membro da Pinto Brasil DAO?",
+      answer: "Como membro da Pinto Brasil DAO, você terá acesso a uma variedade de benefícios, incluindo: Conteúdo Exclusivo, Direito a Voto, Participação nos Lucros e Networking com outros criadores."
+    },
+    {
+      question: "Como funciona a governança na Pinto Brasil DAO?",
+      answer: "A governança da Pinto Brasil DAO é baseada em um sistema de votação onde todos os membros têm voz. As propostas são apresentadas e discutidas na comunidade, e os membros podem votar para aprovar ou rejeitar as iniciativas. Isso garante que todos tenham a oportunidade de influenciar a direção da DAO."
+    },
+    {
+      question: "Quais tipos de projetos a Pinto Brasil DAO apoia?",
+      answer: "A Pinto Brasil DAO apoia uma ampla gama de projetos relacionados à criação de conteúdo digital, desenvolvimento de ferramentas para a comunidade, pesquisa em tecnologias emergentes e iniciativas educacionais. Estamos sempre abertos a novas ideias e colaborações."
+    },
+    {
+      question: "Como posso contribuir para a Pinto Brasil DAO?",
+      answer: "Existem várias maneiras de contribuir para a Pinto Brasil DAO: Participação Ativa, Propostas de Projetos, Colaboração e Compartilhamento de Conhecimento."
+    },
+    {
+      question: "Onde posso encontrar mais informações sobre a Pinto Brasil DAO?",
+      answer: "Para mais informações, você pode visitar nosso site oficial, onde disponibilizamos documentos, guias e atualizações sobre a DAO. Além disso, siga-nos nas redes sociais e entre no nosso Discord para interagir com a comunidade."
+    },
+    {
+      question: "Como a Pinto Brasil DAO lida com a privacidade e segurança dos dados?",
+      answer: "Levamos a privacidade e segurança dos dados muito a sério. Implementamos práticas de segurança robustas e seguimos as melhores diretrizes para proteger as informações dos nossos membros. Para mais detalhes, consulte nossa política de privacidade disponível em nosso site."
+    },
+    {
+      question: "Como posso entrar em contato com a Pinto Brasil DAO?",
+      answer: "Você pode entrar em contato conosco através do nosso servidor Discord, onde temos canais dedicados para perguntas e feedback. Também estamos disponíveis por e-mail e nas redes sociais."
     }
   ];
 
