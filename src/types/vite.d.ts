@@ -15,27 +15,27 @@ declare module 'vite' {
     resolve?: {
       alias?: Record<string, string>
     }
+    build?: {
+      outDir?: string
+      sourcemap?: boolean
+    }
   }
 
   export function defineConfig(config: UserConfig | ((env: ConfigEnv) => UserConfig)): UserConfig
 }
 
 declare module '@vitejs/plugin-react' {
-  const plugin: any
-  export default plugin
+  import type { Plugin } from 'vite'
+  export default function react(options?: any): Plugin
 }
 
 declare module 'lovable-tagger' {
-  const plugin: any
-  export const componentTagger: () => any
+  import type { Plugin } from 'vite'
+  export const componentTagger: () => Plugin
 }
 
-declare module 'path' {
+declare module 'node:path' {
   export function resolve(...paths: string[]): string
-}
-
-declare module '@xyflow/react' {
-  export * from '@xyflow/react'
 }
 
 declare const __dirname: string
