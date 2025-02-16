@@ -108,6 +108,8 @@ declare module '@radix-ui/react-sheet' {
 }
 
 declare module 'recharts' {
+  import { ComponentProps } from 'react'
+  
   interface TooltipProps {
     active?: boolean
     payload?: any[]
@@ -116,5 +118,33 @@ declare module 'recharts' {
     labelClassName?: string
     formatter?: (value: any, name: string) => [string, string]
   }
+  
+  interface LegendProps {
+    payload?: Array<{
+      value: any
+      type?: string
+      id?: string
+      color?: string
+      payload?: any
+    }>
+    verticalAlign?: 'top' | 'bottom' | 'middle'
+  }
+  
+  export interface ResponsiveContainerProps extends ComponentProps<'div'> {
+    aspect?: number
+    width?: string | number
+    height?: string | number
+    children: React.ReactNode
+  }
+
+  export const ResponsiveContainer: React.FC<ResponsiveContainerProps>
   export const Tooltip: React.FC<TooltipProps>
+  export const Legend: React.FC<LegendProps>
+}
+
+declare module 'embla-carousel-react' {
+  export default function useEmblaCarousel<T = any>(): [
+    (node: HTMLElement | null) => void,
+    T | null
+  ]
 }
