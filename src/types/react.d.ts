@@ -96,9 +96,10 @@ declare module 'framer-motion' {
 }
 
 declare module '@radix-ui/react-sheet' {
-  interface SheetContentProps {
+  export interface SheetContentProps {
     className?: string
     children?: React.ReactNode
+    side?: 'top' | 'right' | 'bottom' | 'left'
   }
   export interface SheetProps {
     Content: React.FC<SheetContentProps>
@@ -117,6 +118,7 @@ declare module 'recharts' {
       name: string
       dataKey: string
       payload: any
+      color?: string
     }>
     label?: string
     labelFormatter?: (label: any) => string
