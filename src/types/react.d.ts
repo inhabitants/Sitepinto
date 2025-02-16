@@ -31,6 +31,21 @@ declare module 'react' {
   export const forwardRef: typeof React.forwardRef
 }
 
+declare module 'input-otp' {
+  interface OTPSlot {
+    char: string
+    hasFakeCaret: boolean
+    isActive: boolean
+  }
+
+  interface OTPInputContext {
+    slots: OTPSlot[]
+  }
+
+  export const OTPInput: React.FC<React.HTMLAttributes<HTMLDivElement>>
+  export const OTPInputContext: React.Context<OTPInputContext>
+}
+
 declare module '@radix-ui/react-sheet' {
   import type { ComponentProps } from 'react'
   
@@ -42,7 +57,19 @@ declare module '@radix-ui/react-sheet' {
     Content: React.FC<SheetContentProps>
   }
   
-  const Sheet: SheetProps
+  const Sheet: SheetProps & {
+    Root: React.FC<ComponentProps<'div'>>
+    Trigger: React.FC<ComponentProps<'button'>>
+    Close: React.FC<ComponentProps<'button'>>
+    Portal: React.FC<ComponentProps<'div'>>
+    Overlay: React.FC<ComponentProps<'div'>>
+    Content: React.FC<SheetContentProps>
+    Header: React.FC<ComponentProps<'div'>>
+    Footer: React.FC<ComponentProps<'div'>>
+    Title: React.FC<ComponentProps<'h2'>>
+    Description: React.FC<ComponentProps<'p'>>
+  }
+  
   export = Sheet
 }
 
