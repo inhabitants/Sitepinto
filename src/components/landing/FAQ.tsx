@@ -18,11 +18,11 @@ const FAQ = () => {
     },
     {
       question: "Quais são as formas de participação na DAO?",
-      answer: "Existem várias categorias de membros: 1) Member Premium (20M tokens Helen depositados); 2) Holder de Pinto (possui NFT Pinto); 3) Associate (50M tokens Helen); 4) Partner (200M tokens Helen). Cada categoria oferece benefícios específicos, como acesso a áreas exclusivas do Discord, participação em Deworks pagos e rewards."
+      answer: "Existem várias categorias de membros: 1) Member Premium (Pagamento por anualidade); 2) Holder de Pinto (possui NFT Pinto); 3) Associate (50M tokens Helen); 4) Partner (200M tokens Helen). Cada categoria oferece benefícios específicos, como acesso a áreas exclusivas do Discord, participação em Deworks pagos e rewards."
     },
     {
       question: "Como funciona o sistema de pesos na DAO?",
-      answer: "O sistema de pesos determina sua participação em premiações e votações. Os pesos são distribuídos da seguinte forma: NFTs Pinto (1º NFT = +1, 2º NFT = +2), Premium Anual (+2), Associate (+4), Partner (+6), Core Member (+4). Os pesos são acumulativos e utilizados para cálculo de chances em sorteios e força em votações."
+      answer: "O sistema de pesos determina sua participação em premiações e votações. Os pesos são distribuídos da seguinte forma: NFTs Pinto (1º NFT = +1, 2º NFT = +2), Premium Anual (+2), Associate (+4), Partner (+6), Core Member (+4). Os pesos são acumulativos e utilizados para cálculo de chances em sorteios e poder em votações."
     },
     {
       question: "Quem são os callers e como funcionam as calls?",
@@ -30,15 +30,15 @@ const FAQ = () => {
     },
     {
       question: "Como a DAO gera e distribui rendimentos?",
-      answer: "A DAO possui múltiplas fontes de rendimento: Produtos e Serviços (HelenAI), Tesouro Ativo (farming, staking), SubDAOs, Parcerias e NFTs/Tokens. A distribuição é feita entre Core Team, Despesas Operacionais, Comunidade e Tesouro de Reserva, seguindo um modelo sustentável."
+      answer: "A DAO possui múltiplas fontes de rendimento: Produtos e Serviços (HelenAI), Tesouro Ativo (farming, staking), SubDAOs, Parcerias e NFTs/Tokens. A distribuição é feita entre Core members, Despesas Operacionais, Comunidade e Tesouro de Reserva, seguindo um modelo sustentabilidade."
     },
     {
       question: "O que são as SubDAOs?",
-      answer: "São subdivisões especializadas com autonomia executiva, limitadas a 1-9 membros cada. Incluem: HelenAI SubDAO (70% dos lucros), Merch SubDAO (70%), Comunicação SubDAO (75%), AI Factory SubDAO (90%) e Community Pools SubDAO (90%). Cada SubDAO tem seu foco específico e modelo de distribuição de lucros."
+      answer: "São subdivisões especializadas com autonomia executiva, limitadas a 1-9 membros cada. Incluem: HelenAI SubDAO, Merch SubDAO, Comunicação SubDAO, AI Factory SubDAO e Community Pools SubDAO. Cada SubDAO tem seu foco específico e modelo de distribuição de lucros."
     },
     {
       question: "O que é a HelenAI?",
-      answer: "HelenAI é uma agente de IA projetada como participante das operações da Pinto DAO. Ela possui identidade própria, serve como interface experimental entre tecnologia e comunidade, atua como centro de informações humanizado e plataforma de experimentação e desenvolvimento."
+      answer: "HelenAI é uma agente de IA projetada como participante das operações da Pinto DAO e também fora dela. Ela possui identidade própria, serve para geração de valor financeiro e de brand, como interface experimental entre novas tecnologias e comunidade, atua como centro de informações humanizado e plataforma de experimentação e desenvolvimento."
     },
     {
       question: "Como posso verificar meu NFT e acompanhar atualizações?",
@@ -47,6 +47,14 @@ const FAQ = () => {
     {
       question: "Como são tomadas as decisões na DAO?",
       answer: "As decisões são tomadas através de consultas à comunidade, votações para decisões importantes e votações onchain para decisões em forte embate. O peso de cada membro nas votações é determinado por seu sistema de pesos na DAO."
+    },
+    {
+      question: "Quais são os tokens de gestão na DAO?",
+      answer: "A Pinto Brasil DAO possui dois principais tokens de gestão: 1) Token $Helen: Token central da comunidade, utilizado para governança e benefícios; 2) NFT Pinto: Coleção de NFT central da comunidade, que garante acesso vitalício e benefícios exclusivos aos holders."
+    },
+    {
+      question: "Onde posso encontrar documentação detalhada sobre a DAO?",
+      answer: "Toda a documentação detalhada da Pinto Brasil DAO está disponível em nosso site docs.pinto.wtf. Lá você encontrará nosso White Paper completo, documentação técnica, guias detalhados e um FAQ extensivo. Recomendamos a leitura completa da documentação para entender melhor nossa estrutura, governança, visão e oportunidades."
     }
   ];
 
