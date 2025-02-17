@@ -1,4 +1,3 @@
-
 import { Twitter, Youtube, Linkedin } from "lucide-react";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 
@@ -13,7 +12,6 @@ const Team = () => {
           image: "/PK.jpg",
           social: {
             twitter: "https://x.com/x06pk"
-            
           }
         },
         {
@@ -22,7 +20,6 @@ const Team = () => {
           image: "/placeholder.svg",
           social: {
             twitter: "https://twitter.com/dev2",
-            youtube: "https://youtube.com/@dev2",
             linkedin: "https://linkedin.com/in/dev2"
           }
         }
@@ -100,6 +97,43 @@ const Team = () => {
     }
   ];
 
+  const SocialLinks = ({ social }: { social: Record<string, string> }) => {
+    return (
+      <div className="flex justify-center space-x-2">
+        {social.twitter && (
+          <a
+            href={social.twitter}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
+          >
+            <Twitter className="w-4 h-4" />
+          </a>
+        )}
+        {social.youtube && (
+          <a
+            href={social.youtube}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
+          >
+            <Youtube className="w-4 h-4" />
+          </a>
+        )}
+        {social.linkedin && (
+          <a
+            href={social.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
+          >
+            <Linkedin className="w-4 h-4" />
+          </a>
+        )}
+      </div>
+    );
+  };
+
   return (
     <section className="py-24 bg-neutral-800">
       <div className="container-padding">
@@ -138,32 +172,7 @@ const Team = () => {
                       </div>
                     </HoverCardTrigger>
                     <HoverCardContent className="w-auto p-2">
-                      <div className="flex justify-center space-x-2">
-                        <a
-                          href={member.social.twitter}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
-                        >
-                          <Twitter className="w-4 h-4" />
-                        </a>
-                        <a
-                          href={member.social.youtube}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
-                        >
-                          <Youtube className="w-4 h-4" />
-                        </a>
-                        <a
-                          href={member.social.linkedin}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="p-1.5 rounded-full bg-neutral-100 hover:bg-accent-purple hover:text-white transition-colors"
-                        >
-                          <Linkedin className="w-4 h-4" />
-                        </a>
-                      </div>
+                      <SocialLinks social={member.social} />
                     </HoverCardContent>
                   </HoverCard>
                 ))}
