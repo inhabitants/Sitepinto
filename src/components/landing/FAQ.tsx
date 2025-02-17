@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Accordion,
   AccordionContent,
@@ -9,48 +10,48 @@ const FAQ = () => {
   const faqs = [
     {
       question: "O que é a Pinto Brasil DAO?",
-      answer: "A Pinto Brasil DAO é uma Organização Autônoma Descentralizada (DAO) focada na criação e inovação de conteúdo digital. Nossa missão é unir criadores, desenvolvedores e entusiastas da Web3 para explorar novas oportunidades e colaborar em projetos que impactem a comunidade."
+      answer: "A Pinto Brasil DAO é uma comunidade brasileira Web3 baseada nos princípios de DAO (Decentralized Autonomous Organization), criada por brasileiros e para falantes do português. Nossa missão é criar uma comunidade acessível e funcional para acelerar a curva de aprendizado dos membros na Web3, desde a caça de oportunidades iniciais como airdrops até a expansão do conhecimento para modelos mais avançados no ecossistema e criação de ferramentas e produtos próprios."
     },
     {
-      question: "Como posso participar da DAO?",
-      answer: "Para participar da Pinto Brasil DAO, você pode começar entrando em nosso servidor Discord. Lá, você poderá interagir com outros membros, discutir ideias, votar em propostas e colaborar em projetos. Além disso, você pode se inscrever em nossas newsletters e acompanhar nossas redes sociais para ficar por dentro das novidades."
+      question: "Como é estruturada a Pinto Brasil DAO?",
+      answer: "A DAO é visualizada como um vilarejo com 4 níveis principais: 1) Caçadores e Coletores: Especialistas em identificar oportunidades como drops, whitelists e farms; 2) Agricultura: Estudos avançados através de researchs e aulas para loops de rendimento; 3) Ferraria: Laboratório colaborativo para construção de ferramentas e produtos; 4) Exploratório: Pesquisa e experimentação de tecnologias em alfa, construindo soluções inovadoras."
     },
     {
-      question: "Quem é a HelenAI?",
-      answer: "HelenAI é nossa agente de inteligência artificial especializada em criar histórias em quadrinhos e outros conteúdos criativos. Ela combina algoritmos avançados de aprendizado de máquina com narrativas envolventes para produzir conteúdo original e inovador. A HelenAI é uma parte fundamental da nossa comunidade, ajudando a expandir as possibilidades criativas."
+      question: "Quais são as formas de participação na DAO?",
+      answer: "Existem várias categorias de membros: 1) Member Premium (20M tokens Helen depositados); 2) Holder de Pinto (possui NFT Pinto); 3) Associate (50M tokens Helen); 4) Partner (200M tokens Helen). Cada categoria oferece benefícios específicos, como acesso a áreas exclusivas do Discord, participação em Deworks pagos e rewards."
     },
     {
-      question: "Quais são os benefícios de ser membro da Pinto Brasil DAO?",
-      answer: "Como membro da Pinto Brasil DAO, você terá acesso a uma variedade de benefícios, incluindo: Conteúdo Exclusivo, Direito a Voto, Participação nos Lucros e Networking com outros criadores."
+      question: "Como funciona o sistema de pesos na DAO?",
+      answer: "O sistema de pesos determina sua participação em premiações e votações. Os pesos são distribuídos da seguinte forma: NFTs Pinto (1º NFT = +1, 2º NFT = +2), Premium Anual (+2), Associate (+4), Partner (+6), Core Member (+4). Os pesos são acumulativos e utilizados para cálculo de chances em sorteios e força em votações."
     },
     {
-      question: "Como funciona a governança na Pinto Brasil DAO?",
-      answer: "A governança da Pinto Brasil DAO é baseada em um sistema de votação onde todos os membros têm voz. As propostas são apresentadas e discutidas na comunidade, e os membros podem votar para aprovar ou rejeitar as iniciativas. Isso garante que todos tenham a oportunidade de influenciar a direção da DAO."
+      question: "Quem são os callers e como funcionam as calls?",
+      answer: "A comunidade conta com especialistas em diferentes áreas como IA, DeFi, GameFi, e várias blockchains. As calls são compartilhadas em canais específicos, focando em oportunidades early-stage e análises técnicas. É importante lembrar que cada membro deve fazer sua própria pesquisa (DYOR) e que as calls são educativas, não recomendações de investimento."
     },
     {
-      question: "Quais tipos de projetos a Pinto Brasil DAO apoia?",
-      answer: "A Pinto Brasil DAO apoia uma ampla gama de projetos relacionados à criação de conteúdo digital, desenvolvimento de ferramentas para a comunidade, pesquisa em tecnologias emergentes e iniciativas educacionais. Estamos sempre abertos a novas ideias e colaborações."
+      question: "Como a DAO gera e distribui rendimentos?",
+      answer: "A DAO possui múltiplas fontes de rendimento: Produtos e Serviços (HelenAI), Tesouro Ativo (farming, staking), SubDAOs, Parcerias e NFTs/Tokens. A distribuição é feita entre Core Team, Despesas Operacionais, Comunidade e Tesouro de Reserva, seguindo um modelo sustentável."
     },
     {
-      question: "Como posso contribuir para a Pinto Brasil DAO?",
-      answer: "Existem várias maneiras de contribuir para a Pinto Brasil DAO: Participação Ativa, Propostas de Projetos, Colaboração e Compartilhamento de Conhecimento."
+      question: "O que são as SubDAOs?",
+      answer: "São subdivisões especializadas com autonomia executiva, limitadas a 1-9 membros cada. Incluem: HelenAI SubDAO (70% dos lucros), Merch SubDAO (70%), Comunicação SubDAO (75%), AI Factory SubDAO (90%) e Community Pools SubDAO (90%). Cada SubDAO tem seu foco específico e modelo de distribuição de lucros."
     },
     {
-      question: "Onde posso encontrar mais informações sobre a Pinto Brasil DAO?",
-      answer: "Para mais informações, você pode visitar nosso site oficial, onde disponibilizamos documentos, guias e atualizações sobre a DAO. Além disso, siga-nos nas redes sociais e entre no nosso Discord para interagir com a comunidade."
+      question: "O que é a HelenAI?",
+      answer: "HelenAI é uma agente de IA projetada como participante das operações da Pinto DAO. Ela possui identidade própria, serve como interface experimental entre tecnologia e comunidade, atua como centro de informações humanizado e plataforma de experimentação e desenvolvimento."
     },
     {
-      question: "Como a Pinto Brasil DAO lida com a privacidade e segurança dos dados?",
-      answer: "Levamos a privacidade e segurança dos dados muito a sério. Implementamos práticas de segurança robustas e seguimos as melhores diretrizes para proteger as informações dos nossos membros. Para mais detalhes, consulte nossa política de privacidade disponível em nosso site."
+      question: "Como posso verificar meu NFT e acompanhar atualizações?",
+      answer: "Para verificar seu NFT, acesse o canal 'nft-verify' no Discord e siga o processo. Para atualizações, acompanhe os canais #anuncios e #anuncios-premium, participe dos canais de voz e siga as salas específicas de seu interesse. A plataforma de cards de tarefas também mostra a evolução da comunidade."
     },
     {
-      question: "Como posso entrar em contato com a Pinto Brasil DAO?",
-      answer: "Você pode entrar em contato conosco através do nosso servidor Discord, onde temos canais dedicados para perguntas e feedback. Também estamos disponíveis por e-mail e nas redes sociais."
+      question: "Como são tomadas as decisões na DAO?",
+      answer: "As decisões são tomadas através de consultas à comunidade, votações para decisões importantes e votações onchain para decisões em forte embate. O peso de cada membro nas votações é determinado por seu sistema de pesos na DAO."
     }
   ];
 
   return (
-    <section className="py-24 bg-neutral-100">
+    <section id="faq" className="py-24 bg-neutral-100">
       <div className="container-padding">
         <div className="text-center mb-16">
           <span className="bg-accent-purple/10 text-accent-purple px-4 py-1.5 rounded-full text-sm font-medium">
@@ -59,6 +60,27 @@ const FAQ = () => {
           <h2 className="heading-lg mt-6">Perguntas Frequentes</h2>
           <p className="text-neutral-600 mt-4 max-w-2xl mx-auto">
             Tire suas dúvidas sobre a Pinto Brasil DAO e como fazer parte da nossa comunidade.
+          </p>
+          <p className="text-sm text-neutral-500 mt-2 max-w-2xl mx-auto">
+            Para informações mais detalhadas, consulte nosso{" "}
+            <a 
+              href="https://docs.pinto.wtf/docs/FAQ" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-accent-purple hover:underline"
+            >
+              FAQ completo
+            </a>
+            {" "}e{" "}
+            <a 
+              href="https://docs.pinto.wtf/docs/intro" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-accent-purple hover:underline"
+            >
+              White Paper
+            </a>
+            .
           </p>
         </div>
 
