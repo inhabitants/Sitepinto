@@ -9,7 +9,7 @@ const Team = () => {
         {
           name: "Tarcio",
           role: "IA e Virtuals",
-          image: "/placeholder.svg",
+          image: "/tarcio.jpg",
           social: {
             twitter: "https://x.com/"
           }
@@ -25,7 +25,7 @@ const Team = () => {
         {
           name: "Kohari",
           role: "Gamefi e airdrops",
-          image: "/placeholder.svg",
+          image: "/kohari.jpg",
           social: {
             twitter: "https://x.com/eukohari"
           }
@@ -33,7 +33,7 @@ const Team = () => {
         {
           name: "Skott",
           role: "Front de Solana",
-          image: "/placeholder.svg",
+          image: "/skott.jpg",
           social: {
             twitter: "https://x.com/skottrun"
           }
@@ -41,7 +41,7 @@ const Team = () => {
         {
           name: "Talles",
           role: "DeFi e narrativas de mercado",
-          image: "/placeholder.svg",
+          image: "/talles.jpg",
           social: {
             twitter: "https://twitter.com/talles"
           }
@@ -49,7 +49,7 @@ const Team = () => {
         {
           name: "Leitas",
           role: "Farming de airdrops avançados",
-          image: "/placeholder.svg",
+          image: "/leitas.jpg",
           social: {
             twitter: "https://x.com/leitas873"
           }
@@ -57,7 +57,7 @@ const Team = () => {
         {
           name: "Gaskan",
           role: "Especialista em rede SUI",
-          image: "/placeholder.svg",
+          image: "/gaskan.jpg",
           social: {
             twitter: "https://x.com/e88henrique"
           }
@@ -65,7 +65,7 @@ const Team = () => {
         {
           name: "Tato",
           role: "Alphas e oportunidades free",
-          image: "/placeholder.svg",
+          image: "/tato.jpg",
           social: {
             twitter: "https://x.com/TATOnft"
           }
@@ -81,7 +81,7 @@ const Team = () => {
         {
           name: "Mendes",
           role: "Solana e multi-chain games",
-          image: "/placeholder.svg",
+          image: "/mendes.jpg",
           social: {
             twitter: "https://x.com/mendes_degen"
           }
