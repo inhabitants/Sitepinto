@@ -73,7 +73,7 @@ const Team = () => {
         {
           name: "Milca0",
           role: "GameFi e play-to-earn",
-          image: "/placeholder.svg",
+          image: "/milca.jpg",
           social: {
             twitter: "https://x.com/milca0_"
           }
