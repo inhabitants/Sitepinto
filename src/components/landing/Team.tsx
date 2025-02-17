@@ -17,7 +17,7 @@ const Team = () => {
         {
           name: "Borderless",
           role: "Research em IA e DeFi",
-          image: "/placeholder.svg",
+          image: "/borderless.jpg",
           social: {
             twitter: "https://x.com/Borderless_DeFi"
           }
@@ -131,7 +131,7 @@ const Team = () => {
         {
           name: "Borderless",
           role: "Product / AI",
-          image: "/PK.jpg",
+          image: "/borderless.jpg",
           social: {
             twitter: "https://x.com/x06pk"
           }
