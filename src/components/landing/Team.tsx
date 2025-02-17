@@ -8,10 +8,10 @@ const Team = () => {
       members: [
         {
           name: "Tarcio",
-          role: "Especialista em IA e Virtuals",
+          role: "IA e Virtuals",
           image: "/placeholder.svg",
           social: {
-            twitter: "https://twitter.com/tarcio"
+            twitter: "https://x.com/tarcio_nft"
           }
         },
         {
@@ -19,20 +19,20 @@ const Team = () => {
           role: "Research em IA e DeFi",
           image: "/placeholder.svg",
           social: {
-            twitter: "https://twitter.com/borderless"
+            twitter: "https://x.com/Borderless_DeFi"
           }
         },
         {
           name: "Kohari",
-          role: "Especialista em jogos e airdrops",
+          role: "Gamefi e airdrops",
           image: "/placeholder.svg",
           social: {
-            twitter: "https://twitter.com/kohari"
+            twitter: "https://x.com/eukohari"
           }
         },
         {
           name: "Skott",
-          role: "Especialista em Solana",
+          role: "Front de Solana",
           image: "/placeholder.svg",
           social: {
             twitter: "https://twitter.com/skott"
@@ -59,7 +59,7 @@ const Team = () => {
           role: "Especialista em rede SUI",
           image: "/placeholder.svg",
           social: {
-            twitter: "https://twitter.com/gaskan"
+            twitter: "https://x.com/e88henrique"
           }
         },
         {
@@ -67,7 +67,7 @@ const Team = () => {
           role: "Alphas e oportunidades free",
           image: "/placeholder.svg",
           social: {
-            twitter: "https://twitter.com/tato"
+            twitter: "https://x.com/TATOnft"
           }
         },
         {
@@ -75,7 +75,7 @@ const Team = () => {
           role: "GameFi e play-to-earn",
           image: "/placeholder.svg",
           social: {
-            twitter: "https://twitter.com/milca0"
+            twitter: "https://x.com/milca0_"
           }
         },
         {
@@ -83,7 +83,7 @@ const Team = () => {
           role: "Solana e multi-chain games",
           image: "/placeholder.svg",
           social: {
-            twitter: "https://twitter.com/mendes"
+            twitter: "https://x.com/mendes_degen"
           }
         },
         {
@@ -91,7 +91,36 @@ const Team = () => {
           role: "Perpétuos e projetos early-stage",
           image: "/placeholder.svg",
           social: {
-            twitter: "https://twitter.com/tembz"
+            twitter: "https://x.com/andretembz"
+          }
+        }
+      ]
+    },
+    {
+      name: "Community Managers",
+      members: [
+        {
+          name: "Marelo",
+          role: "Community Lead",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://x.com/TATOnft"
+          }
+        },
+        {
+          name: "Blastoise",
+          role: "Community Manager",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://x.com/milca0_"
+          }
+        },
+        {
+          name: "Profeh",
+          role: "Community Growth",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://x.com/e88henrique"
           }
         }
       ]
@@ -233,9 +262,9 @@ const Team = () => {
                             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                           />
                         </div>
-                        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full flex flex-col items-center justify-center">
-                          <p className="text-white text-xs font-medium">{member.name}</p>
-                          <p className="text-neutral-300 text-xs">{member.role}</p>
+                        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full flex flex-col items-center justify-center px-1">
+                          <p className="text-white text-xs font-medium text-center">{member.name}</p>
+                          <p className="text-neutral-300 text-xs text-center leading-tight">{member.role}</p>
                         </div>
                       </div>
                     </HoverCardTrigger>
