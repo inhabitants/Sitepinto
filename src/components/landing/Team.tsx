@@ -129,6 +129,14 @@ const Team = () => {
       name: "Development",
       members: [
         {
+          name: "Borderless",
+          role: "Product / AI",
+          image: "/PK.jpg",
+          social: {
+            twitter: "https://x.com/x06pk"
+          }
+        },
+        {
           name: "PK",
           role: "Frontend",
           image: "/PK.jpg",
@@ -137,7 +145,7 @@ const Team = () => {
           }
         },
         {
-          name: "Dev Member 2",
+          name: "Sinners",
           role: "Frontend",
           image: "/placeholder.svg",
           social: {
