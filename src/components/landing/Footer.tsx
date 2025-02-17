@@ -39,9 +39,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-3 text-sm text-neutral-600">
-              <li><a href="https://docs.pinto.wtf/docs/legal/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Privacidade</a></li>
-              <li><a href="https://docs.pinto.wtf/docs/legal/terms" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Termos</a></li>
-              <li><a href="https://docs.pinto.wtf/docs/legal/license" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Licença</a></li>
+              <li><a href="https://docs.pinto.wtf/docs/disclaimer" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Privacidade</a></li>
+              <li><a href="https://docs.pinto.wtf/docs/disclaimer" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Termos</a></li>
+              <li><a href="https://docs.pinto.wtf/docs/disclaimer" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Licença</a></li>
             </ul>
           </div>
         </div>
