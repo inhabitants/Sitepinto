@@ -102,7 +102,7 @@ const Team = () => {
         {
           name: "Marelo",
           role: "Community Lead",
-          image: "/placeholder.svg",
+          image: "/marelo.jpg",
           social: {
             twitter: "https://x.com/"
           }
@@ -110,7 +110,7 @@ const Team = () => {
         {
           name: "Blastoise",
           role: "Event Manager",
-          image: "/placeholder.svg",
+          image: "/blastoise.jpg",
           social: {
             twitter: "https://x.com/"
           }
@@ -118,7 +118,7 @@ const Team = () => {
         {
           name: "Profeh",
           role: "Discord Manager",
-          image: "/placeholder.svg",
+          image: "/profeh.jpg",
           social: {
             twitter: "https://x.com/"
           }
@@ -147,7 +147,7 @@ const Team = () => {
         {
           name: "Sinners",
           role: "Frontend",
-          image: "/placeholder.svg",
+          image: "/sinners.jpg",
           social: {
             twitter: "https://twitter.com/dev2",
             linkedin: "https://linkedin.com/in/dev2"
