@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, Anchor } from "lucide-react";
 import { motion } from "framer-motion";
@@ -40,7 +39,7 @@ const Navigation = () => {
           <img 
             src="/Logo-Pinto-DAO.png" 
             alt="Pinto DAO" 
-            className="h-14 w-[160px] object-contain"
+            className="h-16 w-[180px] object-contain"
           />
         </div>
         
