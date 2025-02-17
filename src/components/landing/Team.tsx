@@ -89,7 +89,7 @@ const Team = () => {
         {
           name: "Tembz",
           role: "Perpétuos e projetos early-stage",
-          image: "/public/tembzz.jpg",
+          image: "/tembzz.jpg",
           social: {
             twitter: "https://x.com/andretembz"
           }
