@@ -11,7 +11,7 @@ const Team = () => {
           role: "IA e Virtuals",
           image: "/placeholder.svg",
           social: {
-            twitter: "https://x.com/tarcio_nft"
+            twitter: "https://x.com/"
           }
         },
         {
@@ -35,7 +35,7 @@ const Team = () => {
           role: "Front de Solana",
           image: "/placeholder.svg",
           social: {
-            twitter: "https://twitter.com/skott"
+            twitter: "https://x.com/skottrun"
           }
         },
         {
@@ -51,7 +51,7 @@ const Team = () => {
           role: "Farming de airdrops avançados",
           image: "/placeholder.svg",
           social: {
-            twitter: "https://twitter.com/leitas"
+            twitter: "https://x.com/leitas873"
           }
         },
         {
@@ -104,23 +104,23 @@ const Team = () => {
           role: "Community Lead",
           image: "/placeholder.svg",
           social: {
-            twitter: "https://x.com/TATOnft"
+            twitter: "https://x.com/"
           }
         },
         {
           name: "Blastoise",
-          role: "Community Manager",
+          role: "Event Manager",
           image: "/placeholder.svg",
           social: {
-            twitter: "https://x.com/milca0_"
+            twitter: "https://x.com/"
           }
         },
         {
           name: "Profeh",
-          role: "Community Growth",
+          role: "Discord Manager",
           image: "/placeholder.svg",
           social: {
-            twitter: "https://x.com/e88henrique"
+            twitter: "https://x.com/"
           }
         }
       ]
