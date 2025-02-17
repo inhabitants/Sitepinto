@@ -160,8 +160,8 @@ const Team = () => {
       members: [
         {
           name: "Loirin",
-          role: "UI/UX",
-          image: "/placeholder.svg",
+          role: "UI",
+          image: "/loirin.jpg",
           social: {
             twitter: "https://twitter.com/design1",
             youtube: "https://youtube.com/@design1",
