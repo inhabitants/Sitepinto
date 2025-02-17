@@ -146,7 +146,7 @@ const Team = () => {
         },
         {
           name: "Sinners",
-          role: "Frontend",
+          role: "Bots/Backend",
           image: "/sinners.jpg",
           social: {
             twitter: "https://twitter.com/dev2",
