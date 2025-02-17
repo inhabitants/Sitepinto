@@ -36,11 +36,14 @@ const Navigation = () => {
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-50">
       <div className="glass-panel rounded-full px-6 py-4 flex items-center justify-between shadow-lg backdrop-blur-md">
         <div className="flex items-center gap-3">
-          <img 
-            src="/Logo-Pinto-DAO.png" 
-            alt="Pinto DAO" 
-            className="h-16 w-[180px] object-contain"
-          />
+          <div className="relative group cursor-pointer">
+            <img 
+              src="/Logo-Pinto-DAO.png" 
+              alt="Pinto DAO" 
+              className="h-16 w-[180px] object-contain transition-transform duration-300 group-hover:scale-110 relative z-10"
+            />
+            <div className="absolute inset-0 bg-accent-purple/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg z-0"></div>
+          </div>
         </div>
         
         <div className="hidden md:flex items-center gap-8">
