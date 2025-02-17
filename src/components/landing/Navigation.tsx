@@ -40,9 +40,8 @@ const Navigation = () => {
             <img 
               src="/Logo-Pinto-DAO.png" 
               alt="Pinto DAO" 
-              className="h-16 w-[180px] object-contain transition-transform duration-300 group-hover:scale-110 relative z-10"
+              className="h-16 w-[180px] object-contain transition-transform duration-300 group-hover:scale-150 relative z-10"
             />
-            <div className="absolute inset-0 bg-accent-purple/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg z-0"></div>
           </div>
         </div>
         
