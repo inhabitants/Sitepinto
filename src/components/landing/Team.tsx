@@ -104,7 +104,7 @@ const Team = () => {
           role: "Community Lead",
           image: "/marelo.jpg",
           social: {
-            twitter: "https://x.com/"
+            twitter: "https://x.com/MareloFuma"
           }
         },
         {
@@ -112,7 +112,7 @@ const Team = () => {
           role: "Event Manager",
           image: "/blastoise.jpg",
           social: {
-            twitter: "https://x.com/"
+            twitter: "https://x.com/Blastoiise_"
           }
         },
         {
@@ -120,7 +120,7 @@ const Team = () => {
           role: "Discord Manager",
           image: "/profeh.jpg",
           social: {
-            twitter: "https://x.com/"
+            twitter: "https://x.com/0xprofeh"
           }
         }
       ]
@@ -133,7 +133,7 @@ const Team = () => {
           role: "Product / AI",
           image: "/borderless.jpg",
           social: {
-            twitter: "https://x.com/x06pk"
+            twitter: "https://x.com/Borderless_DeFi"
           }
         },
         {
@@ -150,7 +150,7 @@ const Team = () => {
           image: "/sinners.jpg",
           social: {
             twitter: "https://twitter.com/dev2",
-            linkedin: "https://linkedin.com/in/dev2"
+            linkedin: "https://x.com/___sinners___"
           }
         }
       ]
@@ -159,7 +159,7 @@ const Team = () => {
       name: "Design",
       members: [
         {
-          name: "Design Member 1",
+          name: "Loirin",
           role: "UI/UX",
           image: "/placeholder.svg",
           social: {
