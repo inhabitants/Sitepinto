@@ -4,6 +4,99 @@ import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/h
 const Team = () => {
   const sectors = [
     {
+      name: "Callers",
+      members: [
+        {
+          name: "Tarcio",
+          role: "Especialista em IA e Virtuals",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://twitter.com/tarcio"
+          }
+        },
+        {
+          name: "Borderless",
+          role: "Research em IA e DeFi",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://twitter.com/borderless"
+          }
+        },
+        {
+          name: "Kohari",
+          role: "Especialista em jogos e airdrops",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://twitter.com/kohari"
+          }
+        },
+        {
+          name: "Skott",
+          role: "Especialista em Solana",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://twitter.com/skott"
+          }
+        },
+        {
+          name: "Talles",
+          role: "DeFi e narrativas de mercado",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://twitter.com/talles"
+          }
+        },
+        {
+          name: "Leitas",
+          role: "Farming de airdrops avançados",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://twitter.com/leitas"
+          }
+        },
+        {
+          name: "Gaskan",
+          role: "Especialista em rede SUI",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://twitter.com/gaskan"
+          }
+        },
+        {
+          name: "Tato",
+          role: "Alphas e oportunidades free",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://twitter.com/tato"
+          }
+        },
+        {
+          name: "Milca0",
+          role: "GameFi e play-to-earn",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://twitter.com/milca0"
+          }
+        },
+        {
+          name: "Mendes",
+          role: "Solana e multi-chain games",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://twitter.com/mendes"
+          }
+        },
+        {
+          name: "Tembz",
+          role: "Perpétuos e projetos early-stage",
+          image: "/placeholder.svg",
+          social: {
+            twitter: "https://twitter.com/tembz"
+          }
+        }
+      ]
+    },
+    {
       name: "Development",
       members: [
         {
@@ -66,31 +159,6 @@ const Team = () => {
             twitter: "https://twitter.com/outreach1",
             youtube: "https://youtube.com/@outreach1",
             linkedin: "https://linkedin.com/in/outreach1"
-          }
-        }
-      ]
-    },
-    {
-      name: "Callers",
-      members: [
-        {
-          name: "Caller 1",
-          role: "Market Analyst",
-          image: "/placeholder.svg",
-          social: {
-            twitter: "https://twitter.com/caller1",
-            youtube: "https://youtube.com/@caller1",
-            linkedin: "https://linkedin.com/in/caller1"
-          }
-        },
-        {
-          name: "Caller 2",
-          role: "Technical Analyst",
-          image: "/placeholder.svg",
-          social: {
-            twitter: "https://twitter.com/caller2",
-            youtube: "https://youtube.com/@caller2",
-            linkedin: "https://linkedin.com/in/caller2"
           }
         }
       ]
