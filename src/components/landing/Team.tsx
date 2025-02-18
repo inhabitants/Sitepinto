@@ -211,6 +211,14 @@ const Team = () => {
       }
     },
     {
+      name: "Ieragon",
+      role: "Memeiro",
+      image: "/ieragon.jpg",
+      social: {
+        twitter: "https://x.com/ieragon79"
+      }
+    },
+    {
       name: "Rillen",
       role: "Graphic Design",
       image: "/rillen.jpg",
