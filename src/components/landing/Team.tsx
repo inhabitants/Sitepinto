@@ -169,13 +169,11 @@ const Team = () => {
       }
     },
     {
-      name: "New Designer",
+      name: "Rillen",
       role: "Graphic Design",
-      image: "/newdesigner.jpg",
+      image: "/rillen.jpg",
       social: {
-        twitter: "https://twitter.com/newdesigner",
-        youtube: "https://youtube.com/@newdesigner",
-        linkedin: "https://linkedin.com/in/newdesigner"
+        twitter: "https://x.com/RillenFi"
       }
     }
   ]
