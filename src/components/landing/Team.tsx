@@ -11,7 +11,7 @@ const Team = () => {
           role: "IA e Virtuals",
           image: "/tarcio.jpg",
           social: {
-            twitter: "https://x.com/"
+            twitter: "https://x.com/anderson_t60080"
           }
         },
         {
@@ -126,36 +126,52 @@ const Team = () => {
       ]
     },
     {
-      name: "Development",
-      members: [
-        {
-          name: "Borderless",
-          role: "Product / AI",
-          image: "/borderless.jpg",
-          social: {
-            twitter: "https://x.com/Borderless_DeFi"
-          }
-        },
-        {
-          name: "PK",
-          role: "Frontend",
-          image: "/PK.jpg",
-          social: {
-            twitter: "https://x.com/x06pk"
-          }
-        },
-        {
-          name: "Sinners",
-          role: "Bots/Backend",
-          image: "/sinners.jpg",
-          social: {
-            twitter: "https://twitter.com/dev2",
-            linkedin: "https://x.com/___sinners___"
-          }
-        }
-      ]
+{
+  name: "Development",
+  members: [
+    {
+      name: "Borderless",
+      role: "Product / AI",
+      image: "/borderless.jpg",
+      social: {
+        twitter: "https://x.com/Borderless_DeFi"
+      }
     },
     {
+      name: "PK",
+      role: "Frontend",
+      image: "/PK.jpg",
+      social: {
+        twitter: "https://x.com/x06pk"
+      }
+    },
+    {
+      name: "Sinners",
+      role: "Bots/Backend",
+      image: "/sinners.jpg",
+      social: {
+        twitter: "https://x.com/___sinners___"
+      }
+    },
+    {
+      name: "Bielizn",
+      role: "Edit & Backend",
+      image: "/newdev.jpg",
+      social: {
+        twitter: "https://x.com/thesh1ro_"
+      }
+    },
+    {
+      name: "QQuante",
+      role: "AI & Backend",
+      image: "/hex.jpg",
+      social: {
+        twitter: "https://x.com/hex_sec"
+      }
+    }
+  ]
+},
+{
      name: "Design",
   members: [
     {
@@ -163,9 +179,7 @@ const Team = () => {
       role: "UI",
       image: "/loirin.jpg",
       social: {
-        twitter: "https://twitter.com/design1",
-        youtube: "https://youtube.com/@design1",
-        linkedin: "https://linkedin.com/in/design1"
+        twitter: "https://x.com/L0irinn"
       }
     },
     {
