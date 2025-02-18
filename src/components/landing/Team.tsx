@@ -156,21 +156,31 @@ const Team = () => {
       ]
     },
     {
-      name: "Design",
-      members: [
-        {
-          name: "Loirin",
-          role: "UI",
-          image: "/loirin.jpg",
-          social: {
-            twitter: "https://twitter.com/design1",
-            youtube: "https://youtube.com/@design1",
-            linkedin: "https://linkedin.com/in/design1"
-          }
-        }
-      ]
+     name: "Design",
+  members: [
+    {
+      name: "Loirin",
+      role: "UI",
+      image: "/loirin.jpg",
+      social: {
+        twitter: "https://twitter.com/design1",
+        youtube: "https://youtube.com/@design1",
+        linkedin: "https://linkedin.com/in/design1"
+      }
     },
     {
+      name: "New Designer",
+      role: "Graphic Design",
+      image: "/newdesigner.jpg",
+      social: {
+        twitter: "https://twitter.com/newdesigner",
+        youtube: "https://youtube.com/@newdesigner",
+        linkedin: "https://linkedin.com/in/newdesigner"
+      }
+    }
+  ]
+},
+{
       name: "Research",
       members: [
         {
