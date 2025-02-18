@@ -126,9 +126,9 @@ const Team = () => {
     {
       name: "Rodrigorom",
       role: "Product manager",
-      image: "/echo.jpg",
+      image: "/rodrigorom.jpg",
       social: {
-        twitter: "https://x.com/echo_engage"
+        twitter: "https://x.com/0xrodrigorom"
       }
     }
   ]
@@ -141,15 +141,15 @@ const Team = () => {
       role: "Treasury Manager",
       image: "/bras.jpg",
       social: {
-        twitter: "https://x.com/vault_manager"
+        twitter: "https://x.com/0xBras"
       }
     },
     {
-      name: "Ledger",
-      role: "Financial Analyst",
-      image: "/ledger.jpg",
+      name: "Augusto Granai",
+      role: "Pool Advisor",
+      image: "/augusto.jpg",
       social: {
-        twitter: "https://x.com/ledger_analyst"
+        twitter: "https://x.com/augustogranai"
       }
     }
   ]
