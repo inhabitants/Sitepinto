@@ -130,6 +130,14 @@ const Team = () => {
       social: {
         twitter: "https://x.com/0xrodrigorom"
       }
+    },
+    {
+      name: "Cachorro",
+      role: "Community Helper",
+      image: "/cachorro.jpg",
+      social: {
+        twitter: "https://x.com/CachorroEth"
+      }
     }
   ]
 },
