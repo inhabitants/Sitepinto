@@ -126,7 +126,6 @@ const Team = () => {
       ]
     },
     {
-{
   name: "Development",
   members: [
     {
