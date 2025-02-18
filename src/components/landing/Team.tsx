@@ -97,35 +97,64 @@ const Team = () => {
       ]
     },
     {
-      name: "Community Managers",
-      members: [
-        {
-          name: "Marelo",
-          role: "Community Lead",
-          image: "/marelo.jpg",
-          social: {
-            twitter: "https://x.com/MareloFuma"
-          }
-        },
-        {
-          name: "Blastoise",
-          role: "Event Manager",
-          image: "/blastoise.jpg",
-          social: {
-            twitter: "https://x.com/Blastoiise_"
-          }
-        },
-        {
-          name: "Profeh",
-          role: "Discord Manager",
-          image: "/profeh.jpg",
-          social: {
-            twitter: "https://x.com/0xprofeh"
-          }
-        }
-      ]
+  name: "Community Managers",
+  members: [
+    {
+      name: "Marelo",
+      role: "Community Lead",
+      image: "/marelo.jpg",
+      social: {
+        twitter: "https://x.com/MareloFuma"
+      }
     },
     {
+      name: "Blastoise",
+      role: "Event Manager",
+      image: "/blastoise.jpg",
+      social: {
+        twitter: "https://x.com/Blastoiise_"
+      }
+    },
+    {
+      name: "Profeh",
+      role: "Discord Manager",
+      image: "/profeh.jpg",
+      social: {
+        twitter: "https://x.com/0xprofeh"
+      }
+    },
+    {
+      name: "Echo",
+      role: "Engagement Specialist",
+      image: "/echo.jpg",
+      social: {
+        twitter: "https://x.com/echo_engage"
+      }
+    }
+  ]
+},
+{
+  name: "Finance",
+  members: [
+    {
+      name: "Vault",
+      role: "Treasury Manager",
+      image: "/vault.jpg",
+      social: {
+        twitter: "https://x.com/vault_manager"
+      }
+    },
+    {
+      name: "Ledger",
+      role: "Financial Analyst",
+      image: "/ledger.jpg",
+      social: {
+        twitter: "https://x.com/ledger_analyst"
+      }
+    }
+  ]
+},
+{
   name: "Development",
   members: [
     {
