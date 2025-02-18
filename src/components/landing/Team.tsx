@@ -208,20 +208,27 @@ const Team = () => {
   ]
 },
 {
-      name: "Outreach",
-      members: [
-        {
-          name: "Outreach Member 1",
-          role: "Community Manager",
-          image: "/placeholder.svg",
-          social: {
-            twitter: "https://twitter.com/outreach1",
-            youtube: "https://youtube.com/@outreach1",
-            linkedin: "https://linkedin.com/in/outreach1"
-          }
-        }
-      ]
+ name: "Outreach",
+  members: [
+    {
+      name: "Milca0",
+      role: "Caller/Promoter",
+      image: "/milca.jpg",
+      social: {
+        twitter: "https://twitter.com/outreach1"
+      }
+    },
+    {
+      name: "Augusto",
+      role: "SubDAO Manager & Streamer",
+      image: "/augusto.jpg",
+      social: {
+        twitter: "https://x.com/augustogranai",
+        youtube: "https://youtube.com/@outreach2"
+      }
     }
+  ]
+}
   ];
 
   const SocialLinks = ({ social }: { social: Record<string, string> }) => {
