@@ -126,7 +126,7 @@ const Team = () => {
     {
       name: "Rodrigorom",
       role: "Product manager",
-      image: "/rodrigorom.jpg",
+      image: "/rodriogorom.jpg",
       social: {
         twitter: "https://x.com/0xrodrigorom"
       }
