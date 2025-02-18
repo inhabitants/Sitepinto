@@ -180,20 +180,34 @@ const Team = () => {
 },
 {
       name: "Research",
-      members: [
-        {
-          name: "Research Member 1",
-          role: "Tokenomics",
-          image: "/placeholder.svg",
-          social: {
-            twitter: "https://twitter.com/research1",
-            youtube: "https://youtube.com/@research1",
-            linkedin: "https://linkedin.com/in/research1"
-          }
-        }
-      ]
+  members: [
+    {
+      name: "Flyer",
+      role: "Tokenomics",
+      image: "/flyer.jpg",
+      social: {
+        twitter: "https://x.com/0x_Flyer"
+      }
     },
     {
+      name: "Leet",
+      role: "Market/protocol Analysis",
+      image: "/leet.jpg",
+      social: {
+        twitter: "https://x.com/leesc_"
+      }
+    },
+    {
+      name: "Alemalta",
+      role: "Blockchain Researcher",
+      image: "alemalta.jpg",
+      social: {
+        twitter: "https://x.com/alemaltabtc"
+      }
+    }
+  ]
+},
+{
       name: "Outreach",
       members: [
         {
