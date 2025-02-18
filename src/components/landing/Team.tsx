@@ -124,8 +124,8 @@ const Team = () => {
       }
     },
     {
-      name: "Echo",
-      role: "Engagement Specialist",
+      name: "Rodrigorom",
+      role: "Product manager",
       image: "/echo.jpg",
       social: {
         twitter: "https://x.com/echo_engage"
@@ -137,9 +137,9 @@ const Team = () => {
   name: "Finance",
   members: [
     {
-      name: "Vault",
+      name: "Bras",
       role: "Treasury Manager",
-      image: "/vault.jpg",
+      image: "/bras.jpg",
       social: {
         twitter: "https://x.com/vault_manager"
       }
@@ -184,7 +184,7 @@ const Team = () => {
     {
       name: "Bielizn",
       role: "Edit & Backend",
-      image: "/newdev.jpg",
+      image: "/bielzin.jpg",
       social: {
         twitter: "https://x.com/thesh1ro_"
       }
@@ -192,7 +192,7 @@ const Team = () => {
     {
       name: "QQuante",
       role: "AI & Backend",
-      image: "/hex.jpg",
+      image: "/quante.jpg",
       social: {
         twitter: "https://x.com/hex_sec"
       }
