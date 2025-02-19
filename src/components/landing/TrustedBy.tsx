@@ -33,7 +33,8 @@ const TrustedBy = () => {
       link: "https://opensea.io/collection/pintudo",
       target: "_blank"
 
-    }
+    },
+    
     { 
       name: "Rayls", 
       className: "w-48",
@@ -41,7 +42,7 @@ const TrustedBy = () => {
       link: "https://x.com/PBrasilNFT/status/1891632500381974894", 
       target: "_blank"
 
-    },
+    }
 
   ];
 
