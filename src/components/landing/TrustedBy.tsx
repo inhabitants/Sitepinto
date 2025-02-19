@@ -34,6 +34,13 @@ const TrustedBy = () => {
       target: "_blank"
 
     }
+    { 
+      name: "Rayls", 
+      className: "w-48",
+      imageUrl: "/Rayls_Logo.jpg",
+      link: "https://x.com/PBrasilNFT/status/1891632500381974894", 
+      target: "_blank"
+
   ];
 
   return (
