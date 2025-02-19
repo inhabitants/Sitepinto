@@ -41,6 +41,8 @@ const TrustedBy = () => {
       link: "https://x.com/PBrasilNFT/status/1891632500381974894", 
       target: "_blank"
 
+    },
+
   ];
 
   return (
