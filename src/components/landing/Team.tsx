@@ -335,7 +335,7 @@ const Team = () => {
           </span>
           <h2 className="heading-lg mt-6 text-neutral-100">Core members da DAO</h2>
           <p className="text-neutral-400 mt-4 max-w-2xl mx-auto">
-            Conheça os membros proeminentes de nossa comunidade descentralizada.
+            Conheça os membros proeminentes da Pinto DAO
           </p>
         </div>
 
