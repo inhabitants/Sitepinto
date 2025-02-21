@@ -281,8 +281,16 @@ const Team = () => {
       role: "SubDAO Manager & Streamer",
       image: "/augusto.jpg",
       social: {
-        twitter: "https://x.com/augustogranai",
-        youtube: "https://youtube.com/@outreach2"
+        twitter: "https://x.com/augustogranai"
+        }
+    },
+    {
+      name: "Deb",
+      role: "Co-Founder",
+      image: "/deb.jpg",
+      social: {
+        twitter: "https://x.com/debinvest/photo",
+        youtube: "https://www.youtube.com/channel/UCxmzUsmN1xU2nQUWtgId27w"
       }
     }
   ]
