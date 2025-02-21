@@ -190,7 +190,7 @@ const Team = () => {
       }
     },
     {
-      name: "Bielizn",
+      name: "Bielzin",
       role: "Edit & Backend",
       image: "/bielzin.jpg",
       social: {
