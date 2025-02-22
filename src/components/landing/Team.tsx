@@ -287,7 +287,7 @@ const Team = () => {
     {
       name: "Deb",
       role: "Co-Founder",
-      image: "/deb.jpg",
+      image: "/deb.png",
       social: {
         twitter: "https://x.com/debinvest/photo",
         youtube: "https://www.youtube.com/channel/UCxmzUsmN1xU2nQUWtgId27w"
