@@ -1,21 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 const Tokens = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const tokens = [
     {
       name: "Helen Token",
       description: "Token central da comunidade, utilizado para governança e benefícios exclusivos.",
       image: "/HelenToken.png",
-      link: "https://app.uniswap.org/swap",
-      buttonText: "Comprar na Uniswap"
+      link: "https://app.uniswap.org/swap?outputCurrency=0x174f6a1286c0be66c83531368113cbf95faf17c6",
+      buttonText: "Comprar na Uniswap",
+      hasWidget: true
     },
     {
       name: "Pinto NFT",
       description: "Coleção de NFT central da comunidade, que garante acesso vitalício e benefícios exclusivos aos holders.",
       image: "/PintoNFT.png",
       link: "https://opensea.io/collection/pintudo",
-      buttonText: "Ver na OpenSea"
+      buttonText: "Ver na OpenSea",
+      hasWidget: false
     }
   ];
 
@@ -52,14 +57,36 @@ const Tokens = () => {
                 <p className="text-neutral-600 mb-6">
                   {token.description}
                 </p>
-                <a 
-                  href={token.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button-primary w-full"
-                >
-                  {token.buttonText}
-                </a>
+                {token.hasWidget ? (
+                  <Dialog open={isOpen} onOpenChange={setIsOpen}>
+                    <DialogTrigger asChild>
+                      <Button className="button-primary w-full">
+                        {token.buttonText}
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-[600px]">
+                      <DialogHeader>
+                        <DialogTitle>Comprar Helen Token</DialogTitle>
+                      </DialogHeader>
+                      <div className="w-full h-[600px]">
+                        <iframe
+                          src="https://app.uniswap.org/swap?outputCurrency=0x174f6a1286c0be66c83531368113cbf95faf17c6"
+                          className="w-full h-full border-0"
+                          title="Uniswap Widget"
+                        />
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+                ) : (
+                  <a 
+                    href={token.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button-primary w-full"
+                  >
+                    {token.buttonText}
+                  </a>
+                )}
               </div>
             </div>
           ))}
