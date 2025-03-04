@@ -34,7 +34,7 @@ const Tokens = () => {
           </span>
           <h2 className="heading-lg mt-6">Acesso à Comunidade</h2>
           <p className="text-neutral-600 mt-4 max-w-2xl mx-auto">
-            A comunidade só pode ser acessa através de um dos tokens abaixo
+            A comunidade só pode ser acessada através de um dos tokens abaixo
           </p>
         </div>
 
@@ -45,12 +45,21 @@ const Tokens = () => {
               className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="flex flex-col items-center text-center">
-                <div className="w-32 h-32 mb-6">
-                  <img 
-                    src={token.image}
-                    alt={token.name}
-                    className="w-full h-full object-contain"
-                  />
+                <div className="w-32 h-32 mb-6 perspective-1000">
+                  <div className="relative w-full h-full transition-transform duration-500 transform-style-preserve-3d hover:rotate-y-180 cursor-pointer group">
+                    <div className="absolute w-full h-full backface-hidden">
+                      <img 
+                        src={token.image}
+                        alt={token.name}
+                        className="w-full h-full object-contain rounded-full ring-4 ring-accent-purple/20 group-hover:ring-accent-purple/40 transition-all duration-300"
+                      />
+                    </div>
+                    <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-accent-purple/10 rounded-full flex items-center justify-center">
+                      <span className="text-accent-purple font-medium text-sm px-4 text-center">
+                        {token.name}
+                      </span>
+                    </div>
+                  </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-primary">
                   {token.name}
@@ -61,7 +70,7 @@ const Tokens = () => {
                 {token.hasWidget ? (
                   <Dialog open={isOpen} onOpenChange={setIsOpen}>
                     <DialogTrigger asChild>
-                      <Button className="button-primary w-full">
+                      <Button className="button-secondary w-full">
                         {token.buttonText}
                       </Button>
                     </DialogTrigger>
@@ -94,7 +103,7 @@ const Tokens = () => {
                     href={token.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="button-primary w-full"
+                    className="button-secondary w-full"
                   >
                     {token.buttonText}
                   </a>
