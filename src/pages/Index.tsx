@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/landing/Navigation";
 import Hero from "@/components/landing/Hero";
 import TrustedBy from "@/components/landing/TrustedBy";
@@ -9,6 +8,7 @@ import VillageStructure from "@/components/landing/VillageStructure";
 import Team from "@/components/landing/Team";
 import FAQ from "@/components/landing/FAQ";
 import Footer from "@/components/landing/Footer";
+import Tokens from "@/components/landing/Tokens";
 
 const Index = () => {
   return (
@@ -24,6 +24,9 @@ const Index = () => {
       </div>
       <div id="produtos">
         <Products />
+      </div>
+      <div id="tokens">
+        <Tokens />
       </div>
       <div id="estrutura">
         <VillageStructure />
