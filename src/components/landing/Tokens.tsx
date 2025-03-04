@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Copy, Check } from "lucide-react";
 
 const Tokens = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const tokenAddress = "0x174f6a1286c0be66c83531368113cbf95faf17c6";
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(tokenAddress);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   const tokens = [
     {
@@ -45,21 +54,12 @@ const Tokens = () => {
               className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="flex flex-col items-center text-center">
-                <div className="w-32 h-32 mb-6 perspective-1000">
-                  <div className="relative w-full h-full transition-transform duration-500 transform-style-preserve-3d hover:rotate-y-180 cursor-pointer group">
-                    <div className="absolute w-full h-full backface-hidden">
-                      <img 
-                        src={token.image}
-                        alt={token.name}
-                        className="w-full h-full object-contain rounded-full ring-4 ring-accent-purple/20 group-hover:ring-accent-purple/40 transition-all duration-300"
-                      />
-                    </div>
-                    <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-accent-purple/10 rounded-full flex items-center justify-center">
-                      <span className="text-accent-purple font-medium text-sm px-4 text-center">
-                        {token.name}
-                      </span>
-                    </div>
-                  </div>
+                <div className="w-32 h-32 mb-6 overflow-hidden rounded-full group">
+                  <img 
+                    src={token.image}
+                    alt={token.name}
+                    className="w-full h-full object-contain rounded-full ring-4 ring-accent-purple/20 group-hover:ring-accent-purple/60 transition-all duration-300 group-hover:scale-110"
+                  />
                 </div>
                 <h3 className="text-xl font-semibold mb-3 text-primary">
                   {token.name}
@@ -78,7 +78,20 @@ const Tokens = () => {
                       <DialogHeader>
                         <DialogTitle>Comprar Helen Token</DialogTitle>
                       </DialogHeader>
-                      <div className="w-full h-[600px]">
+                      
+                      <div className="bg-neutral-100 p-3 rounded-md flex items-center justify-between mb-4">
+                        <div className="text-sm font-mono text-neutral-600 overflow-hidden text-ellipsis">
+                          {tokenAddress}
+                        </div>
+                        <button 
+                          onClick={copyToClipboard}
+                          className="p-1.5 bg-accent-purple/10 rounded-md hover:bg-accent-purple/20 transition-colors"
+                        >
+                          {copied ? <Check className="w-4 h-4 text-green-500" /> : <Copy className="w-4 h-4 text-accent-purple" />}
+                        </button>
+                      </div>
+                      
+                      <div className="w-full h-[500px]">
                         <iframe
                           src="https://app.uniswap.org/swap?outputCurrency=0x174f6a1286c0be66c83531368113cbf95faf17c6"
                           className="w-full h-full border-0"
