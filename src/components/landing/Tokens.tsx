@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { ExternalLink } from "lucide-react";
 
 const Tokens = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ const Tokens = () => {
     {
       name: "Helen Token",
       description: "Token central da comunidade, utilizado para governança e benefícios exclusivos.",
-      image: "/HelenToken.png",
+      image: "/Helentoken.png",
       link: "https://app.uniswap.org/swap?outputCurrency=0x174f6a1286c0be66c83531368113cbf95faf17c6",
       buttonText: "Comprar na Uniswap",
       hasWidget: true
@@ -17,7 +18,7 @@ const Tokens = () => {
     {
       name: "Pinto NFT",
       description: "Coleção de NFT central da comunidade, que garante acesso vitalício e benefícios exclusivos aos holders.",
-      image: "/PintoNFT.png",
+      image: "/Pintobase.png",
       link: "https://opensea.io/collection/pintudo",
       buttonText: "Ver na OpenSea",
       hasWidget: false
@@ -33,7 +34,7 @@ const Tokens = () => {
           </span>
           <h2 className="heading-lg mt-6">Acesso à Comunidade</h2>
           <p className="text-neutral-600 mt-4 max-w-2xl mx-auto">
-            Nossa comunidade é fechada e só pode ser acessada através de um dos tokens abaixo
+            A comunidade só pode ser acessa através de um dos tokens abaixo
           </p>
         </div>
 
@@ -74,6 +75,17 @@ const Tokens = () => {
                           className="w-full h-full border-0"
                           title="Uniswap Widget"
                         />
+                      </div>
+                      <div className="mt-4">
+                        <a 
+                          href={token.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="button-secondary w-full flex items-center justify-center gap-2"
+                        >
+                          Abrir na Uniswap
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
                       </div>
                     </DialogContent>
                   </Dialog>
