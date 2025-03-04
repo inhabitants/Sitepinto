@@ -21,7 +21,7 @@ const Tokens = () => {
       description: "Token central da comunidade, utilizado para governança e benefícios exclusivos.",
       image: "/Helentoken.png",
       link: "https://app.uniswap.org/swap?outputCurrency=0x174f6a1286c0be66c83531368113cbf95faf17c6",
-      buttonText: "Comprar na Uniswap",
+      buttonText: "Ver na Uniswap",
       hasWidget: true
     },
     {
