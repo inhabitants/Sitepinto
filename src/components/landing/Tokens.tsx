@@ -21,7 +21,7 @@ const Tokens = () => {
       description: "Token central da comunidade, utilizado para governança e benefícios exclusivos.",
       image: "/Helentoken.png",
       link: "https://app.uniswap.org/swap?outputCurrency=0x174f6a1286c0be66c83531368113cbf95faf17c6",
-      buttonText: "Comprar na Uniswap",
+      buttonText: "Visitar Uniswap",
       hasWidget: true
     },
     {
@@ -29,7 +29,7 @@ const Tokens = () => {
       description: "Coleção de NFT central da comunidade, que garante acesso vitalício e benefícios exclusivos aos holders.",
       image: "/Pintobase.png",
       link: "https://opensea.io/collection/pintudo",
-      buttonText: "Ver na OpenSea",
+      buttonText: "Visitar OpenSea",
       hasWidget: false
     }
   ];
