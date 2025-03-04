@@ -21,7 +21,7 @@ const Tokens = () => {
       description: "Token central da comunidade, utilizado para governança e benefícios exclusivos.",
       image: "/Helentoken.png",
       link: "https://app.uniswap.org/swap?outputCurrency=0x174f6a1286c0be66c83531368113cbf95faf17c6",
-      buttonText: "Ver na Uniswap",
+      buttonText: "Comprar na Uniswap",
       hasWidget: true
     },
     {
@@ -71,7 +71,7 @@ const Tokens = () => {
                   <Dialog open={isOpen} onOpenChange={setIsOpen}>
                     <DialogTrigger asChild>
                       <a 
-                        className="px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-block text-center"
+                        className="px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-block text-center cursor-pointer"
                       >
                         {token.buttonText}
                       </a>
@@ -93,11 +93,13 @@ const Tokens = () => {
                         </button>
                       </div>
                       
-                      <div className="w-full h-[500px]">
+                      <div className="w-full h-[500px] bg-white rounded-lg overflow-hidden">
                         <iframe
                           src="https://app.uniswap.org/swap?outputCurrency=0x174f6a1286c0be66c83531368113cbf95faf17c6"
                           className="w-full h-full border-0"
                           title="Uniswap Widget"
+                          allow="clipboard-write; camera; microphone; geolocation"
+                          sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals allow-top-navigation"
                         />
                       </div>
                       <div className="mt-4">
