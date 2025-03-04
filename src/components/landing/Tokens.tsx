@@ -21,7 +21,7 @@ const Tokens = () => {
       description: "Token central da comunidade, utilizado para governança e benefícios exclusivos.",
       image: "/Helentoken.png",
       link: "https://app.uniswap.org/swap?outputCurrency=0x174f6a1286c0be66c83531368113cbf95faf17c6",
-      buttonText: "Visitar Uniswap",
+      buttonText: "Comprar na Uniswap",
       hasWidget: true
     },
     {
@@ -29,7 +29,7 @@ const Tokens = () => {
       description: "Coleção de NFT central da comunidade, que garante acesso vitalício e benefícios exclusivos aos holders.",
       image: "/Pintobase.png",
       link: "https://opensea.io/collection/pintudo",
-      buttonText: "Visitar OpenSea",
+      buttonText: "Ver na OpenSea",
       hasWidget: false
     }
   ];
@@ -70,9 +70,11 @@ const Tokens = () => {
                 {token.hasWidget ? (
                   <Dialog open={isOpen} onOpenChange={setIsOpen}>
                     <DialogTrigger asChild>
-                      <Button className="button-secondary w-full">
+                      <a 
+                        className="px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-block text-center"
+                      >
                         {token.buttonText}
-                      </Button>
+                      </a>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[600px]">
                       <DialogHeader>
@@ -103,7 +105,7 @@ const Tokens = () => {
                           href={token.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="button-secondary w-full flex items-center justify-center gap-2"
+                          className="px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-flex items-center justify-center gap-2"
                         >
                           Abrir na Uniswap
                           <ExternalLink className="w-4 h-4" />
@@ -116,7 +118,7 @@ const Tokens = () => {
                     href={token.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="button-secondary w-full"
+                    className="px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-block text-center"
                   >
                     {token.buttonText}
                   </a>
