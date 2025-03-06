@@ -54,11 +54,8 @@ const Footer = () => {
             <a href="https://discord.pinto.wtf" target="_blank" rel="noopener noreferrer" className="text-neutral-600 hover:text-primary transition-colors">
               Discord
             </a>
-            <a href="https://twitter.com/pintobrasildao" target="_blank" rel="noopener noreferrer" className="text-neutral-600 hover:text-primary transition-colors">
-              Twitter
-            </a>
-            <a href="https://github.com/inhabitants" target="_blank" rel="noopener noreferrer" className="text-neutral-600 hover:text-primary transition-colors">
-              GitHub
+            <a href="https://x.pinto.wtf" target="_blank" rel="noopener noreferrer" className="text-neutral-600 hover:text-primary transition-colors">
+              X
             </a>
           </div>
         </div>
