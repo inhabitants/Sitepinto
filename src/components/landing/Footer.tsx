@@ -15,7 +15,7 @@ const Footer = () => {
               <span className="text-xl font-semibold">Pinto Brasil DAO</span>
             </div>
             <p className="text-neutral-600 text-sm">
-            Irreverência, experimentação  e Cooperação Para Além do Alpha
+            Irreverência, experimentação e cooperação para além do alpha
             </p>
           </div>
           
