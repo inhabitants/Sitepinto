@@ -4,7 +4,7 @@ import { ArrowRight, MessageCircle } from "lucide-react";
 
 const Hero = () => {
   return (
-    <header className="relative overflow-hidden">
+    <header className="relative overflow-hidden h-screen">
       {/* Vídeo de fundo */}
       <div className="absolute inset-0 w-full h-full z-0">
         <video
@@ -18,12 +18,12 @@ const Hero = () => {
           Seu navegador não suporta o elemento de vídeo.
         </video>
         {/* Camada de sobreposição para melhorar legibilidade do texto */}
-        <div className="absolute inset-0 bg-black/30 z-1"></div>
+        <div className="absolute inset-0 bg-black/50 z-1"></div>
       </div>
       
       {/* Conteúdo */}
-      <div className="container-padding py-12 relative z-10">
-        <div className="max-w-4xl mx-auto text-center pt-40 pb-32">
+      <div className="container-padding py-12 relative z-10 h-full flex items-center">
+        <div className="max-w-4xl mx-auto text-center w-full">
           <motion.h1 
             className="heading-xl mb-6 text-white"
             initial={{ opacity: 0, y: 20 }}

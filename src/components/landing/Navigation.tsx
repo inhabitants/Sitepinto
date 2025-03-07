@@ -46,13 +46,13 @@ const Navigation = () => {
         </div>
         
         <div className="hidden md:flex items-center gap-8">
-          <a href="#recursos" className="text-neutral-600 hover:text-primary transition-colors font-medium">Sobre</a>
-          <a href="#valores" className="text-neutral-600 hover:text-primary transition-colors font-medium">Valores</a>
-          <a href="#produtos" className="text-neutral-600 hover:text-primary transition-colors font-medium">Produtos</a>
-          <a href="#tokens" className="text-neutral-600 hover:text-primary transition-colors font-medium">Tokens</a>
-          <a href="#estrutura" className="text-neutral-600 hover:text-primary transition-colors font-medium">Estrutura</a>
-          <a href="#equipe" className="text-neutral-600 hover:text-primary transition-colors font-medium">Membros</a>
-          <a href="#faq" className="text-neutral-600 hover:text-primary transition-colors font-medium">FAQ</a>
+          <a href="#recursos" className="text-neutral-700 hover:text-primary transition-colors font-medium">Sobre</a>
+          <a href="#valores" className="text-neutral-700 hover:text-primary transition-colors font-medium">Valores</a>
+          <a href="#produtos" className="text-neutral-700 hover:text-primary transition-colors font-medium">Produtos</a>
+          <a href="#tokens" className="text-neutral-700 hover:text-primary transition-colors font-medium">Tokens</a>
+          <a href="#estrutura" className="text-neutral-700 hover:text-primary transition-colors font-medium">Estrutura</a>
+          <a href="#equipe" className="text-neutral-700 hover:text-primary transition-colors font-medium">Membros</a>
+          <a href="#faq" className="text-neutral-700 hover:text-primary transition-colors font-medium">FAQ</a>
         </div>
         
         <div className="hidden md:flex items-center gap-4">
@@ -90,16 +90,16 @@ const Navigation = () => {
           transition={{ duration: 0.2 }}
         >
           <div className="flex flex-col gap-4">
-            <a href="#recursos" className="text-neutral-600 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">Sobre</a>
-            <a href="#valores" className="text-neutral-600 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">Valores</a>
-            <a href="#produtos" className="text-neutral-600 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">Produtos</a>
-            <a href="#tokens" className="text-neutral-600 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">Tokens</a>
-            <a href="#estrutura" className="text-neutral-600 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg flex items-center gap-1">
+            <a href="#recursos" className="text-neutral-700 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">Sobre</a>
+            <a href="#valores" className="text-neutral-700 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">Valores</a>
+            <a href="#produtos" className="text-neutral-700 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">Produtos</a>
+            <a href="#tokens" className="text-neutral-700 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">Tokens</a>
+            <a href="#estrutura" className="text-neutral-700 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg flex items-center gap-1">
               <Anchor className="w-4 h-4" />
               Estrutura
             </a>
-            <a href="#equipe" className="text-neutral-600 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">Membros</a>
-            <a href="#faq" className="text-neutral-600 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">FAQ</a>
+            <a href="#equipe" className="text-neutral-700 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">Membros</a>
+            <a href="#faq" className="text-neutral-700 hover:text-primary transition-colors font-medium px-4 py-2 hover:bg-neutral-200/50 rounded-lg">FAQ</a>
             <hr className="border-neutral-200" />
             <a 
               href="https://discord.pinto.wtf"

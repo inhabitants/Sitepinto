@@ -70,11 +70,11 @@ const Tokens = () => {
                 {token.hasWidget ? (
                   <Dialog open={isOpen} onOpenChange={setIsOpen}>
                     <DialogTrigger asChild>
-                      <a 
+                      <button 
                         className="px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-block text-center cursor-pointer"
                       >
                         {token.buttonText}
-                      </a>
+                      </button>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[600px]">
                       <DialogHeader>
@@ -107,7 +107,7 @@ const Tokens = () => {
                           href={token.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-flex items-center justify-center gap-2"
+                          className="px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-flex items-center justify-center gap-2 cursor-pointer"
                         >
                           Abrir na Uniswap
                           <ExternalLink className="w-4 h-4" />
@@ -120,7 +120,7 @@ const Tokens = () => {
                     href={token.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-block text-center"
+                    className="px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-block text-center cursor-pointer"
                   >
                     {token.buttonText}
                   </a>
