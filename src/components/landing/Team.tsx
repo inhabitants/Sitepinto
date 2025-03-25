@@ -174,14 +174,6 @@ const Team = () => {
       }
     },
     {
-      name: "PK",
-      role: "Frontend",
-      image: "/PK.jpg",
-      social: {
-        twitter: "https://x.com/x06pk"
-      }
-    },
-    {
       name: "Sinners",
       role: "Bots/Backend",
       image: "/sinners.jpg",
