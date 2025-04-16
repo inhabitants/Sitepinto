@@ -9,7 +9,7 @@ import { PayEmbed } from "thirdweb/react";
 import { base } from "thirdweb/chains";
 
 const client = createThirdwebClient({
-  clientId: "....", // Substitua pelo seu clientId real
+  clientId: "3076cba3ba05f39fceaa810ce8a45596",
 });
 
 const Tokens = () => {

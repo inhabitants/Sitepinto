@@ -40,6 +40,9 @@
     "@radix-ui/react-toggle-group": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.2",
     "@tanstack/react-query": "^5.56.2",
+    "@thirdweb-dev/chains": "^0.1.120",
+    "@thirdweb-dev/react": "^4.9.4",
+    "@thirdweb-dev/sdk": "^4.0.99",
     "@xyflow/react": "^12.4.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -60,6 +63,7 @@
     "sonner": "^1.5.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
+    "thirdweb": "^5.94.2",
     "vaul": "^0.9.3",
     "zod": "^3.23.8"
   },
