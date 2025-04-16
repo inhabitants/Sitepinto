@@ -10,8 +10,8 @@ import { ThirdwebProvider } from "@thirdweb-dev/react";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <ThirdwebProvider activeChain="base">
-    <QueryClientProvider client={queryClient}>
+  <QueryClientProvider client={queryClient}>
+    <ThirdwebProvider activeChain="base">
       <TooltipProvider>
         <Toaster />
         <Sonner />
@@ -21,8 +21,8 @@ const App = () => (
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
-    </QueryClientProvider>
-  </ThirdwebProvider>
+    </ThirdwebProvider>
+  </QueryClientProvider>
 );
 
 export default App;
