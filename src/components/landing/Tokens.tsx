@@ -3,6 +3,15 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { ExternalLink, Copy, Check } from "lucide-react";
 
+// Thirdweb imports
+import { createThirdwebClient } from "thirdweb";
+import { PayEmbed } from "thirdweb/react";
+import { base } from "thirdweb/chains";
+
+const client = createThirdwebClient({
+  clientId: "....", // Substitua pelo seu clientId real
+});
+
 const Tokens = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -68,53 +77,88 @@ const Tokens = () => {
                   {token.description}
                 </p>
                 {token.hasWidget ? (
-                  <Dialog open={isOpen} onOpenChange={setIsOpen}>
-                    <DialogTrigger asChild>
-                      <button 
-                        className="px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-block text-center cursor-pointer"
-                      >
-                        {token.buttonText}
-                      </button>
-                    </DialogTrigger>
-                    <DialogContent className="sm:max-w-[600px]">
-                      <DialogHeader>
-                        <DialogTitle>Comprar Helen Token</DialogTitle>
-                      </DialogHeader>
-                      
-                      <div className="bg-neutral-100 p-3 rounded-md flex items-center justify-between mb-4">
-                        <div className="text-sm font-mono text-neutral-600 overflow-hidden text-ellipsis">
-                          {tokenAddress}
-                        </div>
+                  <>
+                    {/* Modal Uniswap */}
+                    <Dialog open={isOpen} onOpenChange={setIsOpen}>
+                      <DialogTrigger asChild>
                         <button 
-                          onClick={copyToClipboard}
-                          className="p-1.5 bg-accent-purple/10 rounded-md hover:bg-accent-purple/20 transition-colors"
+                          className="px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-block text-center cursor-pointer"
                         >
-                          {copied ? <Check className="w-4 h-4 text-green-500" /> : <Copy className="w-4 h-4 text-accent-purple" />}
+                          {token.buttonText}
                         </button>
-                      </div>
-                      
-                      <div className="w-full h-[500px] bg-white rounded-lg overflow-hidden">
-                        <iframe
-                          src="https://app.uniswap.org/swap?outputCurrency=0x174f6a1286c0be66c83531368113cbf95faf17c6"
-                          className="w-full h-full border-0"
-                          title="Uniswap Widget"
-                          allow="clipboard-write; camera; microphone; geolocation"
-                          sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals allow-top-navigation"
-                        />
-                      </div>
-                      <div className="mt-4">
-                        <a 
-                          href={token.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-flex items-center justify-center gap-2 cursor-pointer"
+                      </DialogTrigger>
+                      <DialogContent className="sm:max-w-[600px]">
+                        <DialogHeader>
+                          <DialogTitle>Comprar Helen Token</DialogTitle>
+                        </DialogHeader>
+                        <div className="bg-neutral-100 p-3 rounded-md flex items-center justify-between mb-4">
+                          <div className="text-sm font-mono text-neutral-600 overflow-hidden text-ellipsis">
+                            {tokenAddress}
+                          </div>
+                          <button 
+                            onClick={copyToClipboard}
+                            className="p-1.5 bg-accent-purple/10 rounded-md hover:bg-accent-purple/20 transition-colors"
+                          >
+                            {copied ? <Check className="w-4 h-4 text-green-500" /> : <Copy className="w-4 h-4 text-accent-purple" />}
+                          </button>
+                        </div>
+                        <div className="w-full h-[500px] bg-white rounded-lg overflow-hidden">
+                          <iframe
+                            src="https://app.uniswap.org/swap?outputCurrency=0x174f6a1286c0be66c83531368113cbf95faf17c6"
+                            className="w-full h-full border-0"
+                            title="Uniswap Widget"
+                            allow="clipboard-write; camera; microphone; geolocation"
+                            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals allow-top-navigation"
+                          />
+                        </div>
+                        <div className="mt-4">
+                          <a 
+                            href={token.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-flex items-center justify-center gap-2 cursor-pointer"
+                          >
+                            Abrir na Uniswap
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
+                        </div>
+                      </DialogContent>
+                    </Dialog>
+                    {/* Botão e modal Thirdweb */}
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <button
+                          className="mt-3 px-6 py-3 bg-[#0A0A23] text-white rounded-lg hover:bg-[#2a2a5a] transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-block text-center cursor-pointer"
                         >
-                          Abrir na Uniswap
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      </div>
-                    </DialogContent>
-                  </Dialog>
+                          Comprar via Thirdweb
+                        </button>
+                      </DialogTrigger>
+                      <DialogContent className="sm:max-w-[600px]">
+                        <DialogHeader>
+                          <DialogTitle>Comprar Helen Token via Thirdweb</DialogTitle>
+                        </DialogHeader>
+                        {/* PayEmbed thirdweb */}
+                        <div className="w-full h-[500px] bg-white rounded-lg overflow-auto flex items-center justify-center">
+                          <PayEmbed
+                            client={client}
+                            payOptions={{
+                              mode: "fund_wallet",
+                              prefillBuy: {
+                                chain: base,
+                                amount: "10000",
+                                token: {
+                                  name: "Helen",
+                                  symbol: "Helen",
+                                  address: "0x174f6a1286c0be66c83531368113cbf95faf17c6",
+                                  icon: "https://dao.pinto.wtf/Helentoken.png",
+                                },
+                              },
+                            }}
+                          />
+                        </div>
+                      </DialogContent>
+                    </Dialog>
+                  </>
                 ) : (
                   <a 
                     href={token.link}
