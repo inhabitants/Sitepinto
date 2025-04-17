@@ -3,15 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { ExternalLink, Copy, Check } from "lucide-react";
 
-// Thirdweb imports
-import { createThirdwebClient } from "thirdweb";
-import { PayEmbed } from "thirdweb/react";
-import { base } from "thirdweb/chains";
-
-const client = createThirdwebClient({
-  clientId: "3076cba3ba05f39fceaa810ce8a45596",
-});
-
 const Tokens = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -121,40 +112,6 @@ const Tokens = () => {
                             Abrir na Uniswap
                             <ExternalLink className="w-4 h-4" />
                           </a>
-                        </div>
-                      </DialogContent>
-                    </Dialog>
-                    {/* Botão e modal Thirdweb */}
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <button
-                          className="mt-3 px-6 py-3 bg-[#0A0A23] text-white rounded-lg hover:bg-[#2a2a5a] transition-all duration-200 font-medium tracking-wide shadow-sm hover:shadow-md w-full inline-block text-center cursor-pointer"
-                        >
-                          Comprar via Thirdweb
-                        </button>
-                      </DialogTrigger>
-                      <DialogContent className="sm:max-w-[600px]">
-                        <DialogHeader>
-                          <DialogTitle>Comprar Helen Token via Thirdweb</DialogTitle>
-                        </DialogHeader>
-                        {/* PayEmbed thirdweb */}
-                        <div className="w-full h-[500px] bg-white rounded-lg overflow-auto flex items-center justify-center">
-                          <PayEmbed
-                            client={client}
-                            payOptions={{
-                              mode: "fund_wallet",
-                              prefillBuy: {
-                                chain: base,
-                                amount: "10000",
-                                token: {
-                                  name: "Helen",
-                                  symbol: "Helen",
-                                  address: "0x174f6a1286c0be66c83531368113cbf95faf17c6",
-                                  icon: "https://dao.pinto.wtf/Helentoken.png",
-                                },
-                              },
-                            }}
-                          />
                         </div>
                       </DialogContent>
                     </Dialog>
