@@ -4,15 +4,15 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-// Reintroduzindo o ThirdwebProvider do pacote antigo
-import { ThirdwebProvider } from "@thirdweb-dev/react";
+// Corrigindo para provider v5 de thirdweb/react
+import { ThirdwebProvider } from "thirdweb/react";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    {/* ThirdwebProvider dentro do QueryClientProvider */}
-    <ThirdwebProvider activeChain="base">
+    {/* Provider v5 de thirdweb/react sem props */}
+    <ThirdwebProvider>
       <TooltipProvider>
         <Toaster />
         <Sonner />
