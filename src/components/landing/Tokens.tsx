@@ -20,7 +20,7 @@ const Tokens = () => {
       name: "Helen Token",
       description: "Token central da comunidade, utilizado para governança e benefícios exclusivos.",
       image: "/Helentoken.png",
-      link: "https://app.uniswap.org/swap?outputCurrency=0x174f6a1286c0be66c83531368113cbf95faf17c6",
+      link: "https://app.uniswap.org/swap?chain=base&inputCurrency=NATIVE&outputCurrency=0x174f6a1286C0be66C83531368113cBF95FAf17C6",
       buttonText: "Ver na Uniswap",
       hasWidget: true
     },
@@ -95,7 +95,7 @@ const Tokens = () => {
                         </div>
                         <div className="w-full h-[500px] bg-white rounded-lg overflow-hidden">
                           <iframe
-                            src="https://app.uniswap.org/swap?outputCurrency=0x174f6a1286c0be66c83531368113cbf95faf17c6"
+                            src="https://app.uniswap.org/swap?chain=base&inputCurrency=NATIVE&outputCurrency=0x174f6a1286C0be66C83531368113cBF95FAf17C6"
                             className="w-full h-full border-0"
                             title="Uniswap Widget"
                             allow="clipboard-write; camera; microphone; geolocation"
