@@ -31,11 +31,11 @@ const Team = () => {
           }
         },
         {
-          name: "Skott",
-          role: "Front de Solana",
-          image: "/skott.jpg",
+          name: "GabCoin",
+          role: "Airdrops e Ánalise gráfica",
+          image: "/gab.png.jpg",
           social: {
-            twitter: "https://x.com/skottrun"
+            twitter: "https://x.com/gabcoin_"
           }
         },
         {
