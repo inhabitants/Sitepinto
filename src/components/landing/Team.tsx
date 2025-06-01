@@ -47,11 +47,11 @@ const Team = () => {
           }
         },
         {
-          name: "Leitas",
+          name: "Felipe Kazuto",
           role: "Farming de airdrops avançados",
-          image: "/leitas.jpg",
+          image: "/felipe.jpg",
           social: {
-            twitter: "https://x.com/leitas873"
+            twitter: "https://x.com/XFelipeKazutoX"
           }
         },
         {
