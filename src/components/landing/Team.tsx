@@ -138,14 +138,6 @@ const Team = () => {
       social: {
         twitter: "https://x.com/0xrodrigorom"
       }
-    },
-    {
-      name: "Cachorro",
-      role: "Community Helper",
-      image: "/cachorro.jpg",
-      social: {
-        twitter: "https://x.com/CachorroEth"
-      }
     }
   ]
 },
@@ -187,22 +179,6 @@ const Team = () => {
       image: "/sinners.jpg",
       social: {
         twitter: "https://x.com/___sinners___"
-      }
-    },
-    {
-      name: "Bielzin",
-      role: "Edit & Backend",
-      image: "/bielzin.jpg",
-      social: {
-        twitter: "https://x.com/thesh1ro_"
-      }
-    },
-    {
-      name: "QQuante",
-      role: "AI & Backend",
-      image: "/quante.jpg",
-      social: {
-        twitter: "https://x.com/hex_sec"
       }
     }
   ]
