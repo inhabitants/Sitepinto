@@ -87,11 +87,19 @@ const Team = () => {
           }
         },
         {
-          name: "Tembz",
-          role: "Perpétuos e projetos early-stage",
-          image: "/tembzz.jpg",
+          name: "Bruno Lytyrko",
+          role: "Trincheiras da Solana",
+          image: "/brunoL.jpg",
           social: {
-            twitter: "https://x.com/andretembz"
+            twitter: "https://x.com/lytyrko"
+              }
+        },
+        {
+          name: "Vinizera",
+          role: "Airdrop e memecoin hunter",
+          image: "/vinizera.jpg",
+          social: {
+            twitter: "https://x.com/ovinifaria"
           }
         }
       ]
