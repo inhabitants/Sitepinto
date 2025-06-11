@@ -4,6 +4,7 @@ import TrustedBy from "@/components/landing/TrustedBy";
 import Features from "@/components/landing/Features";
 import Values from "@/components/landing/Values";
 import Products from "@/components/landing/Products";
+import Projects from "@/components/landing/Projects";
 import VillageStructure from "@/components/landing/VillageStructure";
 import Team from "@/components/landing/Team";
 import FAQ from "@/components/landing/FAQ";
@@ -24,6 +25,9 @@ const Index = () => {
       </div>
       <div id="produtos">
         <Products />
+      </div>
+      <div id="projetos">
+        <Projects />
       </div>
       <div id="tokens">
         <Tokens />
