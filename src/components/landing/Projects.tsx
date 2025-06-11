@@ -1,4 +1,5 @@
 import React from "react";
+import { Lightbulb } from "lucide-react";
 
 interface Project {
   image: string;
@@ -22,7 +23,7 @@ const Projects = () => {
       buttonText: "Visitar Site",
     },
     {
-      image: "/aitaglogo.png",
+      image: "/aitagapp.png",
       title: "AItag.app",
       description:
         "Curadoria de ferramentas de AI, com busca avançada, recomendações personalizadas, customização de share e webapp para desktop e mobile",
@@ -44,7 +45,7 @@ const Projects = () => {
   const allCards: Project[] = [
     ...projects,
     {
-      image: "/placeholder4.jpg",
+      image: "", // nenhum
       title: "Traga seu Projeto",
       description:
         "Tem um projeto que quer construir junto com a DAO? Entre em contato e vamos construir juntos!",
@@ -78,14 +79,20 @@ const Projects = () => {
                   : "bg-white"
               }`}
             >
-              {/* Imagem do projeto */}
-              <div className="w-full h-40 mb-6 overflow-hidden rounded-xl group bg-neutral-100">
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
+              {/* Imagem ou ícone */}
+              {card.isSpecial ? (
+                <div className="w-full h-40 mb-6 flex items-center justify-center rounded-xl bg-accent-purple/10">
+                  <Lightbulb className="w-12 h-12 text-accent-purple" />
+                </div>
+              ) : (
+                <div className="w-full h-40 mb-6 overflow-hidden rounded-xl group bg-neutral-100">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              )}
 
               {/* Conteúdo */}
               <h3 className="text-xl font-semibold mb-3 text-primary">
