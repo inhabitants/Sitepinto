@@ -13,7 +13,7 @@ interface Project {
 const Projects = () => {
   const projects: Project[] = [
     {
-      image: "/placeholder1.jpg",
+      image: "/helenaiwtf.png",
       title: "Helenai.wtf",
       description:
         "Agente ativa no X, discord. Presente como avatar no Instagram, Tiktok, Youtube, Spotify com músicas autorais e clipes, gifs no whatsapp, instagram e discord.",
@@ -22,7 +22,7 @@ const Projects = () => {
       buttonText: "Visitar Site",
     },
     {
-      image: "/placeholder2.jpg",
+      image: "/aitaglogo.png",
       title: "AItag.app",
       description:
         "Curadoria de ferramentas de AI, com busca avançada, recomendações personalizadas, customização de share e webapp para desktop e mobile",
@@ -31,7 +31,7 @@ const Projects = () => {
       buttonText: "Visitar Site",
     },
     {
-      image: "/placeholder3.jpg",
+      image: "/botsinners.png",
       title: "Sinners Pool",
       description:
         "Bot construido com habilidade do sinners e capital de diversos membros da comunidade, no qual o saldo tem saído muito positivo, nesse momento competitivo da Virtuals",
