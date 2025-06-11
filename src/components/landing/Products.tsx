@@ -69,11 +69,11 @@ const Products = () => {
   ];
 
   return (
-    <section id="produtos" className="py-24">
+    <section id="servicos" className="py-24">
       <div className="container-padding">
         <div className="text-center mb-16">
           <span className="bg-accent-purple/10 text-accent-purple px-4 py-1.5 rounded-full text-sm font-medium">
-            PRODUTOS & SERVIÇOS
+            SERVIÇOS
           </span>
           <h2 className="heading-lg mt-6">O que nossa comunidade oferece</h2>
           <p className="text-neutral-600 mt-4 max-w-2xl mx-auto">

@@ -24,13 +24,13 @@ const Index = () => {
         <Values />
       </div>
       <div id="produtos">
-        <Products />
-      </div>
-      <div id="projetos">
         <Projects />
       </div>
       <div id="tokens">
         <Tokens />
+      </div>
+      <div id="servicos">
+        <Products />
       </div>
       <div id="estrutura">
         <VillageStructure />
