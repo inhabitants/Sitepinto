@@ -6,30 +6,46 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = (e: Event) => {
+    const handleMenuClick = (e: MouseEvent) => {
       e.preventDefault();
-      const target = e.target as HTMLAnchorElement;
-      const id = target.getAttribute('href')?.substring(1);
+      const target = e.currentTarget as HTMLAnchorElement;
+      const href = target.getAttribute('href');
+      const id = href?.substring(1);
       if (id) {
+        // Atualiza o hash na URL para possibilitar compartilhamento / reload na seção correta
+        window.history.replaceState(null, '', `#${id}`);
+
         const element = document.getElementById(id);
         if (element) {
-          element.scrollIntoView({
-            behavior: 'smooth'
-          });
+          element.scrollIntoView({ behavior: 'smooth' });
         }
       }
     };
 
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => {
-      link.addEventListener('click', handleScroll);
+      link.addEventListener('click', handleMenuClick);
     });
 
     return () => {
       links.forEach(link => {
-        link.removeEventListener('click', handleScroll);
+        link.removeEventListener('click', handleMenuClick);
       });
     };
+  }, []);
+
+  // Quando a página for carregada com um hash na URL (#secao), role até ela automaticamente
+  useEffect(() => {
+    const { hash } = window.location;
+    if (hash) {
+      const id = hash.substring(1);
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 0);
+      }
+    }
   }, []);
 
   return (

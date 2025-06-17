@@ -33,9 +33,9 @@ const Projects = () => {
     },
     {
       image: "/botsinners.png",
-      title: "Sinners Pool",
+      title: "Virtuals bot",
       description:
-        "Bot construido com habilidade do sinners e capital de diversos membros da comunidade, no qual o saldo tem saído muito positivo, nesse momento competitivo da Virtuals",
+        "Bot construido com habilidade do sinners e capital de diversos membros da comunidade em pool, no qual o saldo saiu muito positivo, nesse momento competitivo da Virtuals",
       link: "https://discord.pinto.wtf",
       isExternal: true,
       buttonText: "Ver no Discord",
