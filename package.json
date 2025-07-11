@@ -4,11 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
+    "dev": "next dev",
+    "build": "next build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "start": "next start"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -43,6 +42,7 @@
     "@thirdweb-dev/chains": "^0.1.120",
     "@thirdweb-dev/react": "^4.9.4",
     "@thirdweb-dev/sdk": "^4.0.99",
+    "@vercel/analytics": "^1.5.0",
     "@xyflow/react": "^12.4.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -52,6 +52,7 @@
     "framer-motion": "^11.11.11",
     "input-otp": "^1.2.4",
     "lucide-react": "^0.451.0",
+    "next": "^14.0.0",
     "next-themes": "^0.3.0",
     "react": "^18.3.1",
     "react-day-picker": "^8.10.1",
