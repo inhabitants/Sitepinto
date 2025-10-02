@@ -23,16 +23,16 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Produto</h4>
             <ul className="space-y-3 text-sm text-neutral-600">
               <li><a href="https://helenai.wtf" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">HelenAI</a></li>
-              <li><a href="https://docs.pinto.wtf/docs/intro" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Documentação</a></li>
+              <li><a href="#produtos" className="hover:text-primary transition-colors">Projetos</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Comunidade</h4>
             <ul className="space-y-3 text-sm text-neutral-600">
-              <li><a href="https://docs.pinto.wtf/docs/intro" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Sobre</a></li>
+              <li><a href="#recursos" className="hover:text-primary transition-colors">Sobre</a></li>
               <li><a href="https://discord.pinto.wtf" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Discord</a></li>
-              <li><a href="https://docs.pinto.wtf/docs/intro" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">DAO</a></li>
+              <li><a href="#estrutura" className="hover:text-primary transition-colors">Estrutura</a></li>
             </ul>
           </div>
 

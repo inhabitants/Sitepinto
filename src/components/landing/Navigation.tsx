@@ -74,14 +74,6 @@ const Navigation = () => {
         
         <div className="hidden md:flex items-center gap-4">
           <a 
-            href="https://docs.pinto.wtf/docs/intro" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 text-primary hover:text-primary/80 transition-colors font-medium"
-          >
-            Docs
-          </a>
-          <a 
             href="https://discord.pinto.wtf"
             target="_blank"
             rel="noopener noreferrer"

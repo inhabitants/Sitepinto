@@ -103,24 +103,14 @@ const Products = () => {
                 {card.description}
               </p>
               {card.isSpecial ? (
-                <div className="flex gap-4 mt-auto w-full">
-                  <a 
-                    href={card.link}
-                    className="button-primary flex-1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {card.buttonText}
-                  </a>
-                  <a 
-                    href="https://docs.pinto.wtf/docs/SubDAO"
-                    className="button-secondary flex-1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Ver Docs
-                  </a>
-                </div>
+                <a 
+                  href={card.link}
+                  className="button-primary mt-auto w-full"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {card.buttonText}
+                </a>
               ) : (
                 <a 
                   href={card.link}

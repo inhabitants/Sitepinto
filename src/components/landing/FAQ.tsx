@@ -69,27 +69,6 @@ const FAQ = () => {
           <p className="text-neutral-600 mt-4 max-w-2xl mx-auto">
             Tire suas dúvidas sobre a Pinto Brasil DAO e como fazer parte da nossa comunidade.
           </p>
-          <p className="text-sm text-neutral-500 mt-2 max-w-2xl mx-auto">
-            Para informações mais detalhadas, consulte nosso{" "}
-            <a 
-              href="https://docs.pinto.wtf/docs/FAQ" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-accent-purple hover:underline"
-            >
-              FAQ completo
-            </a>
-            {" "}e{" "}
-            <a 
-              href="https://docs.pinto.wtf/docs/intro" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-accent-purple hover:underline"
-            >
-              White Paper
-            </a>
-            .
-          </p>
         </div>
 
         <div className="max-w-3xl mx-auto">
