@@ -34,22 +34,34 @@ const Features = () => {
           </p>
         </div>
 
-        {features.map((feature, index) => (
-          <div key={feature.title} className={`flex flex-col md:flex-row gap-12 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
-            <div className="flex-1">
-              <h3 className="text-3xl font-bold mb-4">{feature.title}</h3>
-              <p className="text-neutral-600 mb-6 text-lg">{feature.description}</p>
-              <ul className="space-y-3">
+        <div className="max-w-4xl mx-auto">
+          {features.map((feature) => (
+            <div key={feature.title} className="text-center">
+              <h3 className="text-2xl font-bold mb-4">{feature.title}</h3>
+              <p className="text-neutral-600 mb-8 text-lg max-w-2xl mx-auto">{feature.description}</p>
+              
+              <div className="flex justify-center mb-8">
+                <Card className="glass-panel p-3 rounded-2xl max-w-xs">
+                  <img 
+                    src={feature.image}
+                    alt={feature.title}
+                    className="w-full h-auto rounded-lg"
+                  />
+                </Card>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 max-w-2xl mx-auto">
                 {feature.points.map((point) => (
-                  <li key={point} className="flex items-center gap-3">
+                  <div key={point} className="flex items-center gap-3 text-left">
                     <div className="w-5 h-5 rounded-full bg-accent-purple/10 flex items-center justify-center flex-shrink-0">
                       <Check className="w-3 h-3 text-accent-purple" />
                     </div>
                     <span className="text-neutral-700">{point}</span>
-                  </li>
+                  </div>
                 ))}
-              </ul>
-              <div className="mt-8 flex gap-4">
+              </div>
+
+              <div className="flex justify-center gap-4">
                 <a 
                   href={feature.primaryLink}
                   target="_blank"
@@ -66,17 +78,8 @@ const Features = () => {
                 </a>
               </div>
             </div>
-            <div className="flex-1 flex justify-center">
-              <Card className="glass-panel p-4 rounded-2xl max-w-sm">
-                <img 
-                  src={feature.image}
-                  alt={feature.title}
-                  className="w-full h-auto rounded-lg"
-                />
-              </Card>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

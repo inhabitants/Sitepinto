@@ -56,12 +56,10 @@ const Hero = () => {
               <MessageCircle className="w-4 h-4" />
             </a>
             <a 
-              href="https://helenai.wtf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#produtos"
               className="px-6 py-3 border border-white/30 rounded-lg hover:bg-white/10 transition-colors flex items-center gap-2 text-white"
             >
-              Conhecer HelenAI
+              Conhecer Projetos
               <ArrowRight className="w-4 h-4" />
             </a>
           </motion.div>
