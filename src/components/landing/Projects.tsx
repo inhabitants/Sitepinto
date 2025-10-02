@@ -44,7 +44,7 @@ const Projects = () => {
       image: "/Ecossistema-sapiens-sinteticos.png",
       title: "Sapiens Sintéticos",
       description:
-        "Ecossistema de aprendizagem e ferramentas de AI de link",
+        "Ecossistema de aprendizagem e ferramentas de AI",
       link: "https://www.sapienssintetico.com",
       isExternal: true,
       buttonText: "Visitar Site",
@@ -53,7 +53,7 @@ const Projects = () => {
       image: "/chickwar.png",
       title: "Chick Wars",
       description:
-        "Minigame ganhador de competição de IA com imagens de galinhas",
+        "Minigame ganhador de competição Tier2 de IA com Web3",
       link: "https://remix.gg/?game=83c05a35-b182-42e4-85ec-a9df4926decf",
       isExternal: true,
       buttonText: "Jogar",
