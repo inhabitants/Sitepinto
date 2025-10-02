@@ -58,6 +58,15 @@ const Projects = () => {
       isExternal: true,
       buttonText: "Jogar",
     },
+    {
+      image: "/pbrasilyoutube.jpeg",
+      title: "PBrasil DAO - YouTube",
+      description:
+        "Compilado de entrevistas e aulas sobre Web3 e AI com convidados especiais da comunidade",
+      link: "https://www.youtube.com/@PBrasilDAO",
+      isExternal: true,
+      buttonText: "Assistir no YouTube",
+    },
   ];
 
   const allCards: Project[] = [
