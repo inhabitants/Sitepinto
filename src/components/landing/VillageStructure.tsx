@@ -1,6 +1,5 @@
 import React from 'react';
 import VillageFlow from './village-structure/VillageFlow';
-import { ArrowRight } from 'lucide-react';
 
 const VillageStructure = () => {
   return (
@@ -17,19 +16,6 @@ const VillageStructure = () => {
         </div>
         
         <VillageFlow />
-
-        {/* Botão Saber Mais */}
-        <div className="mt-12 text-center">
-          <a 
-            href="https://docs.pinto.wtf/docs/intro"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-accent-purple text-white rounded-lg hover:bg-accent-purple/90 transition-colors"
-          >
-            Entenda nossa Estrutura
-            <ArrowRight className="w-4 h-4" />
-          </a>
-        </div>
       </div>
     </section>
   );
