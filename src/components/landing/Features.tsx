@@ -17,7 +17,7 @@ const Features = () => {
       description: "Uma agente de IA de IP compartilhada que funciona como uma atriz multibrand.",
       points: ["Brand Compartilhada", "Colaboração Criativa", "Produção visual"],
       image: "/Helens.gif",
-      primaryLink: "https://helenai.xyz",
+      primaryLink: "https://helenai.wtf",
       secondaryLink: "https://docs.pinto.wtf/docs/intro"
     }
   ];

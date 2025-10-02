@@ -22,7 +22,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Produto</h4>
             <ul className="space-y-3 text-sm text-neutral-600">
-              <li><a href="https://helenai.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">HelenAI</a></li>
+              <li><a href="https://helenai.wtf" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">HelenAI</a></li>
               <li><a href="https://docs.pinto.wtf/docs/intro" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Documentação</a></li>
             </ul>
           </div>

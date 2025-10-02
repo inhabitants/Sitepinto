@@ -2,111 +2,103 @@ import { Twitter, Youtube, Linkedin } from "lucide-react";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 
 const Team = () => {
-  const sectors = [
+  const members = [
     {
-      name: "Callers",
-      members: [
-        {
-          name: "Tarcio",
-          role: "IA e Virtuals",
-          image: "/tarcio.jpg",
-          social: {
-            twitter: "https://x.com/anderson_t60080"
-          }
-        },
-        {
-          name: "Borderless",
-          role: "Research em IA e DeFi",
-          image: "/borderless.jpg",
-          social: {
-            twitter: "https://x.com/Borderless_DeFi"
-          }
-        },
-        {
-          name: "Kohari",
-          role: "Gamefi e airdrops",
-          image: "/kohari.jpg",
-          social: {
-            twitter: "https://x.com/eukohari"
-          }
-        },
-        {
-          name: "GabCoin",
-          role: "Airdrops e Ánalise gráfica",
-          image: "/gab.png.jpg",
-          social: {
-            twitter: "https://x.com/gabcoin_"
-          }
-        },
-        {
-          name: "Talles",
-          role: "DeFi e narrativas de mercado",
-          image: "/talles.jpg",
-          social: {
-            twitter: "https://twitter.com/talles"
-          }
-        },
-        {
-          name: "Felipe Kazuto",
-          role: "Farming de airdrops avançados",
-          image: "/felipe.jpg",
-          social: {
-            twitter: "https://x.com/XFelipeKazutoX"
-          }
-        },
-        {
-          name: "Gaskan",
-          role: "Especialista em rede SUI",
-          image: "/gaskan.jpg",
-          social: {
-            twitter: "https://x.com/e88henrique"
-          }
-        },
-        {
-          name: "Tato",
-          role: "Alphas e oportunidades free",
-          image: "/tato.jpg",
-          social: {
-            twitter: "https://x.com/TATOnft"
-          }
-        },
-        {
-          name: "Milca0",
-          role: "GameFi e play-to-earn",
-          image: "/milca.jpg",
-          social: {
-            twitter: "https://x.com/milca0_"
-          }
-        },
-        {
-          name: "Mendes",
-          role: "Solana e multi-chain games",
-          image: "/mendes.jpg",
-          social: {
-            twitter: "https://x.com/mendes_degen"
-          }
-        },
-        {
-          name: "Bruno Lytyrko",
-          role: "Trincheiras da Solana",
-          image: "/brunoL.jpg",
-          social: {
-            twitter: "https://x.com/lytyrko"
-              }
-        },
-        {
-          name: "Vinizera",
-          role: "Airdrop e memecoin hunter",
-          image: "/vinizera.jpg",
-          social: {
-            twitter: "https://x.com/ovinifaria"
-          }
-        }
-      ]
+      name: "Tarcio",
+      role: "IA e Virtuals",
+      image: "/tarcio.jpg",
+      social: {
+        twitter: "https://x.com/anderson_t60080"
+      }
     },
     {
-  name: "Community Managers",
-  members: [
+      name: "Borderless",
+      role: "Research em IA e DeFi",
+      image: "/borderless.jpg",
+      social: {
+        twitter: "https://x.com/Borderless_DeFi"
+      }
+    },
+    {
+      name: "Kohari",
+      role: "Gamefi e airdrops",
+      image: "/kohari.jpg",
+      social: {
+        twitter: "https://x.com/eukohari"
+      }
+    },
+    {
+      name: "GabCoin",
+      role: "Airdrops e Ánalise gráfica",
+      image: "/gab.png.jpg",
+      social: {
+        twitter: "https://x.com/gabcoin_"
+      }
+    },
+    {
+      name: "Talles",
+      role: "DeFi e narrativas de mercado",
+      image: "/talles.jpg",
+      social: {
+        twitter: "https://twitter.com/talles"
+      }
+    },
+    {
+      name: "Felipe Kazuto",
+      role: "Farming de airdrops avançados",
+      image: "/felipe.jpg",
+      social: {
+        twitter: "https://x.com/XFelipeKazutoX"
+      }
+    },
+    {
+      name: "Gaskan",
+      role: "Especialista em rede SUI",
+      image: "/gaskan.jpg",
+      social: {
+        twitter: "https://x.com/e88henrique"
+      }
+    },
+    {
+      name: "Tato",
+      role: "Alphas e oportunidades free",
+      image: "/tato.jpg",
+      social: {
+        twitter: "https://x.com/TATOnft"
+      }
+    },
+    {
+      name: "Milca0",
+      role: "GameFi e play-to-earn",
+      image: "/milca.jpg",
+      social: {
+        twitter: "https://x.com/milca0_"
+      }
+    },
+    {
+      name: "Mendes",
+      role: "Solana e multi-chain games",
+      image: "/mendes.jpg",
+      social: {
+        twitter: "https://x.com/mendes_degen"
+      }
+    },
+    {
+      name: "Bruno Lytyrko",
+      role: "Trincheiras da Solana",
+      image: "/brunoL.jpg",
+      social: {
+        twitter: "https://x.com/lytyrko"
+      }
+    },
+    {
+      name: "Vinizera",
+      role: "Airdrop e memecoin hunter",
+      image: "/vinizera.jpg",
+      social: {
+        twitter: "https://x.com/ovinifaria"
+      }
+    },
     {
       name: "Marelo",
       role: "Community Lead",
@@ -138,12 +130,7 @@ const Team = () => {
       social: {
         twitter: "https://x.com/0xrodrigorom"
       }
-    }
-  ]
-},
-{
-  name: "Finance",
-  members: [
+    },
     {
       name: "Bras",
       role: "Treasury Manager",
@@ -159,19 +146,6 @@ const Team = () => {
       social: {
         twitter: "https://x.com/augustogranai"
       }
-    }
-  ]
-},
-{
-  name: "Development",
-  members: [
-    {
-      name: "Borderless",
-      role: "Product / AI",
-      image: "/borderless.jpg",
-      social: {
-        twitter: "https://x.com/Borderless_DeFi"
-      }
     },
     {
       name: "Sinners",
@@ -180,12 +154,7 @@ const Team = () => {
       social: {
         twitter: "https://x.com/___sinners___"
       }
-    }
-  ]
-},
-{
-     name: "Design",
-  members: [
+    },
     {
       name: "Loirin",
       role: "UI",
@@ -209,12 +178,7 @@ const Team = () => {
       social: {
         twitter: "https://x.com/RillenFi"
       }
-    }
-  ]
-},
-{
-      name: "Research",
-  members: [
+    },
     {
       name: "Flyer",
       role: "Tokenomics",
@@ -238,27 +202,6 @@ const Team = () => {
       social: {
         twitter: "https://x.com/alemaltabtc"
       }
-    }
-  ]
-},
-{
- name: "Outreach",
-  members: [
-    {
-      name: "Milca0",
-      role: "Caller/Promoter",
-      image: "/milca.jpg",
-      social: {
-        twitter: "https://twitter.com/outreach1"
-      }
-    },
-    {
-      name: "Augusto",
-      role: "SubDAO Manager & Streamer",
-      image: "/augusto.jpg",
-      social: {
-        twitter: "https://x.com/augustogranai"
-        }
     },
     {
       name: "Deb",
@@ -269,8 +212,6 @@ const Team = () => {
         youtube: "https://www.youtube.com/channel/UCxmzUsmN1xU2nQUWtgId27w"
       }
     }
-  ]
-}
   ];
 
   const SocialLinks = ({ social }: { social: Record<string, string> }) => {
@@ -323,37 +264,28 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid gap-16">
-          {sectors.map((sector) => (
-            <div key={sector.name} className="bg-neutral-800/50 rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-neutral-100 mb-8 border-b border-neutral-700 pb-4">
-                {sector.name}
-              </h3>
-              <div className="flex flex-wrap gap-8 justify-center">
-                {sector.members.map((member) => (
-                  <HoverCard key={member.name}>
-                    <HoverCardTrigger asChild>
-                      <div className="relative group cursor-pointer w-[75px] h-[75px]">
-                        <div className="overflow-hidden rounded-full w-[75px] h-[75px]">
-                          <img
-                            src={member.image}
-                            alt={member.name}
-                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                          />
-                        </div>
-                        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full flex flex-col items-center justify-center px-1">
-                          <p className="text-white text-xs font-medium text-center">{member.name}</p>
-                          <p className="text-neutral-300 text-xs text-center leading-tight">{member.role}</p>
-                        </div>
-                      </div>
-                    </HoverCardTrigger>
-                    <HoverCardContent className="w-auto p-2">
-                      <SocialLinks social={member.social} />
-                    </HoverCardContent>
-                  </HoverCard>
-                ))}
-              </div>
-            </div>
+        <div className="flex flex-wrap gap-8 justify-center max-w-5xl mx-auto">
+          {members.map((member) => (
+            <HoverCard key={member.name}>
+              <HoverCardTrigger asChild>
+                <div className="relative group cursor-pointer w-[75px] h-[75px]">
+                  <div className="overflow-hidden rounded-full w-[75px] h-[75px]">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full flex flex-col items-center justify-center px-1">
+                    <p className="text-white text-xs font-medium text-center">{member.name}</p>
+                    <p className="text-neutral-300 text-xs text-center leading-tight">{member.role}</p>
+                  </div>
+                </div>
+              </HoverCardTrigger>
+              <HoverCardContent className="w-auto p-2">
+                <SocialLinks social={member.social} />
+              </HoverCardContent>
+            </HoverCard>
           ))}
         </div>
       </div>
