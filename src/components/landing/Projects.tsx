@@ -60,7 +60,7 @@ const Projects = () => {
     },
     {
       image: "/pbrasilyoutube.jpeg",
-      title: "PBrasil DAO - YouTube",
+      title: "Aulas e Entrevistas Especiais",
       description:
         "Compilado de entrevistas e aulas sobre Web3 e AI com convidados especiais da comunidade",
       link: "https://www.youtube.com/@PBrasilDAO",
