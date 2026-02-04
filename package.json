@@ -39,9 +39,6 @@
     "@radix-ui/react-toggle-group": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.2",
     "@tanstack/react-query": "^5.56.2",
-    "@thirdweb-dev/chains": "^0.1.120",
-    "@thirdweb-dev/react": "^4.9.4",
-    "@thirdweb-dev/sdk": "^4.0.99",
     "@vercel/analytics": "^1.5.0",
     "@xyflow/react": "^12.4.3",
     "class-variance-authority": "^0.7.0",
@@ -52,7 +49,7 @@
     "framer-motion": "^11.11.11",
     "input-otp": "^1.2.4",
     "lucide-react": "^0.451.0",
-    "next": "14.2.35",
+    "next": "^16.1.6",
     "next-themes": "^0.3.0",
     "react": "^18.3.1",
     "react-day-picker": "^8.10.1",
@@ -64,7 +61,6 @@
     "sonner": "^1.5.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
-    "thirdweb": "^5.94.2",
     "vaul": "^0.9.3",
     "zod": "^3.23.8"
   },
@@ -85,6 +81,6 @@
     "tailwindcss": "^3.4.11",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "vite": "^7.3.1"
   }
 }
