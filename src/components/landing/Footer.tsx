@@ -23,6 +23,8 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Produto</h4>
             <ul className="space-y-3 text-sm text-neutral-600">
               <li><a href="https://helenai.wtf" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">HelenAI</a></li>
+              <li><a href="https://sapiensinteticos.com" target="_blank" rel="noopener" className="hover:text-primary transition-colors">Sapiens Sintéticos</a></li>
+              <li><a href="https://inhabitants.zone" target="_blank" rel="noopener" className="hover:text-primary transition-colors">in/habitants</a></li>
               <li><a href="#produtos" className="hover:text-primary transition-colors">Projetos</a></li>
             </ul>
           </div>
