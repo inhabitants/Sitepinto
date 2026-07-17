@@ -1,19 +1,52 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle } from "lucide-react";
 
 const Hero = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [videoSrc, setVideoSrc] = useState<string | undefined>(undefined);
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    // Adia o vídeo de fundo (pesado) até a página ficar ociosa, pra não
+    // competir com o LCP / primeira renderização.
+    const start = () => setVideoSrc('/Pintointro.mp4');
+    const schedule = () => {
+      if (typeof window.requestIdleCallback === 'function') {
+        window.requestIdleCallback(start, { timeout: 2000 });
+      } else {
+        window.setTimeout(start, 300);
+      }
+    };
+    if (document.readyState === 'complete') {
+      schedule();
+    } else {
+      window.addEventListener('load', schedule, { once: true });
+      return () => window.removeEventListener('load', schedule);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (videoSrc && videoRef.current) {
+      videoRef.current.load();
+      videoRef.current.play().catch(() => {});
+    }
+  }, [videoSrc]);
+
   return (
     <header className="relative overflow-hidden h-screen">
-      {/* Vídeo de fundo */}
-      <div className="absolute inset-0 w-full h-full z-0">
+      {/* Vídeo de fundo (lazy) — fundo preto pinta na hora, vídeo entra depois com fade */}
+      <div className="absolute inset-0 w-full h-full z-0 bg-black">
         <video
-          className="w-full h-full object-cover"
+          ref={videoRef}
+          className={`w-full h-full object-cover transition-opacity duration-700 ${ready ? 'opacity-100' : 'opacity-0'}`}
           autoPlay
           loop
           muted
           playsInline
-          src="/Pintointro.mp4"
+          preload="none"
+          onPlaying={() => setReady(true)}
+          src={videoSrc}
         >
           Seu navegador não suporta o elemento de vídeo.
         </video>
